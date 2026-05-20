@@ -13,6 +13,11 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 
+const seededRandom = (seed: number) => {
+  const x = Math.sin(seed) * 10000;
+  return x - Math.floor(x);
+};
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -58,29 +63,35 @@ const Footer = () => {
 
       {/* Floating Ice Cream Icons */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(8)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute text-white/5 text-3xl"
-            initial={{
-              x: Math.random() * 100 + "%",
-              y: Math.random() * 100 + "%",
-            }}
-            animate={{
-              y: [null, -30, -60],
-              rotate: [0, 360],
-              opacity: [0, 0.1, 0],
-            }}
-            transition={{
-              duration: Math.random() * 15 + 10,
-              repeat: Infinity,
-              delay: Math.random() * 10,
-              ease: "linear",
-            }}
-          >
-            🍦
-          </motion.div>
-        ))}
+        {[...Array(8)].map((_, i) => {
+          const randX = seededRandom(i * 4 + 1) * 100;
+          const randY = seededRandom(i * 4 + 2) * 100;
+          const randDuration = seededRandom(i * 4 + 3) * 15 + 10;
+          const randDelay = seededRandom(i * 4 + 4) * 10;
+          return (
+            <motion.div
+              key={i}
+              className="absolute text-white/5 text-3xl"
+              initial={{
+                x: `${randX}%`,
+                y: `${randY}%`,
+              }}
+              animate={{
+                y: [null, -30, -60],
+                rotate: [0, 360],
+                opacity: [0, 0.1, 0],
+              }}
+              transition={{
+                duration: randDuration,
+                repeat: Infinity,
+                delay: randDelay,
+                ease: "linear",
+              }}
+            >
+              🍦
+            </motion.div>
+          );
+        })}
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">

@@ -3,6 +3,11 @@ import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
 import { FaChevronLeft, FaChevronRight, FaCoffee, FaIceCream, FaHamburger, FaMugHot, FaGlassWhiskey, FaCandyCane, FaAppleAlt, FaEye } from 'react-icons/fa';
 
+const seededRandom = (seed: number) => {
+  const x = Math.sin(seed) * 10000;
+  return x - Math.floor(x);
+};
+
 const MenuSection = () => {
   const sectionRef = useRef(null);
   const containerRef = useRef(null);
@@ -185,30 +190,36 @@ const MenuSection = () => {
 
       {/* Floating Ice Cream Particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute text-white/5 text-4xl"
-            initial={{ 
-              x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 0),
-              y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 0),
-              rotate: 0
-            }}
-            animate={{
-              y: [null, -100, -200],
-              rotate: [0, 360],
-              opacity: [0, 0.1, 0]
-            }}
-            transition={{
-              duration: Math.random() * 10 + 10,
-              repeat: Infinity,
-              delay: Math.random() * 10,
-              ease: "linear"
-            }}
-          >
-            🍦
-          </motion.div>
-        ))}
+        {[...Array(20)].map((_, i) => {
+          const randX = seededRandom(i * 4 + 1) * 100;
+          const randY = seededRandom(i * 4 + 2) * 100;
+          const randDuration = seededRandom(i * 4 + 3) * 10 + 10;
+          const randDelay = seededRandom(i * 4 + 4) * 10;
+          return (
+            <motion.div
+              key={i}
+              className="absolute text-white/5 text-4xl"
+              initial={{ 
+                x: `${randX}%`,
+                y: `${randY}%`,
+                rotate: 0
+              }}
+              animate={{
+                y: [null, -100, -200],
+                rotate: [0, 360],
+                opacity: [0, 0.1, 0]
+              }}
+              transition={{
+                duration: randDuration,
+                repeat: Infinity,
+                delay: randDelay,
+                ease: "linear"
+              }}
+            >
+              🍦
+            </motion.div>
+          );
+        })}
       </div>
 
       <section 
