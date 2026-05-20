@@ -18,6 +18,8 @@ const seededRandom = (seed: number) => {
   return x - Math.floor(x);
 };
 
+const formatPercent = (value: number) => `${Number(value.toFixed(4))}%`;
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -64,8 +66,8 @@ const Footer = () => {
       {/* Floating Ice Cream Icons */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(8)].map((_, i) => {
-          const randX = seededRandom(i * 4 + 1) * 100;
-          const randY = seededRandom(i * 4 + 2) * 100;
+          const randX = formatPercent(seededRandom(i * 4 + 1) * 100);
+          const randY = formatPercent(seededRandom(i * 4 + 2) * 100);
           const randDuration = seededRandom(i * 4 + 3) * 15 + 10;
           const randDelay = seededRandom(i * 4 + 4) * 10;
           return (
@@ -73,8 +75,8 @@ const Footer = () => {
               key={i}
               className="absolute text-white/5 text-3xl"
               initial={{
-                x: `${randX}%`,
-                y: `${randY}%`,
+                x: randX,
+                y: randY,
               }}
               animate={{
                 y: [null, -30, -60],

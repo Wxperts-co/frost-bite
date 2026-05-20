@@ -60,7 +60,7 @@ const FeaturedProducts = () => {
             width={200}
             height={200}
             className="opacity-15"
-            style={{ opacity: 0.30 }}
+            style={{ opacity: 0.30, width: 'auto', height: 'auto' }}
           />
         </motion.div>
       </motion.div>
@@ -90,7 +90,7 @@ const FeaturedProducts = () => {
             width={200}
             height={200}
             className="opacity-15"
-            style={{ opacity: 0.15 }}
+            style={{ opacity: 0.15, width: 'auto', height: 'auto' }}
           />
         </motion.div>
       </motion.div>
@@ -118,7 +118,7 @@ const FeaturedProducts = () => {
             alt="Ice Cream Top"
             width={80}
             height={80}
-            style={{ opacity: 0.1 }}
+            style={{ opacity: 0.1, width: 'auto', height: 'auto' }}
           />
         </motion.div>
       </motion.div>
@@ -146,7 +146,7 @@ const FeaturedProducts = () => {
             alt="Ice Cream Bottom"
             width={60}
             height={60}
-            style={{ opacity: 0.12 }}
+            style={{ opacity: 0.12, width: 'auto', height: 'auto' }}
           />
         </motion.div>
       </motion.div>
