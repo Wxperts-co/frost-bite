@@ -66,9 +66,9 @@ const Header = () => {
 
           {/* Desktop Menu - Bold with Nunito Font */}
           <div className="hidden lg:flex items-center space-x-8">
-            {navItems.map((item) => (
+            {navItems.map((item, idx) => (
               <Link
-                key={item.name}
+                key={`${item.name}-${item.href}-${idx}`}
                 href={item.href}
                 className={`transition-all duration-300 font-bold text-base tracking-wide ${
                   scrolled 
@@ -120,9 +120,9 @@ const Header = () => {
               style={{ fontFamily: "'Nunito', sans-serif" }}
             >
               <div className="py-4">
-                {navItems.map((item) => (
+                {navItems.map((item, idx) => (
                   <Link
-                    key={item.name}
+                    key={`${item.name}-${item.href}-${idx}`}
                     href={item.href}
                     className="block px-6 py-3 text-gray-700 hover:bg-[#c07f07] hover:text-white transition-colors duration-300 font-bold"
                     style={{ fontWeight: 700 }}

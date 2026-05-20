@@ -190,8 +190,8 @@ const MenuSection = () => {
             key={i}
             className="absolute text-white/5 text-4xl"
             initial={{ 
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+              x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 0),
+              y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 0),
               rotate: 0
             }}
             animate={{

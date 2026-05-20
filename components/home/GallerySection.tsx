@@ -2,8 +2,10 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import dynamic from "next/dynamic";
 import Image from "next/image";
-import Slider from "react-slick";
+
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -32,7 +34,7 @@ const BrandSlider = () => {
     speed: 700,
     autoplay: true,
     autoplaySpeed: 2500,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
     pauseOnHover: true,
@@ -42,12 +44,16 @@ const BrandSlider = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
+          centerMode: false,
+          centerPadding: "0px",
         },
       },
       {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
+          centerMode: true,
+          centerPadding: "16px",
         },
       },
     ],
@@ -76,10 +82,9 @@ const BrandSlider = () => {
                     src={item.image}
                     alt={`Gallery ${item.id}`}
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover rounded-[22px] transition-transform duration-500 group-hover:scale-110"
                   />
-
-                  {/* Overlay */}
                   <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition duration-300" />
                 </div>
               </motion.div>

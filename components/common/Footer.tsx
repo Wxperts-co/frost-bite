@@ -167,9 +167,9 @@ const Footer = () => {
 
             {/* Social Icons */}
             <div className="flex gap-3 mt-6">
-              {socialIcons.map(({ Icon, href, color }) => (
+              {socialIcons.map(({ Icon, href, color }, idx) => (
                 <Link
-                  key={href}
+                  key={`social-${idx}`}
                   href={href}
                   className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#c07f07] transition-all duration-300 hover:scale-110"
                 >
