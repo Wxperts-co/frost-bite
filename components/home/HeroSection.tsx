@@ -153,7 +153,7 @@ const HeroSection = () => {
       <div className="relative z-20 container mx-auto px-4 md:px-6 lg:px-8 min-h-screen flex items-center">
         <div className="max-w-4xl">
           {/* Retro Badge */}
-          {/* Badge */} <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 border border-white/30" > <motion.div animate={{ rotate: 360 }} transition={{ duration: 2, repeat: Infinity, ease: "linear" }} > <FaIceCream className="text-[#c07f07]" /> </motion.div> <span className="text-sm font-medium text-white">✨ Premium Ice Cream Since 2024 ✨</span> </motion.div>
+          {/* Badge */} <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 border border-white/30" > <motion.div animate={{ rotate: 360 }} transition={{ duration: 2, repeat: Infinity, ease: "linear" }} > <FaIceCream className="text-[#c07f07]" /> </motion.div> <span className="text-sm font-medium text-white">✨ Premium Ice Cream Since 2015 ✨</span> </motion.div>
 
           {/* Main Heading */}
           <motion.h1
