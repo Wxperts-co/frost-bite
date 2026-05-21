@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    qualities: [100, 70],
     remotePatterns: [
       {
         protocol: 'https',
@@ -15,7 +16,6 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
-      // Agar aur bhi domains add karne hain to yahan karo
       {
         protocol: 'https',
         hostname: 'images.pexels.com',

@@ -1,15 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import {
-  FaMapMarkerAlt,
-  FaPhone,
-  FaEnvelope,
-  FaFacebook,
-  FaInstagram,
-  FaTwitter,
-  FaYoutube,
-  FaClock,
-} from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -24,34 +15,39 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: "Home", href: "#" },
-    { name: "About Us", href: "#" },
-    { name: "Menu", href: "#" },
-    { name: "Food & Sandwiches", href: "#" },
-    { name: "Gallery", href: "#" },
-    { name: "Reviews", href: "#" },
-    { name: "Contact Us", href: "#" },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about-us" },
+    { name: "Menu", href: "/menu" },
+    { name: "Food & Sandwiches", href: "/food-sandwiches" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Reviews", href: "/reviews" },
+    { name: "Contact Us", href: "/contact-us" },
   ];
 
   const openingHours = [
-  { day: "Monday", hours: "11 AM - 9 PM" },
-  { day: "Tuesday", hours: "11 AM - 9 PM" },
-  { day: "Wednesday", hours: "11 AM - 9 PM" },
-  { day: "Thursday", hours: "11 AM - 9 PM" },
-  { day: "Friday", hours: "11 AM - 9 PM" },
-  { day: "Saturday", hours: "11 AM - 9 PM" },
-  { day: "Sunday", hours: "12 PM - 9 PM" },
-];
+    { day: "Monday", hours: "11 AM - 9 PM" },
+    { day: "Tuesday", hours: "11 AM - 9 PM" },
+    { day: "Wednesday", hours: "11 AM - 9 PM" },
+    { day: "Thursday", hours: "11 AM - 9 PM" },
+    { day: "Friday", hours: "11 AM - 9 PM" },
+    { day: "Saturday", hours: "11 AM - 9 PM" },
+    { day: "Sunday", hours: "12 PM - 9 PM" },
+  ];
 
   const socialIcons = [
-    { Icon: FaFacebook, href: "#", color: "#1877f2" },
-    { Icon: FaInstagram, href: "#", color: "#e4405f" },
-    { Icon: FaTwitter, href: "#", color: "#1da1f2" },
-    { Icon: FaYoutube, href: "#", color: "#ff0000" },
+    { name: "Facebook", href: "#", image: "/images/social/facebook.png" },
+    // { name: "Instagram", href: "#", image: "/images/social/instagram.png" },
+    { name: "YouTube", href: "#", image: "/images/social/youtube.png" },
   ];
 
   return (
-    <footer className="relative bg-[#046069] text-white pt-16 pb-0 overflow-hidden">
+    <footer
+      className="relative bg-cover bg-center bg-no-repeat text-white pt-16 pb-0 overflow-hidden"
+      style={{ backgroundImage: "url('/images/footer-bg.jpg')" }}
+    >
+      {/* Dark Overlay for readability */}
+      <div className="absolute inset-0 bg-[#046069]/70 pointer-events-none"></div>
+
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5 pointer-events-none">
         <div
@@ -99,20 +95,19 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {/* Column 1 - About Us (Sabse Pehle - Left Side) */}
+          {/* Column 1 - About Us */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-[#c07f07]">About Us</h3>
-            <p className="text-white/70 text-sm leading-relaxed mb-4">
+            <h3 className="text-xl font-bold mb-6 text-[#fca90e]">About Us</h3>
+            <p className="text-white text-sm leading-relaxed mb-4">
               Frost Bite is your go-to destination for delicious ice cream,
               burgers, sandwiches, and more. Family-owned and operated since
               2010.
             </p>
-            
           </div>
 
           {/* Column 2 - Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-[#c07f07]">
+            <h3 className="text-xl font-bold mb-6 text-[#fca90e]">
               Quick Links
             </h3>
             <ul className="space-y-3">
@@ -120,7 +115,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-white/70 hover:text-[#c07f07] transition-colors text-sm"
+                    className="text-white hover:text-[#fca90e] transition-colors text-sm"
                   >
                     {link.name}
                   </Link>
@@ -131,16 +126,14 @@ const Footer = () => {
 
           {/* Column 3 - Opening Hours */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-[#c07f07]">
+            <h3 className="text-xl font-bold mb-6 text-[#fca90e]">
               Opening Hours
             </h3>
             <ul className="space-y-3">
               {openingHours.map((item) => (
                 <li key={item.day} className="flex justify-between text-sm">
-                  <span className="text-white/70">{item.day}</span>
-                  <span className="text-white/80 font-medium">
-                    {item.hours}
-                  </span>
+                  <span className="text-white">{item.day}</span>
+                  <span className="text-white font-medium">{item.hours}</span>
                 </li>
               ))}
             </ul>
@@ -148,45 +141,60 @@ const Footer = () => {
 
           {/* Column 4 - Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-[#c07f07]">
+            <h3 className="text-xl font-bold mb-6 text-[#fca90e]">
               Contact Info
             </h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <FaMapMarkerAlt className="text-[#c07f07] mt-1 flex-shrink-0" />
-                <p className="text-white/80 text-sm leading-relaxed">
-                  7025 Galen Dr W, Avon, IN 46123, United States
-                </p>
+                <FaMapMarkerAlt className="text-[#fca90e] mt-1 flex-shrink-0" />
+                <Link
+                  href="https://maps.app.goo.gl/3fXb8V17mC1E5rec9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline transition-all duration-300 group"
+                >
+                  <p className="text-white text-sm leading-relaxed group-hover:text-[#fca90e] transition-colors">
+                    7025 Galen Dr W, Avon, IN 46123, United States
+                  </p>
+                </Link>
               </div>
               <div className="flex items-center gap-3">
-                <FaPhone className="text-[#c07f07]" />
+                <FaPhone className="text-[#fca90e]" />
                 <Link
                   href="tel:+13172722483"
-                  className="text-white/80 hover:text-[#c07f07] transition-colors text-sm"
+                  className="text-white hover:text-[#fca90e] transition-colors text-sm"
                 >
                   (317) 272-2483
                 </Link>
               </div>
               <div className="flex items-center gap-3">
-                <FaEnvelope className="text-[#c07f07]" />
+                <FaEnvelope className="text-[#fca90e]" />
                 <Link
                   href="mailto:frostbite7025@gmail.com"
-                  className="text-white/80 hover:text-[#c07f07] transition-colors text-sm"
+                  className="text-white hover:text-[#fca90e] transition-colors text-sm"
                 >
                   frostbite7025@gmail.com
                 </Link>
               </div>
             </div>
 
-            {/* Social Icons */}
+            {/* Social Icons with PNG Images */}
             <div className="flex gap-3 mt-6">
-              {socialIcons.map(({ Icon, href, color }, idx) => (
+              {socialIcons.map(({ name, href, image }, idx) => (
                 <Link
                   key={`social-${idx}`}
                   href={href}
-                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#c07f07] transition-all duration-300 hover:scale-110"
+                  className="w-10 h-10 flex items-center justify-center transition-all duration-300 overflow-hidden"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <Icon size={18} className="text-white" />
+                  <Image
+                    src={image}
+                    alt={name}
+                    width={20}
+                    height={20}
+                    className=" w-8 h-8"
+                  />
                 </Link>
               ))}
             </div>
@@ -200,24 +208,24 @@ const Footer = () => {
           style={{ textAlign: "center", fontSize: "14px", lineHeight: "1.8" }}
           className="copyright-section py-2 order-secondary border-t border-white/20"
         >
-          <p className="text-white/50 text-sm">
+          <p className="text-white text-sm z-10 relative">
             © {currentYear} Frost Bite. All rights reserved.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-2 text-white/50 text-xs mt-1">
-            <Link href="#" className="hover:text-[#c07f07] transition-colors">
+          <div className="flex flex-wrap items-center justify-center gap-2 text-white text-xs mt-1 z-10 relative">
+            <Link href="#" className="hover:text-[#fca90e] transition-colors">
               Website Development
             </Link>
             <span>|</span>
-            <Link href="#" className="hover:text-[#c07f07] transition-colors">
+            <Link href="#" className="hover:text-[#fca90e] transition-colors">
               Hosting
             </Link>
             <span>|</span>
-            <Link href="#" className="hover:text-[#c07f07] transition-colors">
+            <Link href="#" className="hover:text-[#fca90e] transition-colors">
               SEO
             </Link>
             <span>|</span>
-            <Link href="#" className="hover:text-[#c07f07] transition-colors">
+            <Link href="#" className="hover:text-[#fca90e] transition-colors">
               Digital Marketing
             </Link>
           </div>
@@ -229,7 +237,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="inline-block"
             >
-              <div className="w-[100px] h-[70px]  rounded-lg flex items-center justify-center mx-auto hover:bg-white/20 transition-colors backdrop-blur-sm">
+              <div className="w-[100px] h-[70px] rounded-lg flex items-center justify-center mx-auto  transition-colors backdrop-blur-sm">
                 <Image
                   src="/images/wxperts.webp"
                   alt="WXPERTS"

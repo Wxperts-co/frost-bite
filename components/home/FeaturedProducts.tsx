@@ -200,13 +200,13 @@ const FeaturedProducts = () => {
                 />
                 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl flex items-center justify-center">
+                {/* <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl flex items-center justify-center">
                   <button 
                     className="px-6 py-2 bg-white text-gray-800 rounded-full font-semibold hover:bg-[#c07f07] hover:text-white transition-all duration-300"
                   >
-                    Book  Now
+                    Order Now
                   </button>
-                </div>
+                </div> */}
               </div>
             </motion.div>
           ))}
