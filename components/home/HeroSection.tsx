@@ -155,7 +155,7 @@ const HeroSection = () => {
         <div className="max-w-4xl">
           {/* Retro Badge */}
           {/* Badge */}{" "}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
@@ -172,7 +172,7 @@ const HeroSection = () => {
             <span className="text-sm font-medium text-white">
               ✨ Premium Ice Cream Since 2015 ✨
             </span>{" "}
-          </motion.div>
+          </motion.div> */}
           {/* Main Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -242,7 +242,7 @@ const HeroSection = () => {
         animate={{ scale: [1, 1.2, 1] }}
         transition={{ duration: 1.2, repeat: Infinity }}
       >
-        <FaPlay size={12} className="sm:text-sm" />
+        {/* <FaPlay size={12} className="sm:text-sm" /> */}
       </motion.div>
       Discover Our Story
       <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300 text-sm sm:text-base" />

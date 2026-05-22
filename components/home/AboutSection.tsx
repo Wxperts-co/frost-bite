@@ -145,7 +145,7 @@ const AboutSection = () => {
                 className="relative z-10 flex justify-center items-center lg:pt-10 pt-15"
               >
                 <Image
-                  src="/images/img_2.png"
+                  src="/images/ice-cream-about.png"
                   alt="Ice Cream"
                   width={620}
                   height={720}
@@ -155,7 +155,7 @@ const AboutSection = () => {
               </motion.div>
 
               {/* Experience Circle */}
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ delay: 0.4, type: "spring" }}
@@ -186,7 +186,7 @@ const AboutSection = () => {
                     Experience
                   </p>
                 </div>
-              </motion.div>
+              </motion.div> */}
             </div>
           </motion.div>
           {/* Right Side - Content Section */}
