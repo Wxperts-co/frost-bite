@@ -7,28 +7,27 @@ const FeaturedProducts = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
-  const products = [
-    {
-      id: 1,
-      image: "/images/spacial-1.jpg",
-      badgeColor: "#c07f07"
-    },
-    {
-      id: 2,
-      image: "/images/spacial-2.jpg",
-      badgeColor: "#046069"
-    },
-    {
-      id: 3,
-      image: "/images/spacial-3.jpg",
-      badgeColor: "#c07f07"
-    },
+  const menuItems = [
+    { id: 1, icon: "🍦", title: "Soft-Serve Cups", description: "Creamy classic soft serve", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
+    { id: 2, icon: "🍧", title: "Hard Ice Cream", description: "Scooped to order", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
+    { id: 3, icon: "🥤", title: "Shakes", description: "Thick & hand-spun", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
+    { id: 4, icon: "❄️", title: "Frost", description: "Signature frozen treats", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
+    { id: 5, icon: "✨", title: "Specialty Frost", description: "Unique frost creations", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
+    { id: 6, icon: "🧊", title: "Slushies", description: "Icy & refreshing", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
+    { id: 7, icon: "🥤", title: "Freezes", description: "Cool & satisfying", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
+    { id: 8, icon: "🥤", title: "Beverages", description: "Drinks & more", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
+    { id: 9, icon: "🥩", title: "Tenderloins", description: "Breaded & crispy", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
+    { id: 10, icon: "🍔", title: "Burgers", description: "Classic beef burgers", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
+    { id: 11, icon: "🌭", title: "Hot Dogs", description: "Juicy grilled dogs", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
+    { id: 12, icon: "🐟", title: "Fish Sandwich", description: "Freshly battered fish", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
+    { id: 13, icon: "🌯", title: "Chicken Wrap", description: "Fresh & zesty", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
+    { id: 14, icon: "🍟", title: "Sides", description: "Perfect add-ons", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
   ];
 
   return (
     <section 
       ref={sectionRef}
-      className="relative py-10  px-4 bg-white overflow-hidden"
+      className="relative py-10 px-4 bg-white overflow-hidden"
       style={{
         paddingTop: '2em',
         paddingBottom: '1em',
@@ -151,8 +150,6 @@ const FeaturedProducts = () => {
         </motion.div>
       </motion.div>
 
-     
-
       <div className="container mx-auto relative z-10">
         {/* Section Title */}
         <motion.div
@@ -163,53 +160,66 @@ const FeaturedProducts = () => {
           style={{ paddingTop: '2em', paddingBottom: '2em' }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            Ice Cream Specials
+            What We Serve
           </h2>
+          <p className="text-gray-500 mt-2">Made fresh, served with a smile</p>
         </motion.div>
 
-        {/* Products Grid - 3 columns  */}
+        {/* Menu Grid */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
           style={{
             paddingTop: '1em',
-            paddingBottom: '0em',
+            paddingBottom: '2em',
             paddingLeft: '0em',
             paddingRight: '0em'
           }}
         >
-          {products.map((product, index) => (
-            <motion.div
-              key={product.id}
+          {menuItems.map((item, index) => (
+            <motion.a
+              key={item.id}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
+              transition={{ delay: index * 0.03 }}
+              whileHover={{ y: -5, scale: 1.02 }}
               className="group cursor-pointer"
             >
-              <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ">
-                <Image
-                  src={product.image}
-                  alt={`Product ${product.id}`}
-                  width={640}
-                  height={640}
-                  className="w-full h-auto rounded-2xl transition-transform duration-500 group-hover:scale-105"
-                  style={{ borderRadius: '16px' }}
-                />
-                
-                {/* Hover Overlay */}
-                {/* <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl flex items-center justify-center">
-                  <button 
-                    className="px-6 py-2 bg-white text-gray-800 rounded-full font-semibold hover:bg-[#c07f07] hover:text-white transition-all duration-300"
-                  >
-                    Order Now
-                  </button>
-                </div> */}
+              <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 text-center border border-gray-100 hover:border-amber-300">
+                <div className="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300">
+                  {item.icon}
+                </div>
+                <h3 className="font-semibold text-gray-800 text-lg mb-1">
+                  {item.title}
+                </h3>
+                <p className="text-gray-500 text-sm">
+                  {item.description}
+                </p>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
+        </motion.div>
+
+        {/* CTA Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="text-center pb-8"
+        >
+          <a
+            href="https://www.doordash.com/store/frost-bite-avon-34838511/72840348/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105"
+          >
+            🛵 See Full Menu & Order on DoorDash →
+          </a>
         </motion.div>
       </div>
     </section>
