@@ -2,30 +2,24 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { categories } from '@/data/menu';
 
 const FeaturedProducts = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
-  const menuItems = [
-    { id: 1, icon: "🍦", title: "Soft-Serve Cups", description: "Creamy classic soft serve", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
-    { id: 2, icon: "🍧", title: "Hard Ice Cream", description: "Scooped to order", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
-    { id: 3, icon: "🥤", title: "Shakes", description: "Thick & hand-spun", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
-    { id: 4, icon: "❄️", title: "Frost", description: "Signature frozen treats", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
-    { id: 5, icon: "✨", title: "Specialty Frost", description: "Unique frost creations", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
-    { id: 6, icon: "🧊", title: "Slushies", description: "Icy & refreshing", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
-    { id: 7, icon: "🥤", title: "Freezes", description: "Cool & satisfying", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
-    { id: 8, icon: "🥤", title: "Beverages", description: "Drinks & more", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
-    { id: 9, icon: "🥩", title: "Tenderloins", description: "Breaded & crispy", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
-    { id: 10, icon: "🍔", title: "Burgers", description: "Classic beef burgers", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
-    { id: 11, icon: "🌭", title: "Hot Dogs", description: "Juicy grilled dogs", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
-    { id: 12, icon: "🐟", title: "Fish Sandwich", description: "Freshly battered fish", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
-    { id: 13, icon: "🌯", title: "Chicken Wrap", description: "Fresh & zesty", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
-    { id: 14, icon: "🍟", title: "Sides", description: "Perfect add-ons", link: "https://www.doordash.com/store/frost-bite-avon-34838511/72840348/" },
-  ];
+  const menuItems = categories.map((cat) => ({
+    id: cat.id,
+    icon: cat.emoji,
+    title: cat.name,
+    description: cat.desc,
+    link: `/menu#${cat.id}`,
+  }));
+
 
   return (
-    <section 
+    <section
       ref={sectionRef}
       className="relative py-10 px-4 bg-white overflow-hidden"
       style={{
@@ -160,7 +154,7 @@ const FeaturedProducts = () => {
           style={{ paddingTop: '2em', paddingBottom: '2em' }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            What We Serve
+            Delicious Soft Serve, Sundaes & Hard <br></br> Ice Cream Made Fresh Daily
           </h2>
           <p className="text-gray-500 mt-2">Made fresh, served with a smile</p>
         </motion.div>
@@ -179,18 +173,18 @@ const FeaturedProducts = () => {
           }}
         >
           {menuItems.map((item, index) => (
-            <motion.a
+            <Link
               key={item.id}
               href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: index * 0.03 }}
-              whileHover={{ y: -5, scale: 1.02 }}
-              className="group cursor-pointer"
+              className="group cursor-pointer block"
             >
-              <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 text-center border border-gray-100 hover:border-amber-300">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ delay: index * 0.03 }}
+                whileHover={{ y: -5, scale: 1.02 }}
+                className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 text-center border border-gray-100 hover:border-amber-300 h-full"
+              >
                 <div className="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300">
                   {item.icon}
                 </div>
@@ -200,8 +194,8 @@ const FeaturedProducts = () => {
                 <p className="text-gray-500 text-sm">
                   {item.description}
                 </p>
-              </div>
-            </motion.a>
+              </motion.div>
+            </Link>
           ))}
         </motion.div>
 

@@ -35,9 +35,9 @@ const Footer = () => {
   ];
 
   const socialIcons = [
-    { name: "Facebook", href: "#", image: "/images/social/facebook.png" },
+    { name: "Facebook", href: "https://www.facebook.com/profile.php?id=61577578564334", image: "/images/social/facebook.png" },
     // { name: "Instagram", href: "#", image: "/images/social/instagram.png" },
-    { name: "YouTube", href: "#", image: "/images/social/youtube.png" },
+    { name: "YouTube", href: "https://www.youtube.com/@frostbite-avon-indiana", image: "/images/social/youtube.png" },
   ];
 
   return (

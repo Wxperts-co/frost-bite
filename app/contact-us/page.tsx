@@ -1,12 +1,37 @@
 // app/contact-us/page.tsx (Alternative with pure Tailwind)
+import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/common/breadcrumb";
 import Image from "next/image";
 
-export const metadata = {
-  title: "Contact Us | Frost Bite",
-  description:
-    "Get in touch with Frost Bite. Find our location, opening hours, and send us a message.",
+export const metadata: Metadata = {
+  title: "Frost Bite | Burgers & Fish Sandwich Avon, IN",
+  description: "Find hours, directions, and contact info for Frost Bite in Avon, IN. Stop by Galen Dr for delicious handcrafted ice cream, burgers, fish sandwiches, etc.",
+  keywords: [
+    "burgers & fish sandwich Avon, IN",
+    "ice cream & food in Avon, IN",
+    "cheap ice cream near me Avon, Indiana",
+    "ice cream shops open Sunday Avon, IN",
+    "ice cream and sandwiches near me",
+    "cheap burgers shop near me Avon, IN",
+    "family-friendly ice cream shop Indiana",
+    "kid-friendly restaurants Avon, IN",
+    "affordable ice cream family treat Indiana",
+    "local ice cream shop Avon, Indiana",
+    "locally owned ice cream shop Indiana",
+    "date night desserts Avon, IN"
+  ],
+  openGraph: {
+    title: "Frost Bite | Burgers & Fish Sandwich Avon, IN",
+    description: "Find hours, directions, and contact info for Frost Bite in Avon, IN. Stop by Galen Dr for delicious handcrafted ice cream, burgers, fish sandwiches, etc.",
+    url: "https://frostbite-avon-indiana.com/contact-us",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Frost Bite | Burgers & Fish Sandwich Avon, IN",
+    description: "Find hours, directions, and contact info for Frost Bite in Avon, IN. Stop by Galen Dr for delicious handcrafted ice cream, burgers, fish sandwiches, etc.",
+  }
 };
 
 export default function ContactUsPage() {
@@ -25,6 +50,7 @@ export default function ContactUsPage() {
         style={{ backgroundImage: "url('/images/contact-bg.jpg')" }}
       >
         <div className="relative z-10 container mx-auto px-4 ">
+           <h1 className="text-3xl md:text-4xl font-bold text-[#046069] mb-3 flex items-center justify-center gap-2 text-center pb-4"> Contact Frost Bite in Avon, Indiana</h1>
           <div className="flex flex-wrap -mx-4">
             {/* Left Column */}
             <div className="w-full lg:w-1/3 md:w-1/2 px-4 mb-8 lg:mb-0">
@@ -89,7 +115,9 @@ export default function ContactUsPage() {
                   </h3>
                   <div className="flex gap-2">
                     <a
-                      href="#"
+                      href="https://www.facebook.com/profile.php?id=61577578564334"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-11 h-11 rounded-full border border-gray-300 flex items-center justify-center  hover:border-[#c07f07] transition-all duration-300"
                     >
                       <Image
@@ -101,7 +129,9 @@ export default function ContactUsPage() {
                       />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.youtube.com/@frostbite-avon-indiana"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-11 h-11 rounded-full border border-gray-300 flex items-center justify-center  hover:border-[#c07f07] transition-all duration-300"
                     >
                       <Image
@@ -120,9 +150,9 @@ export default function ContactUsPage() {
             {/* Right Column - Form */}
             <div className="w-full lg:w-2/3 md:w-1/2 px-4">
               <div className="bg-transparent">
-                <h3 className="text-2xl font-bold text-[#1e1e1e] mb-6">
-                  Drop us a line
-                </h3>
+                <h2 className="text-2xl font-bold text-[#1e1e1e] mb-6">
+                 Get in Touch – Call Us or Drop Us a Line Online
+                </h2>
 
                 <form action="#" method="POST">
                   <div className="flex flex-wrap -mx-3">
@@ -187,12 +217,13 @@ export default function ContactUsPage() {
       {/* Google Map */}
       <section className="w-full h-[400px] md:h-[570px]">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.847171270115!2d-86.38991568461908!3d39.77504597945578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886cb0c5c7d5e5e5%3A0x8e2e5e5e5e5e5e5e!2s7025%20Galen%20Dr%20W%2C%20Avon%2C%20IN%2046123!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.8851090894627!2d-86.3992234!3d39.761425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886caff55a21c0ef%3A0x7ae32c7ebdc8b7d8!2sFrost%20Bite!5e1!3m2!1sen!2sin!4v1781563787438!5m2!1sen!2sin"
           width="100%"
           height="100%"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
           className="w-full h-full"
         ></iframe>
       </section>

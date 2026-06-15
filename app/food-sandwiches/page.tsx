@@ -1,8 +1,34 @@
 // app/food-sandwiches/page.tsx
+import type { Metadata } from 'next';
 import { FaHamburger, FaCheese, FaUtensils, FaDrumstickBite, FaFish, FaBacon } from 'react-icons/fa';
 import Breadcrumb from '@/components/common/breadcrumb';
 import Link from 'next/link';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: "Frost Bite | Food & Sandwiches Avon, IN",
+  description: "Enjoy juicy burgers, crispy chicken, hot dogs, sandwiches & combo meals at Frost Bite in Avon, IN. Dine in or order online. Visit us today at 7025 Galen Dr W!",
+  keywords: [
+    "food & sandwiches Avon, IN",
+    "tenderloin sandwich Avon, Indiana",
+    "breaded tenderloin near me Indiana",
+    "burgers and ice cream Avon, IN",
+    "chicken wrap Avon, Indiana",
+    "fish sandwich near me Avon, IN",
+    "hot dogs and burgers Avon, Indiana"
+  ],
+  openGraph: {
+    title: "Frost Bite | Food & Sandwiches Avon, IN",
+    description: "Enjoy juicy burgers, crispy chicken, hot dogs, sandwiches & combo meals at Frost Bite in Avon, IN. Dine in or order online. Visit us today at 7025 Galen Dr W!",
+    url: "https://frostbite-avon-indiana.com/food-sandwiches",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Frost Bite | Food & Sandwiches Avon, IN",
+    description: "Enjoy juicy burgers, crispy chicken, hot dogs, sandwiches & combo meals at Frost Bite in Avon, IN. Dine in or order online. Visit us today at 7025 Galen Dr W!",
+  }
+};
 
 export const dynamic = 'force-dynamic';
 
@@ -84,12 +110,12 @@ export default async function FoodSandwichesPage({ searchParams }: Props) {
               <FaHamburger className="text-[#c07f07]" size={18} />
               <span className="text-[#c07f07] font-semibold text-sm uppercase tracking-wide">Food & Sandwiches</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1e1e1e] mb-4">
-              Food & <span className="text-[#c07f07]">Sandwiches</span>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1e1e1e] mb-4">
+              Food & Sandwiches in Avon, Indiana – Burgers, Chicken, <br></br> <span className="text-[#c07f07]">Combos & More at Frost Bite</span>
             </h1>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Delicious burgers, crispy chicken, hearty sandwiches, and satisfying combo meals.
-            </p>
+            <h2 className="text-gray-600 max-w-2xl mx-auto">
+              Juicy, Flame-Grilled Burgers – Made Fresh at Frost Bite Avon
+            </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#c07f07] to-[#046069] mx-auto rounded-full mt-6" />
           </div>
 

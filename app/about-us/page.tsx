@@ -1,46 +1,72 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "@/components/common/breadcrumb";
 import { CheckCircle, Heart, Users, Award, Coffee } from "lucide-react";
 
-export const metadata = {
-  title: "About Frost Bite | Best Ice Cream in Avon, Indiana",
-  description: "Traditional & Modern Service Since 2010. Learn about our story, signature creations, and why Frost Bite is the go-to destination for ice cream lovers in Avon, Indiana.",
+export const metadata: Metadata = {
+  title: "About | Frost Bite | Ice Cream Shop Avon, IN",
+  description: "Learn about Frost Bite, a beloved ice cream shop in Avon, IN, since 2010. Family-owned, fresh ingredients & cozy vibes. Come taste the difference!",
+  keywords: [
+    "ice cream shop in Avon, IN",
+    "soft serve ice cream cones Indiana",
+    "hot fudge sundae Avon, IN",
+    "cookie dough sundae near me",
+    "banana split Avon, Indiana",
+    "mint chocolate chip ice cream Avon, Indiana",
+    "strawberry sundae near me",
+    "handcrafted ice cream Indiana",
+    "specialty frost desserts Avon, Indiana",
+    "hard scoop ice cream Avon IN",
+    "milkshakes and freezes Avon IN",
+    "slushies near me Avon, Indiana"
+  ],
+  openGraph: {
+    title: "About | Frost Bite | Ice Cream Shop Avon, IN",
+    description: "Learn about Frost Bite, a beloved ice cream shop in Avon, IN, since 2010. Family-owned, fresh ingredients & cozy vibes. Come taste the difference!",
+    url: "https://frostbite-avon-indiana.com/about-us",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About | Frost Bite | Ice Cream Shop Avon, IN",
+    description: "Learn about Frost Bite, a beloved ice cream shop in Avon, IN, since 2010. Family-owned, fresh ingredients & cozy vibes. Come taste the difference!",
+  }
 };
 
 export default function AboutUsPage() {
   return (
     <>
       {/* Breadcrumb Section */}
-      <Breadcrumb 
-        title="About Frost Bite" 
+      <Breadcrumb
+        title="About Frost Bite"
         backgroundImage="/images/inner-bg-1.jpg"
         pageName="About Us"
       />
 
       {/* Our Story Section */}
-      <section 
+      <section
         className="relative overflow-hidden w-full bg-cover bg-no-repeat bg-center bg-fixed py-20 md:py-28"
         style={{ backgroundImage: "url('/images/about-page-bg.jpg ')" }}
       >
         {/* White Overlay */}
         <div className="absolute inset-0 bg-white opacity-90"></div>
-        
+
         <div className="relative z-10 container mx-auto px-4 max-w-[1320px]">
-          
+
           {/* Section Title */}
           <div className="text-center mb-12 animate-slideInUp">
             <p className="text-[#c07f07] text-sm md:text-base uppercase tracking-[2px] font-semibold mb-3">
               Our Story
             </p>
-            <h2 className="text-3xl md:text-5xl font-bold text-[#1e1e1e]">
-              Traditional &amp; Modern Service <br />Since 2010
-            </h2>
+            <h1 className="text-3xl md:text-4xl font-bold text-[#1e1e1e]">
+              About Frost Bite – Avon Indiana's Family-Owned &amp; <br /> Ice Cream Shop Since 2010
+            </h1>
           </div>
 
           {/* Row Content */}
           <div className="flex flex-wrap items-center -mx-4">
-            
+
             {/* Left Content Column */}
             <div className="w-full lg:w-1/3 md:w-1/2 px-4 mb-8 lg:mb-0 animate-slideInUp animation-delay-100">
               <div className="mr-0 lg:mr-5">
@@ -48,27 +74,27 @@ export default function AboutUsPage() {
                   About Frost Bite
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  If you're in the mood for a treat that'll satisfy your sweet tooth, 
-                  <strong className="text-[#c07f07]"> Frost Bite</strong> in Avon, Indiana, is a must-visit destination! 
-                  Located at <strong className="text-[#c07f07]">7025 Galen Dr W</strong>, Frost Bite is the perfect spot to enjoy a 
+                  If you're in the mood for a treat that'll satisfy your sweet tooth,
+                  <strong className="text-[#c07f07]"> Frost Bite</strong> in Avon, Indiana, is a must-visit destination!
+                  Located at <strong className="text-[#c07f07]">7025 Galen Dr W</strong>, Frost Bite is the perfect spot to enjoy a
                   variety of delicious frozen delights.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Whether you're craving something classic or adventurous, this cozy ice cream shop has 
-                  something for everyone. Frost Bite has a laid-back vibe, making it an ideal spot for 
+                  Whether you're craving something classic or adventurous, this cozy ice cream shop has
+                  something for everyone. Frost Bite has a laid-back vibe, making it an ideal spot for
                   families, friends, or anyone looking for a little indulgence.
                 </p>
-                
+
               </div>
             </div>
 
             {/* Center Image Column */}
             <div className="w-full lg:w-1/3 md:w-1/2 px-4 mb-8 lg:mb-0 animate-slideInUp animation-delay-200">
               <figure className="relative block rounded-2xl overflow-hidden ">
-                <Image 
-                  src="/images/ice-cream-1.png" 
-                  alt="Frost Bite Ice Cream" 
-                  width={400} 
+                <Image
+                  src="/images/ice-cream-1.png"
+                  alt="Frost Bite Ice Cream"
+                  width={400}
                   height={400}
                   className="w-full h-auto "
                 />
@@ -78,11 +104,11 @@ export default function AboutUsPage() {
             {/* Right Content Column */}
             <div className="w-full lg:w-1/3 px-4 animate-slideInUp animation-delay-300">
               <div className="ml-0 lg:ml-5">
-                <h3 className="text-2xl md:text-3xl font-bold text-[#1e1e1e] mb-6">
-                  Why You'll Love Us
-                </h3>
+                <h2 className="text-2xl md:text-3xl font-bold text-[#1e1e1e] mb-6">
+                  Our Signature Ice Cream Creations You Can't Miss
+                </h2>
                 <p className="text-gray-600 leading-relaxed mb-5">
-                  Whether you're stopping by for a quick treat or spending some time enjoying the flavors, 
+                  Whether you're stopping by for a quick treat or spending some time enjoying the flavors,
                   you'll always find something to satisfy your cravings at Frost Bite.
                 </p>
                 <ul className="space-y-3">
@@ -187,7 +213,7 @@ export default function AboutUsPage() {
               { icon: <Coffee size={40} />, title: "Premium Quality", desc: "Finest ingredients" },
               { icon: <Heart size={40} />, title: "Loved by All", desc: "Happy customers" },
             ].map((item, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
               >
@@ -204,7 +230,7 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-   
+
     </>
   );
 }

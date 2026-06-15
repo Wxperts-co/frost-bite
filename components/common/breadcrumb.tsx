@@ -9,8 +9,8 @@ interface BreadcrumbProps {
   showHiringBadge?: boolean;
 }
 
-export default function Breadcrumb({ 
-  title, 
+export default function Breadcrumb({
+  title,
   backgroundImage = "/images/inner-bg-1.jpg",
   pageName,
   currentPath,
@@ -30,12 +30,12 @@ export default function Breadcrumb({
         sizes="100vw"
         quality={100}
       />
-      
+
       {/* Dark Overlay */}
       <div className="absolute inset-0 z-[-10] bg-[#1e1e1e] opacity-75"></div>
-      
-      
-      
+
+
+
       <div className="container mx-auto px-4 max-w-[1320px] relative z-10">
         <div className="flex flex-wrap">
           <div className="w-full px-4">
@@ -54,13 +54,13 @@ export default function Breadcrumb({
                   </li>
                 </ul>
               </div>
-              
+
               {/* Title */}
-              <h1 className="text-white font-bold text-3xl md:text-5xl lg:text-6xl mb-4 font-['Playfair_Display']">
+              <h3 className="text-white font-bold text-3xl md:text-5xl lg:text-6xl mb-4 font-['Playfair_Display']">
                 {title}
-              </h1>
-              
-            
+              </h3>
+
+
             </div>
           </div>
         </div>

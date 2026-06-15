@@ -1,11 +1,32 @@
 // app/gallery/page.tsx
+import type { Metadata } from "next";
 import Image from "next/image";
 import Breadcrumb from "@/components/common/breadcrumb";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Gallery | Frost Bite - Ice Cream Shop in Avon, Indiana",
-  description: "View our delicious ice cream creations, sundaes, and the Frost Bite experience.",
+export const metadata: Metadata = {
+  title: "Frost Bite | Cheap Burgers Shop Near Me Avon, IN",
+  description: "Browse photos of Frost Bite's delicious ice cream, sundaes, burgers & more in Avon, IN. See why we're the sweetest spot near 7025 Galen Dr W. Visit us today!",
+  keywords: [
+    "cheap burgers shop near me Avon, IN",
+    "family-friendly ice cream shop Indiana",
+    "kid-friendly restaurants Avon, IN",
+    "affordable ice cream family treat Indiana",
+    "local ice cream shop Avon, Indiana",
+    "locally owned ice cream shop Indiana",
+    "date night desserts Avon, IN"
+  ],
+  openGraph: {
+    title: "Frost Bite | Cheap Burgers Shop Near Me Avon, IN",
+    description: "Browse photos of Frost Bite's delicious ice cream, sundaes, burgers & more in Avon, IN. See why we're the sweetest spot near 7025 Galen Dr W. Visit us today!",
+    url: "https://frostbite-avon-indiana.com/gallery",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Frost Bite | Cheap Burgers Shop Near Me Avon, IN",
+    description: "Browse photos of Frost Bite's delicious ice cream, sundaes, burgers & more in Avon, IN. See why we're the sweetest spot near 7025 Galen Dr W. Visit us today!",
+  }
 };
 
 const galleryImages = [
@@ -41,9 +62,10 @@ export default function GalleryPage() {
             <p className="text-[#c07f07] text-sm md:text-base uppercase tracking-[2px] font-semibold mb-3">
               Our Memories
             </p>
-            <h2 className="text-3xl md:text-5xl font-bold text-[#1e1e1e]">
-              Photo Gallery
-            </h2>
+            <h1 className="text-3xl md:text-4xl font-bold text-[#1e1e1e]">
+              Frost Bite Photo Gallery – A Taste of Avon Indiana's <br></br>Favorite Burgers & Ice Cream Shop
+            </h1>
+            <h2 className='text-lg md:text-2xl font-semibold text-[#c07f07] mt-2'>Burgers, Sandwiches & More – Real Food, Real Flavors in Avon, IN</h2>
             <div className="w-20 h-0.5 bg-[#c07f07] mx-auto mt-4"></div>
           </div>
 

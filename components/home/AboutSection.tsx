@@ -209,18 +209,15 @@ const AboutSection = () => {
             </motion.div>
 
             {/* Heading */}
-            <motion.h2
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight"
+              className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight"
             >
-              <span className="text-gray-800">The flavor you need,</span>
-              <span className="block text-[#c07f07]">
-                the consistency you want—
-              </span>
-              <span className="text-gray-800">ice cream!</span>
-            </motion.h2>
+              <span className="text-gray-800">  Avon's Favorite Ice Cream Shop – Handcrafted Flavors at Frost Bite </span>
+              
+            </motion.h1>
 
             {/* Main Description */}
             <motion.div

@@ -174,7 +174,7 @@ const HeroSection = () => {
             </span>{" "}
           </motion.div> */}
           {/* Main Heading */}
-          <motion.h1
+          <motion.h3
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
@@ -190,7 +190,7 @@ const HeroSection = () => {
             >
               Frost Bite
             </span>
-          </motion.h1>
+          </motion.h3>
           {/* Sub Heading */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -209,46 +209,46 @@ const HeroSection = () => {
           </motion.div>
           {/* Buttons */}
           <motion.div
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.5 }}
-  className="flex flex-col sm:flex-row gap-4 sm:gap-5"
->
-  {/* Order Button - Link to Menu */}
-  <Link href="/menu" className="w-full sm:w-auto">
-    <motion.button
-      whileHover={{ scale: 1.05, y: -3 }}
-      whileTap={{ scale: 0.95 }}
-      className="group bg-[#c07f07] hover:bg-[#d8920b] text-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base md:text-lg shadow-[0_10px_30px_rgba(192,127,7,0.4)] transition-all duration-300 flex items-center justify-center gap-2 sm:gap-3 w-full"
-    >
-      Our Menu 
-      <motion.div
-        animate={{ x: [0, 6, 0] }}
-        transition={{ duration: 1.2, repeat: Infinity }}
-      >
-        <FaArrowRight className="text-sm sm:text-base" />
-      </motion.div>
-    </motion.button>
-  </Link>
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            className="flex flex-col sm:flex-row gap-4 sm:gap-5"
+          >
+            {/* Order Button - Link to Menu */}
+            <Link href="/menu" className="w-full sm:w-auto">
+              <motion.button
+                whileHover={{ scale: 1.05, y: -3 }}
+                whileTap={{ scale: 0.95 }}
+                className="group bg-[#c07f07] hover:bg-[#d8920b] text-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base md:text-lg shadow-[0_10px_30px_rgba(192,127,7,0.4)] transition-all duration-300 flex items-center justify-center gap-2 sm:gap-3 w-full"
+              >
+                Our Menu
+                <motion.div
+                  animate={{ x: [0, 6, 0] }}
+                  transition={{ duration: 1.2, repeat: Infinity }}
+                >
+                  <FaArrowRight className="text-sm sm:text-base" />
+                </motion.div>
+              </motion.button>
+            </Link>
 
-  {/* Story Button - Link to About Us */}
-  <Link href="/about-us" className="w-full sm:w-auto">
-    <motion.button
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      className="group border-4 border-[#752051] bg-white/10 backdrop-blur-md text-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base md:text-lg hover:bg-[#752051] transition-all duration-300 flex items-center justify-center gap-2 sm:gap-3 w-full"
-    >
-      <motion.div
-        animate={{ scale: [1, 1.2, 1] }}
-        transition={{ duration: 1.2, repeat: Infinity }}
-      >
-        {/* <FaPlay size={12} className="sm:text-sm" /> */}
-      </motion.div>
-      Discover Our Story
-      <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300 text-sm sm:text-base" />
-    </motion.button>
-  </Link>
-</motion.div>
+            {/* Story Button - Link to About Us */}
+            <Link href="/about-us" className="w-full sm:w-auto">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="group border-4 border-[#752051] bg-white/10 backdrop-blur-md text-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base md:text-lg hover:bg-[#752051] transition-all duration-300 flex items-center justify-center gap-2 sm:gap-3 w-full"
+              >
+                <motion.div
+                  animate={{ scale: [1, 1.2, 1] }}
+                  transition={{ duration: 1.2, repeat: Infinity }}
+                >
+                  {/* <FaPlay size={12} className="sm:text-sm" /> */}
+                </motion.div>
+                Discover Our Story
+                <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300 text-sm sm:text-base" />
+              </motion.button>
+            </Link>
+          </motion.div>
         </div>
       </div>
 

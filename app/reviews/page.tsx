@@ -1,8 +1,38 @@
 // app/reviews/page.tsx
+import type { Metadata } from 'next';
 import { FaStar, FaQuoteLeft, FaGoogle, FaPencilAlt, FaExternalLinkAlt, FaHeart, FaUsers, FaCalendarAlt } from 'react-icons/fa';
 import Breadcrumb from '@/components/common/breadcrumb';
 import Link from 'next/link';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: "Frost Bite | Ice Cream & Food Avon, IN",
+  description: "See why locals love Frost Bite! Read real customer reviews about our delicious handcrafted ice cream, famous breaded tenderloins, and burgers in Avon, IN",
+  keywords: [
+    "ice cream & food in Avon, IN",
+    "cheap ice cream near me Avon, Indiana",
+    "ice cream shops open Sunday Avon, IN",
+    "ice cream and sandwiches near me",
+    "cheap burgers shop near me Avon, IN",
+    "family-friendly ice cream shop Indiana",
+    "kid-friendly restaurants Avon, IN",
+    "affordable ice cream family treat Indiana",
+    "local ice cream shop Avon, Indiana",
+    "locally owned ice cream shop Indiana",
+    "date night desserts Avon, IN"
+  ],
+  openGraph: {
+    title: "Frost Bite | Ice Cream & Food Avon, IN",
+    description: "See why locals love Frost Bite! Read real customer reviews about our delicious handcrafted ice cream, famous breaded tenderloins, and burgers in Avon, IN",
+    url: "https://frostbite-avon-indiana.com/reviews",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Frost Bite | Ice Cream & Food Avon, IN",
+    description: "See why locals love Frost Bite! Read real customer reviews about our delicious handcrafted ice cream, famous breaded tenderloins, and burgers in Avon, IN",
+  }
+};
 
 export const dynamic = 'force-dynamic';
 
@@ -94,12 +124,12 @@ export default async function ReviewsPage() {
               <FaStar className="text-[#c07f07]" size={18} />
               <span className="text-[#c07f07] font-semibold text-sm uppercase tracking-wide">What People Say</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1e1e1e] mb-4">
-              Customer <span className="text-[#c07f07]">Reviews</span>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1e1e1e] mb-4">
+              500+ Happy Customers Can't Be Wrong – Read <br></br><span className="text-[#c07f07]">Frost Bite Reviews in Avon, Indiana</span>
             </h1>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Real reviews from real customers who love Frost Bite. See why we're the favorite ice cream spot in Avon!
-            </p>
+            <h2 className="text-gray-600 max-w-2xl mx-auto">
+               Verified by Real Customers – Honest Opinions About Frost Bite Avon
+            </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#c07f07] to-[#046069] mx-auto rounded-full mt-6" />
           </div>
 
