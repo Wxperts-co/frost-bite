@@ -50,7 +50,7 @@ export default function MenuPage() {
           <h2 className="text-2xl md:text-3xl font-bold text-[#1e1e1e] mb-3 flex items-center justify-center gap-2 text-center">Soft-Serve Cups – Creamy Classic Soft Serve Made Fresh Daily </h2>
 
           {/* Category Tabs - With Emojis (Anchor Jump Links) */}
-          <div className="sticky top-[80px] z-20 pt-[40px] pb-4 bg-transparent mb-8">
+          <div className="relative md:sticky md:top-[80px] z-20 pt-[40px] pb-4 bg-transparent mb-8">
             <div className="flex flex-wrap justify-center gap-3 bg-white/95 py-4 rounded-xl shadow-sm border border-gray-100">
               {categories.map((cat) => {
                 return (
