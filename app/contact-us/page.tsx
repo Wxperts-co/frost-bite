@@ -65,9 +65,9 @@ export default function ContactUsPage() {
                   </h3>
                   <ul className="space-y-1">
                     <li className="text-[#000]">
-                      Monday - Saturday: 11 AM - 9 PM
+                      Monday - Saturday: 11 AM - 10 PM
                     </li>
-                    <li className="text-[#000]">Sunday: 12 PM - 8 PM</li>
+                    <li className="text-[#000]">Sunday: 12 PM - 10 PM</li>
                   </ul>
                 </div>
 

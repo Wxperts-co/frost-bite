@@ -6,7 +6,7 @@ import { CheckCircle, Heart, Users, Award, Coffee } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About | Frost Bite | Ice Cream Shop Avon, IN",
-  description: "Learn about Frost Bite, a beloved ice cream shop in Avon, IN, since 2010. Family-owned, fresh ingredients & cozy vibes. Come taste the difference!",
+  description: "Learn about Frost Bite, a beloved ice cream shop in Avon, IN, since 1991. Family-owned, fresh ingredients & cozy vibes. Come taste the difference!",
   alternates: {
     canonical: "https://frostbite-avon-indiana.com/about-us",
   },
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "About | Frost Bite | Ice Cream Shop Avon, IN",
-    description: "Learn about Frost Bite, a beloved ice cream shop in Avon, IN, since 2010. Family-owned, fresh ingredients & cozy vibes. Come taste the difference!",
+    description: "Learn about Frost Bite, a beloved ice cream shop in Avon, IN, since 1991. Family-owned, fresh ingredients & cozy vibes. Come taste the difference!",
     url: "https://frostbite-avon-indiana.com/about-us",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "About | Frost Bite | Ice Cream Shop Avon, IN",
-    description: "Learn about Frost Bite, a beloved ice cream shop in Avon, IN, since 2010. Family-owned, fresh ingredients & cozy vibes. Come taste the difference!",
+    description: "Learn about Frost Bite, a beloved ice cream shop in Avon, IN, since 1991. Family-owned, fresh ingredients & cozy vibes. Come taste the difference!",
   }
 };
 
@@ -63,7 +63,7 @@ export default function AboutUsPage() {
               Our Story
             </p>
             <h1 className="text-3xl md:text-4xl font-bold text-[#1e1e1e]">
-              About Frost Bite – Avon Indiana's Family-Owned &amp; <br /> Ice Cream Shop Since 2010
+              About Frost Bite – Avon Indiana's Family-Owned &amp; <br /> Ice Cream Shop Since 1991
             </h1>
           </div>
 
@@ -211,7 +211,7 @@ export default function AboutUsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: <Award size={40} />, title: "Since 2010", desc: "Family-owned and operated" },
+              { icon: <Award size={40} />, title: "Since 1991", desc: "Family-owned and operated" },
               { icon: <Users size={40} />, title: "Family Friendly", desc: "Perfect for all ages" },
               { icon: <Coffee size={40} />, title: "Premium Quality", desc: "Finest ingredients" },
               { icon: <Heart size={40} />, title: "Loved by All", desc: "Happy customers" },

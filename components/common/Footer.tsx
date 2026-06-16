@@ -25,13 +25,13 @@ const Footer = () => {
   ];
 
   const openingHours = [
-    { day: "Monday", hours: "11 AM - 9 PM" },
-    { day: "Tuesday", hours: "11 AM - 9 PM" },
-    { day: "Wednesday", hours: "11 AM - 9 PM" },
-    { day: "Thursday", hours: "11 AM - 9 PM" },
-    { day: "Friday", hours: "11 AM - 9 PM" },
-    { day: "Saturday", hours: "11 AM - 9 PM" },
-    { day: "Sunday", hours: "12 PM - 9 PM" },
+    { day: "Monday", hours: "11 AM - 10 PM" },
+    { day: "Tuesday", hours: "11 AM - 10 PM" },
+    { day: "Wednesday", hours: "11 AM - 10 PM" },
+    { day: "Thursday", hours: "11 AM - 10 PM" },
+    { day: "Friday", hours: "11 AM - 10 PM" },
+    { day: "Saturday", hours: "11 AM - 10 PM" },
+    { day: "Sunday", hours: "12 PM - 10 PM" },
   ];
 
   const socialIcons = [
@@ -101,7 +101,7 @@ const Footer = () => {
             <p className="text-white text-sm leading-relaxed mb-4">
               Frost Bite is your go-to destination for delicious ice cream,
               burgers, sandwiches, and more. Family-owned and operated since
-              2010.
+              1991.
             </p>
           </div>
 
