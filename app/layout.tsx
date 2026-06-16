@@ -4,6 +4,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import { CartProvider } from "@/context/CartContext";
 import CartDrawer from "@/components/cart/CartDrawer";
+import StickyCheckoutButton from "@/components/cart/StickyCheckoutButton";
 
 export const metadata: Metadata = {
   title: "Frost Bite",
@@ -26,6 +27,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <CartDrawer />
+          <StickyCheckoutButton />
         </CartProvider>
       </body>
     </html>

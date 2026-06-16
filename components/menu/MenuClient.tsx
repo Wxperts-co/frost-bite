@@ -17,12 +17,12 @@ const MenuClient: React.FC<MenuClientProps> = ({ categories, menuData }) => {
   const [selectedEmoji, setSelectedEmoji] = useState<string>("🍦");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleAddClick = (item: MenuItem, emoji: string) => {
+  const handleAddClick = (item: MenuItem, emoji: string, e: React.MouseEvent<HTMLButtonElement>) => {
     // If the price string does not contain '|', it is a single-priced item
     if (!item.price.includes("|")) {
       const cleanPrice = item.price.replace(/[^0-9.]/g, "");
       const priceNum = parseFloat(cleanPrice) || 0;
-      addToCart(item.name, "Regular", priceNum, item.price, emoji, item.image, 1);
+      addToCart(item.name, "Regular", priceNum, item.price, emoji, item.image, 1, { x: e.clientX, y: e.clientY });
       return;
     }
 
@@ -111,7 +111,7 @@ const MenuClient: React.FC<MenuClientProps> = ({ categories, menuData }) => {
                             </span>
                           </div>
                           <button
-                            onClick={() => handleAddClick(item, cat.emoji)}
+                            onClick={(e) => handleAddClick(item, cat.emoji, e)}
                             className="bg-[#046069] hover:bg-[#056170] text-white font-bold text-xs px-3.5 py-2 rounded-full shadow-sm hover:shadow transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer flex items-center gap-1 flex-shrink-0"
                           >
                             + Add to Cart

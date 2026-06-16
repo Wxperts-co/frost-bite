@@ -94,7 +94,7 @@ const SizeSelectionModal: React.FC<SizeSelectionModalProps> = ({
 
   const selectedSize = sizes[selectedSizeIndex];
 
-  const handleAddToCart = () => {
+  const handleAddToCart = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (!selectedSize) return;
     addToCart(
       item.name,
@@ -103,7 +103,8 @@ const SizeSelectionModal: React.FC<SizeSelectionModalProps> = ({
       selectedSize.formattedPrice,
       categoryEmoji,
       item.image,
-      quantity
+      quantity,
+      { x: e.clientX, y: e.clientY }
     );
     onClose();
   };

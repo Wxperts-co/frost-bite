@@ -93,6 +93,7 @@ const Header = () => {
 
             {/* Cart Button */}
             <motion.button
+              id="cart-btn-desktop"
               key={`desktop-cart-${cartCount}`}
               animate={cartCount > 0 ? {
                 scale: [1, 1.25, 0.9, 1.15, 0.95, 1],
@@ -200,6 +201,7 @@ const Header = () => {
 
           {/* Mobile Cart Button */}
           <motion.button
+            id="cart-btn-mobile"
             key={`mobile-cart-${cartCount}`}
             animate={cartCount > 0 ? {
               scale: [1, 1.25, 0.9, 1.15, 0.95, 1],
