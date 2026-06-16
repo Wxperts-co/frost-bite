@@ -1,17 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/common/Header";
-import Footer from "@/components/common/Footer"
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Footer from "@/components/common/Footer";
+import { CartProvider } from "@/context/CartContext";
+import CartDrawer from "@/components/cart/CartDrawer";
 
 export const metadata: Metadata = {
   title: "Frost Bite",
@@ -26,13 +18,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className="h-full antialiased"
     >
       <body className="min-h-full flex flex-col">
-        <Header />
-        {children}
-        <Footer/>
-        </body>
+        <CartProvider>
+          <Header />
+          {children}
+          <Footer />
+          <CartDrawer />
+        </CartProvider>
+      </body>
     </html>
   );
 }
+

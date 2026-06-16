@@ -7,6 +7,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Frost Bite | Cheap Burgers Shop Near Me Avon, IN",
   description: "Browse photos of Frost Bite's delicious ice cream, sundaes, burgers & more in Avon, IN. See why we're the sweetest spot near 7025 Galen Dr W. Visit us today!",
+  alternates: {
+    canonical: "https://frostbite-avon-indiana.com/gallery",
+  },
   keywords: [
     "cheap burgers shop near me Avon, IN",
     "family-friendly ice cream shop Indiana",

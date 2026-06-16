@@ -173,18 +173,15 @@ const FeaturedProducts = () => {
           }}
         >
           {menuItems.map((item, index) => (
-            <Link
+            <motion.div
               key={item.id}
-              href={item.link}
-              className="group cursor-pointer block"
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: index * 0.03 }}
+              whileHover={{ y: -5 }}
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 text-center border border-gray-100 hover:border-amber-300 h-full flex flex-col items-center justify-between group"
             >
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: index * 0.03 }}
-                whileHover={{ y: -5, scale: 1.02 }}
-                className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 text-center border border-gray-100 hover:border-amber-300 h-full"
-              >
+              <div className="flex flex-col items-center">
                 <div className="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300">
                   {item.icon}
                 </div>
@@ -194,8 +191,13 @@ const FeaturedProducts = () => {
                 <p className="text-gray-500 text-sm">
                   {item.description}
                 </p>
-              </motion.div>
-            </Link>
+              </div>
+              <Link href={item.link} className="mt-4 block w-full sm:w-auto">
+                <div className="inline-flex items-center justify-center px-5 py-2 bg-gradient-to-r from-[#c07f07] to-[#d8920b] hover:from-[#d8920b] hover:to-[#f2b632] text-white font-bold text-xs rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 cursor-pointer">
+                  Order Now
+                </div>
+              </Link>
+            </motion.div>
           ))}
         </motion.div>
 
@@ -212,7 +214,7 @@ const FeaturedProducts = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105"
           >
-            🛵 See Full Menu & Order on DoorDash →
+            🛵  Order on DoorDash →
           </a>
         </motion.div>
       </div>

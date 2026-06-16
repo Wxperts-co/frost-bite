@@ -213,19 +213,19 @@ const Footer = () => {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-2 text-white text-xs mt-1 z-10 relative">
-            <Link href="#" className="hover:text-[#fca90e] transition-colors">
+            <Link href="https://www.wxperts.co/website-development.php" className="hover:text-[#fca90e] transition-colors">
               Website Development
             </Link>
             <span>|</span>
-            <Link href="#" className="hover:text-[#fca90e] transition-colors">
+            <Link href="https://www.wxperts.co/" className="hover:text-[#fca90e] transition-colors">
               Hosting
             </Link>
             <span>|</span>
-            <Link href="#" className="hover:text-[#fca90e] transition-colors">
+            <Link href="https://www.wxperts.co/search-engine-optimization.php" className="hover:text-[#fca90e] transition-colors">
               SEO
             </Link>
             <span>|</span>
-            <Link href="#" className="hover:text-[#fca90e] transition-colors">
+            <Link href="https://www.wxperts.co/digital-marketing.php" className="hover:text-[#fca90e] transition-colors">
               Digital Marketing
             </Link>
           </div>

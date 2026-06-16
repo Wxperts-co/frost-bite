@@ -9,6 +9,9 @@ import GallerySection from '@/components/home/GallerySection';
 export const metadata: Metadata = {
   title: 'Frost Bite | Best Ice Cream Avon, Indiana',
   description: 'Visit Frost Bite in Avon, IN, for handcrafted ice cream, soft serve, sundaes, shakes, tenderloins & burgers. Family-friendly fun at 7025 Galen Dr W!',
+  alternates: {
+    canonical: 'https://frostbite-avon-indiana.com/',
+  },
   keywords: [
     'handcrafted ice cream & treats in Avon, IN',
     'ice cream shop Avon, Indiana',

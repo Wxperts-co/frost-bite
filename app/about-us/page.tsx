@@ -7,6 +7,9 @@ import { CheckCircle, Heart, Users, Award, Coffee } from "lucide-react";
 export const metadata: Metadata = {
   title: "About | Frost Bite | Ice Cream Shop Avon, IN",
   description: "Learn about Frost Bite, a beloved ice cream shop in Avon, IN, since 2010. Family-owned, fresh ingredients & cozy vibes. Come taste the difference!",
+  alternates: {
+    canonical: "https://frostbite-avon-indiana.com/about-us",
+  },
   keywords: [
     "ice cream shop in Avon, IN",
     "soft serve ice cream cones Indiana",

@@ -7,6 +7,9 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Frost Bite | Burgers & Fish Sandwich Avon, IN",
   description: "Find hours, directions, and contact info for Frost Bite in Avon, IN. Stop by Galen Dr for delicious handcrafted ice cream, burgers, fish sandwiches, etc.",
+  alternates: {
+    canonical: "https://frostbite-avon-indiana.com/contact-us",
+  },
   keywords: [
     "burgers & fish sandwich Avon, IN",
     "ice cream & food in Avon, IN",

@@ -8,6 +8,9 @@ import Image from 'next/image';
 export const metadata: Metadata = {
   title: "Frost Bite | Food & Sandwiches Avon, IN",
   description: "Enjoy juicy burgers, crispy chicken, hot dogs, sandwiches & combo meals at Frost Bite in Avon, IN. Dine in or order online. Visit us today at 7025 Galen Dr W!",
+  alternates: {
+    canonical: "https://frostbite-avon-indiana.com/food-sandwiches",
+  },
   keywords: [
     "food & sandwiches Avon, IN",
     "tenderloin sandwich Avon, Indiana",

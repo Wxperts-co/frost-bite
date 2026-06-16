@@ -8,6 +8,9 @@ import Image from 'next/image';
 export const metadata: Metadata = {
   title: "Frost Bite | Ice Cream & Food Avon, IN",
   description: "See why locals love Frost Bite! Read real customer reviews about our delicious handcrafted ice cream, famous breaded tenderloins, and burgers in Avon, IN",
+  alternates: {
+    canonical: "https://frostbite-avon-indiana.com/reviews",
+  },
   keywords: [
     "ice cream & food in Avon, IN",
     "cheap ice cream near me Avon, Indiana",

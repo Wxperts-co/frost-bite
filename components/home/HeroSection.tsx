@@ -73,7 +73,7 @@ const HeroSection = () => {
           playsInline
           preload="auto"
           className="absolute top-0 left-0 w-full h-full object-cover"
-          poster="https://images.pexels.com/photos/933466/pexels-photo-933466.jpeg?auto=compress"
+          poster="/images/about-page-bg.jpg"
           style={{ willChange: "transform" }}
         >
           <source src="/images/hero-1-1.mp4" type="video/mp4" />

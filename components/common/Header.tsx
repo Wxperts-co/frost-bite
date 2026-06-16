@@ -2,12 +2,23 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaBars, FaTimes, FaArrowRight, FaPhoneAlt } from "react-icons/fa";
+import { FaBars, FaTimes, FaArrowRight, FaPhoneAlt, FaShoppingCart } from "react-icons/fa";
 import Image from "next/image";
+import { useCart } from "@/context/CartContext";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { cartCount, setIsCartOpen } = useCart();
+  const [isPulsing, setIsPulsing] = useState(false);
+
+  useEffect(() => {
+    if (cartCount > 0) {
+      setIsPulsing(true);
+      const timer = setTimeout(() => setIsPulsing(false), 500);
+      return () => clearTimeout(timer);
+    }
+  }, [cartCount]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -79,6 +90,45 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+
+            {/* Cart Button */}
+            <motion.button
+              key={`desktop-cart-${cartCount}`}
+              animate={cartCount > 0 ? {
+                scale: [1, 1.25, 0.9, 1.15, 0.95, 1],
+                rotate: [0, -12, 12, -8, 8, 0],
+              } : {}}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              onClick={() => setIsCartOpen(true)}
+              className={`relative flex items-center justify-center p-2.5 rounded-full transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer ${
+                scrolled
+                  ? "text-gray-700 hover:text-[#c07f07] hover:bg-gray-100/50"
+                  : "text-white/90 hover:text-[#c07f07] hover:bg-white/10"
+              }`}
+              title="View Cart"
+            >
+              {isPulsing && (
+                <motion.div
+                  initial={{ scale: 0.8, opacity: 0.8 }}
+                  animate={{ scale: 2, opacity: 0 }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  className="absolute inset-0 rounded-full bg-[#c07f07]/40 pointer-events-none"
+                />
+              )}
+              <FaShoppingCart size={20} />
+              <AnimatePresence>
+                {cartCount > 0 && (
+                  <motion.span
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    exit={{ scale: 0 }}
+                    className="absolute -top-1 -right-1 bg-red-500 text-white font-extrabold text-[10px] w-5 h-5 rounded-full flex items-center justify-center border border-white shadow-sm"
+                  >
+                    {cartCount}
+                  </motion.span>
+                )}
+              </AnimatePresence>
+            </motion.button>
           </div>
 
           {/* Call Now Button - Responsive Desktop */}
@@ -147,6 +197,43 @@ const Header = () => {
             {/* Border */}
             <div className="absolute inset-0 rounded-full border border-white/20" />
           </motion.a>
+
+          {/* Mobile Cart Button */}
+          <motion.button
+            key={`mobile-cart-${cartCount}`}
+            animate={cartCount > 0 ? {
+              scale: [1, 1.25, 0.9, 1.15, 0.95, 1],
+              rotate: [0, -12, 12, -8, 8, 0],
+            } : {}}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            onClick={() => setIsCartOpen(true)}
+            className={`lg:hidden relative p-2.5 rounded-full flex-shrink-0 transition-all cursor-pointer ${
+              scrolled ? "text-[#056170]" : "text-white"
+            }`}
+            title="View Cart"
+          >
+            {isPulsing && (
+              <motion.div
+                initial={{ scale: 0.8, opacity: 0.8 }}
+                animate={{ scale: 2, opacity: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="absolute inset-0 rounded-full bg-[#c07f07]/40 pointer-events-none"
+              />
+            )}
+            <FaShoppingCart size={22} />
+            <AnimatePresence>
+              {cartCount > 0 && (
+                <motion.span
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  exit={{ scale: 0 }}
+                  className="absolute top-0 right-0 bg-red-500 text-white font-extrabold text-[9px] w-4.5 h-4.5 rounded-full flex items-center justify-center border border-white shadow-sm"
+                >
+                  {cartCount}
+                </motion.span>
+              )}
+            </AnimatePresence>
+          </motion.button>
 
           {/* Mobile Menu Button */}
           <motion.button
