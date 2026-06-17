@@ -4,20 +4,20 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
-import { 
-  FaShoppingBag, 
-  FaTimes, 
-  FaLock, 
-  FaCheck, 
-  FaCreditCard, 
-  FaPaypal, 
-  FaMoneyBillWave 
+import {
+  FaShoppingBag,
+  FaTimes,
+  FaLock,
+  FaCheck,
+  FaCreditCard,
+  FaPaypal,
+  FaMoneyBillWave
 } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 
 const CheckoutClient: React.FC = () => {
   const { cart, cartTotal } = useCart();
-  
+
   // State
   const [activeTab, setActiveTab] = useState<"card" | "paypal" | "zelle">("card");
   const [validated, setValidated] = useState<boolean>(false);
@@ -141,7 +141,7 @@ const CheckoutClient: React.FC = () => {
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
       setValidated(true);
-      
+
       // Scroll to the first error field
       const firstErrorKey = Object.keys(newErrors)[0];
       const errorElement = document.getElementsByName(firstErrorKey)[0];
@@ -178,7 +178,7 @@ const CheckoutClient: React.FC = () => {
       {/* Checkout Form (Left Column) */}
       <div className="lg:col-span-7 bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8">
         <form onSubmit={handleSubmit} noValidate>
-          
+
           {/* Section 1: Basic Information */}
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-4">
@@ -198,9 +198,8 @@ const CheckoutClient: React.FC = () => {
                   value={formData.firstName}
                   onChange={handleChange}
                   placeholder="First Name"
-                  className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all ${
-                    errors.firstName ? "border-red-500 bg-red-50/5" : "border-gray-200"
-                  }`}
+                  className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all ${errors.firstName ? "border-red-500 bg-red-50/5" : "border-gray-200"
+                    }`}
                 />
                 {errors.firstName && (
                   <p className="text-xs text-red-500 mt-1 font-medium">{errors.firstName}</p>
@@ -213,9 +212,8 @@ const CheckoutClient: React.FC = () => {
                   value={formData.lastName}
                   onChange={handleChange}
                   placeholder="Last Name"
-                  className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all ${
-                    errors.lastName ? "border-red-500 bg-red-50/5" : "border-gray-200"
-                  }`}
+                  className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all ${errors.lastName ? "border-red-500 bg-red-50/5" : "border-gray-200"
+                    }`}
                 />
                 {errors.lastName && (
                   <p className="text-xs text-red-500 mt-1 font-medium">{errors.lastName}</p>
@@ -231,9 +229,8 @@ const CheckoutClient: React.FC = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Email Address"
-                  className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all ${
-                    errors.email ? "border-red-500 bg-red-50/5" : "border-gray-200"
-                  }`}
+                  className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all ${errors.email ? "border-red-500 bg-red-50/5" : "border-gray-200"
+                    }`}
                 />
                 {errors.email && (
                   <p className="text-xs text-red-500 mt-1 font-medium">{errors.email}</p>
@@ -246,9 +243,8 @@ const CheckoutClient: React.FC = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Phone Number"
-                  className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all ${
-                    errors.phone ? "border-red-500 bg-red-50/5" : "border-gray-200"
-                  }`}
+                  className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all ${errors.phone ? "border-red-500 bg-red-50/5" : "border-gray-200"
+                    }`}
                 />
                 {errors.phone && (
                   <p className="text-xs text-red-500 mt-1 font-medium">{errors.phone}</p>
@@ -256,7 +252,7 @@ const CheckoutClient: React.FC = () => {
               </div>
             </div>
 
-       
+
           </div>
 
           {/* Section 2: Billing Address */}
@@ -277,9 +273,8 @@ const CheckoutClient: React.FC = () => {
                 value={formData.street}
                 onChange={handleChange}
                 placeholder="Street"
-                className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all ${
-                  errors.street ? "border-red-500 bg-red-50/5" : "border-gray-200"
-                }`}
+                className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all ${errors.street ? "border-red-500 bg-red-50/5" : "border-gray-200"
+                  }`}
               />
               {errors.street && (
                 <p className="text-xs text-red-500 mt-1 font-medium">{errors.street}</p>
@@ -294,9 +289,8 @@ const CheckoutClient: React.FC = () => {
                   value={formData.city}
                   onChange={handleChange}
                   placeholder="City"
-                  className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all ${
-                    errors.city ? "border-red-500 bg-red-50/5" : "border-gray-200"
-                  }`}
+                  className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all ${errors.city ? "border-red-500 bg-red-50/5" : "border-gray-200"
+                    }`}
                 />
                 {errors.city && (
                   <p className="text-xs text-red-500 mt-1 font-medium">{errors.city}</p>
@@ -322,9 +316,8 @@ const CheckoutClient: React.FC = () => {
                   value={formData.zip}
                   onChange={handleChange}
                   placeholder="Zip"
-                  className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all ${
-                    errors.zip ? "border-red-500 bg-red-50/5" : "border-gray-200"
-                  }`}
+                  className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all ${errors.zip ? "border-red-500 bg-red-50/5" : "border-gray-200"
+                    }`}
                 />
                 {errors.zip && (
                   <p className="text-xs text-red-500 mt-1 font-medium">{errors.zip}</p>
@@ -367,11 +360,10 @@ const CheckoutClient: React.FC = () => {
               <button
                 type="button"
                 onClick={() => { setActiveTab("card"); setDemoStatus(null); }}
-                className={`py-3 rounded-lg border text-sm font-semibold flex flex-col items-center justify-center gap-1.5 transition-all duration-200 relative ${
-                  activeTab === "card"
+                className={`py-3 rounded-lg border text-sm font-semibold flex flex-col items-center justify-center gap-1.5 transition-all duration-200 relative ${activeTab === "card"
                     ? "border-[#008060] bg-[#f4fbf7] text-[#008060] font-bold"
                     : "border-gray-200 text-gray-500 hover:bg-gray-50"
-                }`}
+                  }`}
               >
                 <FaCreditCard size={18} />
                 <span>Card</span>
@@ -385,11 +377,10 @@ const CheckoutClient: React.FC = () => {
               <button
                 type="button"
                 onClick={() => { setActiveTab("paypal"); setDemoStatus(null); }}
-                className={`py-3 rounded-lg border text-sm font-semibold flex flex-col items-center justify-center gap-1.5 transition-all duration-200 relative ${
-                  activeTab === "paypal"
+                className={`py-3 rounded-lg border text-sm font-semibold flex flex-col items-center justify-center gap-1.5 transition-all duration-200 relative ${activeTab === "paypal"
                     ? "border-[#008060] bg-[#f4fbf7] text-[#008060] font-bold"
                     : "border-gray-200 text-gray-500 hover:bg-gray-50"
-                }`}
+                  }`}
               >
                 <FaPaypal size={18} />
                 <span>PayPal</span>
@@ -403,11 +394,10 @@ const CheckoutClient: React.FC = () => {
               <button
                 type="button"
                 onClick={() => { setActiveTab("zelle"); setDemoStatus(null); }}
-                className={`py-3 rounded-lg border text-sm font-semibold flex flex-col items-center justify-center gap-1.5 transition-all duration-200 relative ${
-                  activeTab === "zelle"
+                className={`py-3 rounded-lg border text-sm font-semibold flex flex-col items-center justify-center gap-1.5 transition-all duration-200 relative ${activeTab === "zelle"
                     ? "border-[#008060] bg-[#f4fbf7] text-[#008060] font-bold"
                     : "border-gray-200 text-gray-500 hover:bg-gray-50"
-                }`}
+                  }`}
               >
                 <FaMoneyBillWave size={18} />
                 <span>Zelle</span>
@@ -465,9 +455,8 @@ const CheckoutClient: React.FC = () => {
                         }
                       }}
                       placeholder="Credit Card Number"
-                      className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all bg-white ${
-                        errors.cardNumber ? "border-red-500" : "border-gray-200"
-                      }`}
+                      className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all bg-white ${errors.cardNumber ? "border-red-500" : "border-gray-200"
+                        }`}
                     />
                     {errors.cardNumber && (
                       <p className="text-xs text-red-500 mt-1 font-medium">{errors.cardNumber}</p>
@@ -480,9 +469,8 @@ const CheckoutClient: React.FC = () => {
                         name="expMonth"
                         value={formData.expMonth}
                         onChange={handleChange}
-                        className={`w-full h-11 border rounded-md px-2.5 text-gray-500 text-sm focus:outline-none focus:border-blue-500 transition-all bg-white ${
-                          errors.expMonth ? "border-red-500" : "border-gray-200"
-                        }`}
+                        className={`w-full h-11 border rounded-md px-2.5 text-gray-500 text-sm focus:outline-none focus:border-blue-500 transition-all bg-white ${errors.expMonth ? "border-red-500" : "border-gray-200"
+                          }`}
                       >
                         <option value="Month">Month</option>
                         {Array.from({ length: 12 }, (_, i) => {
@@ -499,9 +487,8 @@ const CheckoutClient: React.FC = () => {
                         name="expYear"
                         value={formData.expYear}
                         onChange={handleChange}
-                        className={`w-full h-11 border rounded-md px-2.5 text-gray-500 text-sm focus:outline-none focus:border-blue-500 transition-all bg-white ${
-                          errors.expYear ? "border-red-500" : "border-gray-200"
-                        }`}
+                        className={`w-full h-11 border rounded-md px-2.5 text-gray-500 text-sm focus:outline-none focus:border-blue-500 transition-all bg-white ${errors.expYear ? "border-red-500" : "border-gray-200"
+                          }`}
                       >
                         <option value="Year">Year</option>
                         {Array.from({ length: 10 }, (_, i) => {
@@ -527,9 +514,8 @@ const CheckoutClient: React.FC = () => {
                             }
                           }}
                           placeholder="CVV"
-                          className={`w-full h-11 border rounded-md pl-3.5 pr-8 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all bg-white ${
-                            errors.cvv ? "border-red-500" : "border-gray-200"
-                          }`}
+                          className={`w-full h-11 border rounded-md pl-3.5 pr-8 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all bg-white ${errors.cvv ? "border-red-500" : "border-gray-200"
+                            }`}
                         />
                         <div className="absolute inset-y-0 right-3 flex items-center pointer-events-none text-gray-400">
                           <FaCreditCard size={14} />
@@ -555,9 +541,8 @@ const CheckoutClient: React.FC = () => {
                       value={formData.paypalEmail}
                       onChange={handleChange}
                       placeholder="PayPal Email Address"
-                      className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all bg-white ${
-                        errors.paypalEmail ? "border-red-500" : "border-gray-200"
-                      }`}
+                      className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all bg-white ${errors.paypalEmail ? "border-red-500" : "border-gray-200"
+                        }`}
                     />
                     {errors.paypalEmail && (
                       <p className="text-xs text-red-500 mt-1 font-medium">{errors.paypalEmail}</p>
@@ -573,7 +558,7 @@ const CheckoutClient: React.FC = () => {
                       <span>⚡</span> How to pay with Zelle:
                     </p>
                     <p>1. Open your banking app and select Zelle transfers.</p>
-                    <p>2. Send the total amount to: <strong className="select-all text-gray-800">pay@frostbite-avon.com</strong></p>
+                    <p>2. Send the total amount to: <strong className="select-all text-gray-800"></strong></p>
                     <p>3. Enter your Zelle Registered Name/Phone below for us to verify your payment.</p>
                   </div>
                   <div>
@@ -583,9 +568,8 @@ const CheckoutClient: React.FC = () => {
                       value={formData.zelleName}
                       onChange={handleChange}
                       placeholder="Zelle Registered Name or Phone Number"
-                      className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all bg-white ${
-                        errors.zelleName ? "border-red-500" : "border-gray-200"
-                      }`}
+                      className={`w-full h-11 border rounded-md px-3.5 text-gray-800 text-sm focus:outline-none focus:border-blue-500 transition-all bg-white ${errors.zelleName ? "border-red-500" : "border-gray-200"
+                        }`}
                     />
                     {errors.zelleName && (
                       <p className="text-xs text-red-500 mt-1 font-medium">{errors.zelleName}</p>
@@ -657,7 +641,7 @@ const CheckoutClient: React.FC = () => {
 
       {/* Right Column (Purchase Details & Store Pickup Location) */}
       <div className="lg:col-span-5 flex flex-col gap-6">
-        
+
         {/* Purchase Details */}
         <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
           <div className="bg-gray-50 border-b border-gray-200 px-5 py-3">
