@@ -5,34 +5,40 @@ import Breadcrumb from "@/components/common/breadcrumb";
 import { blogs } from "@/data/blogs";
 
 export const metadata: Metadata = {
-  title: "Blogs | Frost Bite | Ice Cream Shop Avon, IN",
-  description: "Read the Frost Bite blog for delicious stories, ice cream traditions, and handcrafted dessert inspiration in Avon, IN. Visit us at 7025 Galen Dr W!",
+  title: "Frost Bite | homemade ice cream in Avon, Indiana",
+  description: "Enjoy homemade ice cream in Avon, Indiana, crafted with quality ingredients for rich flavor and creamy texture. Visit Frost Bite for your favorite scoop today!",
   alternates: {
     canonical: "https://frostbite-avon-indiana.com/blogs",
   },
   keywords: [
-    "ice cream blog Avon IN",
-    "Frost Bite stories Avon Indiana",
-    "best dessert blog Hendricks County",
-    "locally owned ice cream shop Avon",
-    "sundae and burger shop Avon",
+    "homemade ice cream in Avon, Indiana",
+    "handcrafted ice cream in Avon, IN",
+    "ice cream shop Avon, Indiana",
+    "Frost Bite Avon, IN",
+    "ice cream near me Avon, Indiana",
+    "best ice cream Avon, IN",
+    "soft serve ice cream Avon, Indiana",
   ],
   openGraph: {
-    title: "Blogs | Frost Bite | Ice Cream Shop Avon, IN",
-    description: "Read the Frost Bite blog for delicious stories, ice cream traditions, and handcrafted dessert inspiration in Avon, IN. Visit us at 7025 Galen Dr W!",
+    title: "Frost Bite | homemade ice cream in Avon, Indiana",
+    description: "Enjoy homemade ice cream in Avon, Indiana, crafted with quality ingredients for rich flavor and creamy texture. Visit Frost Bite for your favorite scoop today!",
     url: "https://frostbite-avon-indiana.com/blogs",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blogs | Frost Bite | Ice Cream Shop Avon, IN",
-    description: "Read the Frost Bite blog for delicious stories, ice cream traditions, and handcrafted dessert inspiration in Avon, IN. Visit us at 7025 Galen Dr W!",
+    title: "Frost Bite | homemade ice cream in Avon, Indiana",
+    description: "Enjoy homemade ice cream in Avon, Indiana, crafted with quality ingredients for rich flavor and creamy texture. Visit Frost Bite for your favorite scoop today!",
   }
 };
 
 export default function BlogListingPage() {
   return (
     <>
+      {/* Hidden headings for SEO as specified in the document */}
+      <h1 className="sr-only">local ice cream shop in Avon, IN</h1>
+      <h2 className="sr-only">ice cream shop near me</h2>
+
       <Breadcrumb
         title="Our Blogs"
         backgroundImage="/images/inner-bg-1.jpg"

@@ -17,17 +17,18 @@ export async function generateMetadata({
       title: "Blog Not Found | Frost Bite",
     };
   }
+  const canonical = blog.canonicalUrl || `https://frostbite-avon-indiana.com/blogs/${slug}`;
   return {
-    title: `${blog.title} | Frost Bite Blog`,
+    title: blog.metaTitle || blog.title,
     description: blog.description,
     keywords: blog.keywords,
     alternates: {
-      canonical: `https://frostbite-avon-indiana.com/blogs/${slug}`,
+      canonical,
     },
     openGraph: {
-      title: blog.title,
+      title: blog.metaTitle || blog.title,
       description: blog.description,
-      url: `https://frostbite-avon-indiana.com/blogs/${slug}`,
+      url: canonical,
       type: "article",
       images: [
         {
@@ -40,7 +41,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: blog.title,
+      title: blog.metaTitle || blog.title,
       description: blog.description,
       images: [
         `https://frostbite-avon-indiana.com${blog.coverImage || "/images/default-blog.png"}`

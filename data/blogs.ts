@@ -2,11 +2,13 @@ export interface Blog {
   id: string;
   slug: string;
   title: string;
+  metaTitle?: string;
   description: string;
   content: string;
   date: string;
   coverImage?: string;
   keywords?: string[];
+  canonicalUrl?: string;
 }
 
 export const blogs: Blog[] = [
@@ -14,12 +16,13 @@ export const blogs: Blog[] = [
     id: "blog-handcrafted-ice-cream-avon",
     slug: "handcrafted-ice-cream-avon-in",
     title: "THE JOURNEY OF ICECREAM BEFORE IT EVEN REACHES YOUR CONE.",
+    metaTitle: "Frost Bite | Handcrafted Ice Cream in Avon, IN",
+    canonicalUrl: "https://frostbite-avon-indiana.com/handcrafted-ice-cream-avon-in",
     description:
-      "Enjoy homemade ice cream in Avon, Indiana, crafted with quality ingredients for rich flavor and creamy texture. Visit Frost Bite for your favorite scoop today.",
+      "Discover how handcrafted ice cream is made using quality ingredients for rich flavor and creamy texture. Visit Frost Bite in Avon, IN for every favorite scoop.",
     coverImage: "/images/ice-cream-1.png",
     date: "2026-07-07",
     keywords: [
-      "homemade ice cream in Avon, Indiana",
       "handcrafted ice cream in Avon, IN",
       "ice cream shop Avon, Indiana",
       "Frost Bite Avon, IN",
@@ -28,6 +31,7 @@ export const blogs: Blog[] = [
       "soft serve ice cream Avon, Indiana",
     ],
     content: `
+    <h2>You Can Usually Tell After The First Spoonful </h2>
 <p>
 Nobody needs to explain when ice cream tastes good. You know. It is the kind that makes you pause after the first bite because it is smoother than you expected. Rich without feeling heavy. Sweet without tasting like pure sugar. That reaction never happens by accident. By the time someone is handed a cone or a sundae, most of the important work has already been done.
 </p>
@@ -69,10 +73,12 @@ At Frost Bite, quality is not treated like an extra feature. It is the starting 
   },
   {
     id: "blog-nobody-lets-eat-ice-cream",
-    slug: "lets-eat-ice-cream-frost-bite-family",
+    slug: "family-ice-cream-shop-in-avon-in",
     title: "NOBODY EVER SAYS, LETS MAKE MEMORIES. THEY ALWAYS SAY COME LETS EAT ICE CREAM",
+    metaTitle: "Frost Bite | Family Ice Cream Shop in Avon, IN",
+    canonicalUrl: "https://frostbite-avon-indiana.com/family-ice-cream-shop-in-avon-in",
     description:
-      "Some of life's best memories begin with ice cream. Visit Frost Bite for handcrafted treats, sundaes, and family fun.",
+      "Some of life's best memories begin with ice cream. Visit Frost Bite, your favorite ice cream shop in Avon, IN, for handcrafted treats, sundaes, and family fun.",
     coverImage: "/images/ice-cream-about.png",
     date: "2026-06-19",
     keywords: [
