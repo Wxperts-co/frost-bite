@@ -404,4 +404,32 @@ html {
   }
 }
 
+/* Blog Content Typography Styles */
+.blog-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair_Display', serif;
+}
+
+.blog-content p {
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  font-size: 1.2rem;
+}
+
+.blog-content em {
+  font-style: italic;
+  color: #6b7280; /* text-gray-500 */
+}
+
+.blog-content strong {
+  font-weight: 700;
+  color: #1e1e1e;
+}
+
+
 

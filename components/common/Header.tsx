@@ -35,6 +35,7 @@ const Header = () => {
     { name: "Menu", href: "/menu" },
     { name: "Food & Sandwiches", href: "/food-sandwiches" },
     { name: "Gallery", href: "/gallery" },
+    { name: "Blogs", href: "/blogs" },
     { name: "Reviews", href: "/reviews" },
     { name: "Contact Us", href: "/contact-us" },
   ];

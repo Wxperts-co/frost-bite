@@ -5,7 +5,9 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
+      disallow: ["/checkout"],
     },
     sitemap: "https://frostbite-avon-indiana.com/sitemap.xml",
   };
 }
+
