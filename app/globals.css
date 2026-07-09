@@ -406,7 +406,7 @@ html {
 
 /* Blog Content Typography Styles */
 .blog-content h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #1e1e1e;
   margin-top: 2rem;
@@ -415,10 +415,9 @@ html {
 }
 
 .blog-content p {
-  color: #4b5563;
+  color: #4b5563; /* text-gray-600 */
   line-height: 1.8;
   margin-bottom: 1.25rem;
-  font-size: 1.2rem;
 }
 
 .blog-content em {

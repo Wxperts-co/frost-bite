@@ -80,7 +80,7 @@ export default async function BlogDetailPage({
         {/* White Overlay */}
         <div className="absolute inset-0 bg-white opacity-90"></div>
 
-        <div className="relative z-10 container mx-auto px-4 max-w-[1820px]">
+        <div className="relative z-10 container mx-auto px-4 max-w-[1420px]">
           <div className="flex flex-wrap lg:flex-nowrap gap-10">
             {/* Left Content Area: Main Article */}
             <div className="w-full lg:w-2/3 xl:w-3/4">

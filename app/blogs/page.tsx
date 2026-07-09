@@ -46,7 +46,7 @@ export default function BlogListingPage() {
         {/* White Overlay */}
         <div className="absolute inset-0 bg-white opacity-90"></div>
 
-        <div className="relative z-10 container mx-auto px-4 max-w-[1820px]">
+        <div className="relative z-10 container mx-auto px-4 max-w-[1520px]">
           {/* Section Title */}
           <div className="text-center mb-12 animate-slideInUp">
             <p className="text-[#c07f07] text-sm md:text-base uppercase tracking-[2px] font-semibold mb-3">
