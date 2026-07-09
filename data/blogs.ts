@@ -17,7 +17,7 @@ export const blogs: Blog[] = [
     slug: "handcrafted-ice-cream-avon-in",
     title: "THE JOURNEY OF ICECREAM BEFORE IT EVEN REACHES YOUR CONE.",
     metaTitle: "Frost Bite | Handcrafted Ice Cream in Avon, IN",
-    canonicalUrl: "https://frostbite-avon-indiana.com/handcrafted-ice-cream-avon-in",
+    canonicalUrl: "https://frostbite-avon-indiana.com/blogs/handcrafted-ice-cream-avon-in",
     description:
       "Discover how handcrafted ice cream is made using quality ingredients for rich flavor and creamy texture. Visit Frost Bite in Avon, IN for every favorite scoop.",
     coverImage: "/images/ice-cream-1.png",
@@ -76,7 +76,7 @@ At Frost Bite, quality is not treated like an extra feature. It is the starting 
     slug: "family-ice-cream-shop-in-avon-in",
     title: "NOBODY EVER SAYS, LETS MAKE MEMORIES. THEY ALWAYS SAY COME LETS EAT ICE CREAM",
     metaTitle: "Frost Bite | Family Ice Cream Shop in Avon, IN",
-    canonicalUrl: "https://frostbite-avon-indiana.com/family-ice-cream-shop-in-avon-in",
+    canonicalUrl: "https://frostbite-avon-indiana.com/blogs/family-ice-cream-shop-in-avon-in",
     description:
       "Some of life's best memories begin with ice cream. Visit Frost Bite, your favorite ice cream shop in Avon, IN, for handcrafted treats, sundaes, and family fun.",
     coverImage: "/images/ice-cream-about.png",
