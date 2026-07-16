@@ -64,7 +64,7 @@ export default async function BlogDetailPage({
   }
 
   // Filter other blogs to display in sidebar
-  const otherBlogs = blogs.filter((b) => b.slug !== slug);
+  const otherBlogs = blogs;
 
   return (
     <>
@@ -92,7 +92,7 @@ export default async function BlogDetailPage({
                       src={blog.coverImage}
                       alt={blog.title}
                       fill
-                      className="object-cover"
+                      className="object-contain"
                       priority
                       sizes="(max-width: 924px) 100vw, 75vw"
                     />
@@ -144,56 +144,59 @@ export default async function BlogDetailPage({
 
                 {otherBlogs.length > 0 ? (
                   <div className="flex flex-col gap-5">
-                    {otherBlogs.map((item) => (
-                      <Link
-                        key={item.id}
-                        href={`/blogs/${item.slug}`}
-                        className="group flex gap-4 items-center"
-                      >
-                        <div className="relative w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-gray-100">
-                          {item.coverImage ? (
-                            <Image
-                              src={item.coverImage}
-                              alt={item.title}
-                              fill
-                              className="object-cover transition-transform duration-300 group-hover:scale-105"
-                              sizes="64px"
-                            />
-                          ) : (
-                            <div className="w-full h-full bg-gray-200" />
-                          )}
-                        </div>
-                        <div className="flex flex-col">
-                          <span className="text-xs text-gray-400">
-                            {new Date(item.date).toLocaleDateString(undefined, {
-                              month: "short",
-                              day: "2-digit",
-                              year: "numeric",
-                            })}
-                          </span>
-                          <h4 className="text-sm font-bold text-[#1e1e1e] group-hover:text-[#c07f07] transition-colors duration-300 line-clamp-2 leading-snug">
-                            {item.title}
-                          </h4>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
+  {otherBlogs.map((item) => {
+    const isCurrent = item.slug === slug;
+
+    return (
+      <Link
+        key={item.id}
+        href={isCurrent ? "#" : `/blogs/${item.slug}`}
+        className={`group flex gap-4 items-center ${
+          isCurrent ? "pointer-events-none" : ""
+        }`}
+      >
+        <div className="relative w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-gray-100">
+          {item.coverImage ? (
+            <Image
+              src={item.coverImage}
+              alt={item.title}
+              fill
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
+              sizes="64px"
+            />
+          ) : (
+            <div className="w-full h-full bg-gray-200" />
+          )}
+        </div>
+
+        <div className="flex flex-col">
+          <span className="text-xs text-gray-400">
+            {new Date(item.date).toLocaleDateString(undefined, {
+              month: "short",
+              day: "2-digit",
+              year: "numeric",
+            })}
+          </span>
+
+          <h4
+            className={`text-sm font-bold line-clamp-2 leading-snug transition-colors duration-300 ${
+              isCurrent
+                ? "text-[#c07f07]"
+                : "text-[#1e1e1e] group-hover:text-[#c07f07]"
+            }`}
+          >
+            {item.title}
+          </h4>
+        </div>
+      </Link>
+    );
+  })}
+</div>
                 ) : (
                   <p className="text-sm text-gray-500">No other articles available.</p>
                 )}
 
-                {/* Promotional Frost Bite Widget */}
-                <div className="bg-gradient-to-br from-[#c07f07] to-[#e6a017] rounded-2xl p-6 text-white text-center mt-8">
-                  <h4 className="font-bold text-lg mb-2">Craving Something Sweet?</h4>
-                  <p className="text-white/90 text-sm mb-4">
-                    Visit Frost Bite in Avon for handcrafted ice cream, sundaes, burgers, and more!
-                  </p>
-                  <Link href="/contact-us">
-                    <span className="inline-block bg-[#1e1e1e] text-white hover:bg-white hover:text-[#1e1e1e] transition-colors duration-300 px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider">
-                      Find Us
-                    </span>
-                  </Link>
-                </div>
+                
               </div>
             </aside>
           </div>
