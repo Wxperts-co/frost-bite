@@ -22,7 +22,7 @@ export const blogs: Blog[] = [
     description:
       "Discover how handcrafted ice cream is made using quality ingredients for rich flavor and creamy texture. Visit Frost Bite in Avon, IN for every favorite scoop.",
     coverImage: "/images/ice-cream-3.png",
-    date: "2026-07-07",
+    date: "Jul 07, 2026",
     keywords: [
       "handcrafted ice cream in Avon, IN",
       "ice cream shop Avon, Indiana",
@@ -83,7 +83,7 @@ At Frost Bite, quality is not treated like an extra feature. It is the starting 
     description:
       "Some of life's best memories begin with ice cream. Visit Frost Bite, your favorite ice cream shop in Avon, IN, for handcrafted treats, sundaes, and family fun.",
     coverImage: "/images/ice-cream-about3.png",
-    date: "2026-06-19",
+    date: "Jun 19, 2026",
     keywords: [
       "family ice cream shop in Avon, IN",
       "ice cream shop Avon, Indiana",

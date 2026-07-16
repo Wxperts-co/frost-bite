@@ -17,7 +17,8 @@ export async function generateMetadata({
       title: "Blog Not Found | Frost Bite",
     };
   }
-  const canonical = blog.canonicalUrl || `https://frostbite-avon-indiana.com/blogs/${slug}`;
+  const canonical =
+    blog.canonicalUrl || `https://frostbite-avon-indiana.com/blogs/${slug}`;
   return {
     title: blog.metaTitle || blog.title,
     description: blog.description,
@@ -44,7 +45,7 @@ export async function generateMetadata({
       title: blog.metaTitle || blog.title,
       description: blog.description,
       images: [
-        `https://frostbite-avon-indiana.com${blog.coverImage || "/images/default-blog.png"}`
+        `https://frostbite-avon-indiana.com${blog.coverImage || "/images/default-blog.png"}`,
       ],
     },
   };
@@ -100,14 +101,12 @@ export default async function BlogDetailPage({
                 )}
 
                 <div className="flex items-center gap-3 text-sm text-gray-500 mb-4">
-                  <span className="font-semibold text-[#c07f07]">Author: Frost Bite</span>
+                  <span className="font-semibold text-[#c07f07]">
+                    Author: Frost Bite
+                  </span>
                   <span className="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
                   <span>
-                    {new Date(blog.date).toLocaleDateString(undefined, {
-                      year: "numeric",
-                      month: "long",
-                      day: "2-digit",
-                    })}
+                    {blog.date}
                   </span>
                 </div>
 
@@ -144,59 +143,55 @@ export default async function BlogDetailPage({
 
                 {otherBlogs.length > 0 ? (
                   <div className="flex flex-col gap-5">
-  {otherBlogs.map((item) => {
-    const isCurrent = item.slug === slug;
+                    {otherBlogs.map((item) => {
+                      const isCurrent = item.slug === slug;
 
-    return (
-      <Link
-        key={item.id}
-        href={isCurrent ? "#" : `/blogs/${item.slug}`}
-        className={`group flex gap-4 items-center ${
-          isCurrent ? "pointer-events-none" : ""
-        }`}
-      >
-        <div className="relative w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-gray-100">
-          {item.coverImage ? (
-            <Image
-              src={item.coverImage}
-              alt={item.title}
-              fill
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
-              sizes="64px"
-            />
-          ) : (
-            <div className="w-full h-full bg-gray-200" />
-          )}
-        </div>
+                      return (
+                        <Link
+                          key={item.id}
+                          href={isCurrent ? "#" : `/blogs/${item.slug}`}
+                          className={`group flex gap-4 items-center ${
+                            isCurrent ? "pointer-events-none" : ""
+                          }`}
+                        >
+                          <div className="relative w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-gray-100">
+                            {item.coverImage ? (
+                              <Image
+                                src={item.coverImage}
+                                alt={item.title}
+                                fill
+                                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                                sizes="64px"
+                              />
+                            ) : (
+                              <div className="w-full h-full bg-gray-200" />
+                            )}
+                          </div>
 
-        <div className="flex flex-col">
-          <span className="text-xs text-gray-400">
-            {new Date(item.date).toLocaleDateString(undefined, {
-              month: "short",
-              day: "2-digit",
-              year: "numeric",
-            })}
-          </span>
+                          <div className="flex flex-col">
+                            <span className="text-xs text-gray-400">
+                              {item.date}
+                            </span>
 
-          <h4
-            className={`text-sm font-bold line-clamp-2 leading-snug transition-colors duration-300 ${
-              isCurrent
-                ? "text-[#c07f07]"
-                : "text-[#1e1e1e] group-hover:text-[#c07f07]"
-            }`}
-          >
-            {item.title}
-          </h4>
-        </div>
-      </Link>
-    );
-  })}
-</div>
+                            <h4
+                              className={`text-sm font-bold line-clamp-2 leading-snug transition-colors duration-300 ${
+                                isCurrent
+                                  ? "text-[#c07f07]"
+                                  : "text-[#1e1e1e] group-hover:text-[#c07f07]"
+                              }`}
+                            >
+                              {item.title}
+                            </h4>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
                 ) : (
-                  <p className="text-sm text-gray-500">No other articles available.</p>
+                  <p className="text-sm text-gray-500">
+                    No other articles available.
+                  </p>
                 )}
-
-                
               </div>
             </aside>
           </div>
