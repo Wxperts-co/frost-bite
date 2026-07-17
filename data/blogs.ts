@@ -67,9 +67,6 @@ Making people come back is harder. Anyone can freeze a sweet mixture. Creating s
 At Frost Bite, quality is not treated like an extra feature. It is the starting point. Every handcrafted flavor is prepared with the idea that someone is choosing this shop to celebrate a birthday, finish a family dinner, reward the kids after a game, or simply make an ordinary afternoon a little better. That makes every scoop matter. Whether someone reaches for a Hot Fudge Sundae, Cookie Dough Sundae, Mint Chocolate Chip, or Strawberry Sundae, the goal stays exactly the same. Serve ice cream that tastes like it was worth the trip. So, what are you waiting for <a href="https://frostbite-avon-indiana.com/contact-us" target="_blank" rel="noopener noreferrer" style="color:#0000EE; text-decoration:underline;">contact us today!</a>
 </p>
 
-<p>
-<em>Jul 07, 2026</em>
-</p>
 `.trim(),
   },
   {
@@ -127,9 +124,6 @@ There is something different about walking into a place that belongs to the comm
 <a href="https://frostbite-avon-indiana.com/contact-us" target="_blank" rel="noopener noreferrer" style="color:#0000EE; text-decoration:underline;">People visit Frost Bite</a> for the ice cream. They come back because it has become part of their routine. Maybe it is the handcrafted flavors. Maybe it is finally deciding between the Hot Fudge Sundae and Cookie Dough Sundae. Maybe it is knowing Mint Chocolate Chip or Strawberry Sundae will never disappoint. Or maybe it is simply because it feels like an easy place to end a good day. No pressure. No rush. Just good ice cream and good company.
 </p>
 
-<p>
-<em>Jun 19, 2026</em>
-</p>
 `.trim(),
   },
 ];
