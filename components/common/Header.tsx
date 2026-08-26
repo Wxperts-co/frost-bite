@@ -69,6 +69,7 @@ const Header = () => {
                 alt="PopGlace Logo"
                 width={280}
                 height={180}
+                sizes="(max-width: 768px) 150px, 280px"
                 className="h-14 sm:h-16 md:h-20 lg:h-24 w-auto object-contain"
                 priority
               />

@@ -77,6 +77,7 @@ const HeroSection = () => {
           style={{ willChange: "transform" }}
         >
           <source src="/images/hero-1-1.mp4" type="video/mp4" />
+          <track kind="captions" srcLang="en" label="English" default />
         </video>
 
         {/* Gradient Overlays with New Color #046069 */}
@@ -174,7 +175,7 @@ const HeroSection = () => {
             </span>{" "}
           </motion.div> */}
           {/* Main Heading */}
-          <motion.h3
+          <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
@@ -190,7 +191,7 @@ const HeroSection = () => {
             >
               Frost Bite
             </span>
-          </motion.h3>
+          </motion.h1>
           {/* Sub Heading */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

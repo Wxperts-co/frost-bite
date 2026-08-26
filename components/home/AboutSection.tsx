@@ -150,6 +150,7 @@ const AboutSection = () => {
                   width={620}
                   height={720}
                   priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="w-full max-w-[580px] h-auto object-contain drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)]"
                 />
               </motion.div>
