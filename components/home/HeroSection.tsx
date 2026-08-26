@@ -71,7 +71,7 @@ const HeroSection = () => {
           loop
           muted
           playsInline
-          preload="auto"
+          preload="metadata"
           className="absolute top-0 left-0 w-full h-full object-cover"
           poster="/images/about-page-bg.jpg"
           style={{ willChange: "transform" }}

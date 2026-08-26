@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
+import { Luckiest_Guy } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import { CartProvider } from "@/context/CartContext";
 import dynamic from "next/dynamic";
+
+const luckiestGuy = Luckiest_Guy({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-luckiest-guy",
+  display: "swap",
+});
 
 const CartDrawer = dynamic(() => import("@/components/cart/CartDrawer"));
 const StickyCheckoutButton = dynamic(() => import("@/components/cart/StickyCheckoutButton"));
@@ -21,7 +29,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="h-full antialiased"
+      className={`h-full antialiased ${luckiestGuy.variable}`}
     >
       <body className="min-h-full flex flex-col">
         <CartProvider>
