@@ -108,6 +108,7 @@ const Header = () => {
                   : "text-white/90 hover:text-[#c07f07] hover:bg-white/10"
               }`}
               title="View Cart"
+              aria-label="View Cart"
             >
               {isPulsing && (
                 <motion.div
@@ -214,6 +215,7 @@ const Header = () => {
               scrolled ? "text-[#056170]" : "text-white"
             }`}
             title="View Cart"
+            aria-label="View Cart"
           >
             {isPulsing && (
               <motion.div
@@ -244,6 +246,7 @@ const Header = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden p-2 rounded-lg flex-shrink-0"
             style={{ color: scrolled ? "#056170" : "#ffffff" }}
+            aria-label="Toggle mobile menu"
           >
             {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </motion.button>
