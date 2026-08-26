@@ -13,8 +13,8 @@ const luckiestGuy = Luckiest_Guy({
   display: "swap",
 });
 
-const CartDrawer = dynamic(() => import("@/components/cart/CartDrawer"));
-const StickyCheckoutButton = dynamic(() => import("@/components/cart/StickyCheckoutButton"));
+const CartDrawer = dynamic(() => import("@/components/cart/CartDrawer"), { ssr: false });
+const StickyCheckoutButton = dynamic(() => import("@/components/cart/StickyCheckoutButton"), { ssr: false });
 
 export const metadata: Metadata = {
   title: "Frost Bite",
@@ -31,6 +31,9 @@ export default function RootLayout({
       lang="en"
       className={`h-full antialiased ${luckiestGuy.variable}`}
     >
+      <head>
+        <link rel="preload" href="/images/about-page-bg.jpg" as="image" />
+      </head>
       <body className="min-h-full flex flex-col">
         <CartProvider>
           <Header />

@@ -5,8 +5,8 @@ import HeroSection from '@/components/home/HeroSection';
 
 const AboutSection = dynamic(() => import('@/components/home/AboutSection'));
 const FeaturedProducts = dynamic(() => import('@/components/home/FeaturedProducts'));
-const TestimonialSection = dynamic(() => import('@/components/home/TestimonialSection'));
-const GallerySection = dynamic(() => import('@/components/home/GallerySection'));
+const TestimonialSection = dynamic(() => import('@/components/home/TestimonialSection'), { ssr: false });
+const GallerySection = dynamic(() => import('@/components/home/GallerySection'), { ssr: false });
 
 export const metadata: Metadata = {
   title: 'Frost Bite | Best Ice Cream Avon, Indiana',
