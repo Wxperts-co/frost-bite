@@ -82,7 +82,7 @@ const HeroSection = () => {
         {/* Gradient Overlays with New Color #046069 */}
 
         {/* Animated Particles */}
-        <div className="absolute inset-0 z-10 overflow-hidden pointer-events-none">
+        <div className="absolute inset-0 z-10 overflow-hidden pointer-events-none hidden md:block">
           {particles.map((particle) => (
             <motion.div
               key={particle.id}
@@ -109,7 +109,7 @@ const HeroSection = () => {
         </div>
 
         {/* Decorative Blobs with New Color */}
-        <div className="absolute inset-0 z-10 overflow-hidden pointer-events-none">
+        <div className="absolute inset-0 z-10 overflow-hidden pointer-events-none hidden md:block">
           <motion.div
             className="absolute top-20 left-10 w-64 h-64 rounded-full bg-[#c07f07]/20 blur-3xl"
             animate={{

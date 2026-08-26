@@ -13,8 +13,7 @@ const luckiestGuy = Luckiest_Guy({
   display: "swap",
 });
 
-const CartDrawer = dynamic(() => import("@/components/cart/CartDrawer"));
-const StickyCheckoutButton = dynamic(() => import("@/components/cart/StickyCheckoutButton"));
+import { CartDrawer, StickyCheckoutButton } from "@/components/cart/ClientCartComponents";
 
 export const metadata: Metadata = {
   title: "Frost Bite",
