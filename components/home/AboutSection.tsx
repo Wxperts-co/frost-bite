@@ -210,7 +210,7 @@ const AboutSection = () => {
             </motion.div>
 
             {/* Heading */}
-            <motion.h1
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 }}
@@ -218,7 +218,7 @@ const AboutSection = () => {
             >
               <span className="text-gray-800">  Avon's Favorite Ice Cream Shop – Handcrafted Flavors at Frost Bite </span>
               
-            </motion.h1>
+            </motion.h2>
 
             {/* Main Description */}
             <motion.div

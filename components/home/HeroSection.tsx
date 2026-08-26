@@ -176,9 +176,6 @@ const HeroSection = () => {
           </motion.div> */}
           {/* Main Heading */}
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
             className="leading-[0.95] mb-6"
           >
             <span
@@ -193,10 +190,7 @@ const HeroSection = () => {
             </span>
           </motion.h1>
           {/* Sub Heading */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
+          <div
             className="mb-8"
           >
             <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
@@ -207,12 +201,9 @@ const HeroSection = () => {
               Indulge in handcrafted frozen delights with bold flavors, creamy
               textures, and unforgettable sweetness made fresh every day.
             </p>
-          </motion.div>
+          </div>
           {/* Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
+          <div
             className="flex flex-col sm:flex-row gap-4 sm:gap-5"
           >
             {/* Order Button - Link to Menu */}
@@ -249,7 +240,7 @@ const HeroSection = () => {
                 <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300 text-sm sm:text-base" />
               </motion.button>
             </Link>
-          </motion.div>
+          </div>
         </div>
       </div>
 
