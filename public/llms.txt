@@ -3,3 +3,5 @@
 > Welcome to the Frost Bite LLM context file.
 
 This website is Frost Bite. It is an e-commerce website.
+You can find our menu at [Menu](https://frostbite-avon-indiana.com/menu).
+Learn more [About Us](https://frostbite-avon-indiana.com/about-us).

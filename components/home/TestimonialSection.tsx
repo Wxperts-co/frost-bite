@@ -374,6 +374,7 @@ const TestimonialSection = () => {
             onClick={prevSlide}
             className="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 bg-[#046069] hover:bg-[#c07f07] rounded-full flex items-center justify-center transition-all duration-300 border border-white/20 hover:border-transparent z-20 shadow-lg"
             style={{ left: '-10px' }}
+            aria-label="Previous Testimonial"
           >
             <FaChevronLeft className="text-white" />
           </button>
@@ -381,6 +382,7 @@ const TestimonialSection = () => {
             onClick={nextSlide}
             className="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 bg-[#046069] hover:bg-[#c07f07] rounded-full flex items-center justify-center transition-all duration-300 border border-white/20 hover:border-transparent z-20 shadow-lg"
             style={{ right: '-10px' }}
+            aria-label="Next Testimonial"
           >
             <FaChevronRight className="text-white" />
           </button>
