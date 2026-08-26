@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import dynamic from 'next/dynamic';
 import HeroSection from '@/components/home/HeroSection';
-import AboutSection from '@/components/home/AboutSection';
-import FeaturedProducts from '@/components/home/FeaturedProducts';
-import TestimonialSection from '@/components/home/TestimonialSection';
-import GallerySection from '@/components/home/GallerySection';
+
+const AboutSection = dynamic(() => import('@/components/home/AboutSection'));
+const FeaturedProducts = dynamic(() => import('@/components/home/FeaturedProducts'));
+const TestimonialSection = dynamic(() => import('@/components/home/TestimonialSection'));
+const GallerySection = dynamic(() => import('@/components/home/GallerySection'));
 
 export const metadata: Metadata = {
   title: 'Frost Bite | Best Ice Cream Avon, Indiana',
@@ -110,9 +112,9 @@ export default function Home() {
       />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-XKRLZH2M0R"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script id="google-analytics" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

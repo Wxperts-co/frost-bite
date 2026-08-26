@@ -3,8 +3,10 @@ import "./globals.css";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import { CartProvider } from "@/context/CartContext";
-import CartDrawer from "@/components/cart/CartDrawer";
-import StickyCheckoutButton from "@/components/cart/StickyCheckoutButton";
+import dynamic from "next/dynamic";
+
+const CartDrawer = dynamic(() => import("@/components/cart/CartDrawer"));
+const StickyCheckoutButton = dynamic(() => import("@/components/cart/StickyCheckoutButton"));
 
 export const metadata: Metadata = {
   title: "Frost Bite",

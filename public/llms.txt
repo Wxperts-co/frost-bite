@@ -1,0 +1,5 @@
+# Frost Bite
+
+> Welcome to the Frost Bite LLM context file.
+
+This website is Frost Bite. It is an e-commerce website.
