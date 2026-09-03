@@ -118,7 +118,7 @@ export default function BlogListingPage() {
                     </div>
                     <div className="flex items-center gap-1.5">
                       <Clock className="w-3.5 h-3.5 text-[#c07f07]" />
-                      <span>{blog.readTime || "4 minute read"}</span>
+                      <span>{blog.readTime || "7 minute read"}</span>
                     </div>
                   </div>
 
