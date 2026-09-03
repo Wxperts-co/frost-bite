@@ -135,7 +135,7 @@ There is something different about walking into a place that belongs to the comm
     id: "blog-hardest-part-getting-ice-cream",
     slug: "hardest-part-getting-ice-cream-frost-bite",
     title: "THE HARDEST PART OF GETTING ICE CREAM AT FROST BITE",
-    metaTitle: "The Hardest Part of Getting Ice Cream At Frost Bite",
+    metaTitle: "Frost Bite | Best Ice Cream Flavors in Avon, IN",
     canonicalUrl:
       "https://frostbite-avon-indiana.com/blogs/hardest-part-getting-ice-cream-frost-bite",
     description:
