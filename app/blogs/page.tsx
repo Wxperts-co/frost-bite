@@ -66,7 +66,9 @@ export default function BlogListingPage() {
 
           {/* Grid Layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-            {blogs.map((blog) => (
+            {[...blogs]
+              .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+              .map((blog) => (
               <Link
                 key={blog.id}
                 href={`/blogs/${blog.slug}`}

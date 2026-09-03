@@ -9,6 +9,8 @@ export interface Blog {
   coverImage?: string;
   keywords?: string[];
   canonicalUrl?: string;
+  author?: string;
+  readTime?: string;
 }
 
 export const blogs: Blog[] = [
@@ -124,6 +126,62 @@ There is something different about walking into a place that belongs to the comm
 <a href="https://frostbite-avon-indiana.com/contact-us" target="_blank" rel="noopener noreferrer" style="color:#0000EE; text-decoration:underline;">People visit Frost Bite</a> for the ice cream. They come back because it has become part of their routine. Maybe it is the handcrafted flavors. Maybe it is finally deciding between the Hot Fudge Sundae and Cookie Dough Sundae. Maybe it is knowing Mint Chocolate Chip or Strawberry Sundae will never disappoint. Or maybe it is simply because it feels like an easy place to end a good day. No pressure. No rush. Just good ice cream and good company.
 </p>
 
+`.trim(),
+  },
+  {
+    id: "blog-hardest-part-getting-ice-cream",
+    slug: "hardest-part-getting-ice-cream-frost-bite",
+    title: "THE HARDEST PART OF GETTING ICE CREAM AT FROST BITE",
+    metaTitle: "The Hardest Part of Getting Ice Cream At Frost Bite",
+    canonicalUrl:
+      "https://frostbite-avon-indiana.com/blogs/hardest-part-getting-ice-cream-frost-bite",
+    description:
+      "The plan is easy. “Let’s get ice cream.” Nobody argues. Then you arrive at Frost Bite, and suddenly everyone has a decision to make.",
+    coverImage: "/images/blog/aug-2026.jpg",
+    date: "Aug 19, 2026",
+    keywords: [
+      "Frost Bite Avon IN",
+      "ice cream flavors",
+      "family ice cream shop",
+      "ice cream menu",
+      "getting ice cream",
+    ],
+    author: "Mayank Patel",
+    readTime: "5 minute read",
+    content: `
+<p>
+The plan is easy. “Let’s get ice cream.” Nobody argues. Then you arrive at <a href="https://frostbite-avon-indiana.com/" target="_blank" rel="noopener noreferrer" style="color:#0000EE; text-decoration:underline;">Frost Bite</a>, and suddenly everyone has a decision to make.
+</p>
+
+<h2> The Menu Changes Everything </h2>
+<p>
+You may have walked in thinking you already knew what you wanted. Then you see the <a href="https://frostbite-avon-indiana.com/menu" target="_blank" rel="noopener noreferrer" style="color:#0000EE; text-decoration:underline;">menu</a> choices. The flavour you always get is right there. But something else sounds good too. You start asking questions. Someone next to you orders something that now looks better than what you had planned. Now you are reconsidering everything. It is only ice cream, but somehow it becomes a serious discussion.
+</p>
+
+<h2> The Group Order Is Never Simple </h2>
+<p>
+Going for ice cream with <a href="https://frostbite-avon-indiana.com/about-us" target="_blank" rel="noopener noreferrer" style="color:#0000EE; text-decoration:underline;">friends or family</a> usually involves at least one person saying, “I’ll just have a small one.” They rarely mean it. There is also the person who orders immediately, making everyone else look indecisive. Then there is the person who wants to try everyone else's order before choosing their own. By the time everyone has made up their mind, the original question, Should we get ice cream? feels like it was the easy part.
+</p>
+
+<h2> There Is Comfort in Ordering the Same Thing </h2>
+<p>
+Some people do not experiment. They have found their favourite, and they see no reason to change. Fair enough. There is something nice about knowing exactly what you like and getting it every time. No disappointment. No regret. No wishing you had ordered what someone else has. Although that becomes difficult when you see someone else's treat.
+</p>
+
+<h2> A New Flavour Can Change Your Entire Routine </h2>
+<p>
+Trying something different can be risky. What if you do not like it? But occasionally, the random choice becomes the one you think about the next time someone mentions ice cream. That is the good thing about a place like Frost Bite. There is always another reason to come back. You can stay loyal to the usual order one day and try something completely different the next.
+</p>
+
+<h2> Sometimes You Just Need an Excuse to Go Out </h2>
+<p>
+Ice cream does not need an occasion. You do not need a birthday. You do not need to celebrate something. You can simply decide that you want ice cream. A <a href="https://frostbite-avon-indiana.com/contact-us" target="_blank" rel="noopener noreferrer" style="color:#0000EE; text-decoration:underline;">visit to Frost Bite</a> can be a family outing, a stop with friends or a reason to take a break from an ordinary afternoon. It does not have to be planned weeks in advance. Sometimes the best plans happen because someone says, “Want to get something sweet?”
+</p>
+
+<h2> The Answer Is Usually Yes </h2>
+<p>
+Frost Bite in Avon, Indiana, is a place for people who take their frozen treats seriously, and their decisions about what to order even more seriously. Come with your favourite in mind. Take your time. Change your mind once or twice. Then enjoy whatever you choose. Because, honestly, the hardest part of getting ice cream is deciding what you want.
+</p>
 `.trim(),
   },
 ];
