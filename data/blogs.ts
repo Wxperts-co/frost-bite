@@ -11,6 +11,7 @@ export interface Blog {
   canonicalUrl?: string;
   author?: string;
   readTime?: string;
+  schema?: string;
 }
 
 export const blogs: Blog[] = [
@@ -25,6 +26,7 @@ export const blogs: Blog[] = [
       "Discover how handcrafted ice cream is made using quality ingredients for rich flavor and creamy texture. Visit Frost Bite in Avon, IN for every favorite scoop.",
     coverImage: "/images/ice-cream-3.png",
     date: "Jul 07, 2026",
+    readTime: "4 minute read",
     keywords: [
       "handcrafted ice cream in Avon, IN",
       "ice cream shop Avon, Indiana",
@@ -83,6 +85,7 @@ At Frost Bite, quality is not treated like an extra feature. It is the starting 
       "Some of life's best memories begin with ice cream. Visit Frost Bite, your favorite ice cream shop in Avon, IN, for handcrafted treats, sundaes, and family fun.",
     coverImage: "/images/ice-cream-about3.png",
     date: "Jun 19, 2026",
+    readTime: "3 minute read",
     keywords: [
       "family ice cream shop in Avon, IN",
       "ice cream shop Avon, Indiana",
@@ -147,7 +150,7 @@ There is something different about walking into a place that belongs to the comm
       "getting ice cream",
     ],
     author: "Mayank Patel",
-    readTime: "5 minute read",
+    readTime: "6 minute read",
     content: `
 <p>
 The plan is easy. “Let’s get ice cream.” Nobody argues. Then you arrive at <a href="https://frostbite-avon-indiana.com/" target="_blank" rel="noopener noreferrer" style="color:#0000EE; text-decoration:underline;">Frost Bite</a>, and suddenly everyone has a decision to make.
@@ -182,6 +185,135 @@ Ice cream does not need an occasion. You do not need a birthday. You do not need
 <p>
 Frost Bite in Avon, Indiana, is a place for people who take their frozen treats seriously, and their decisions about what to order even more seriously. Come with your favourite in mind. Take your time. Change your mind once or twice. Then enjoy whatever you choose. Because, honestly, the hardest part of getting ice cream is deciding what you want.
 </p>
+
+<details style="margin-top: 2rem; padding: 1rem; border: 1px solid #eee; border-radius: 8px; background: #f9f9f9;">
+  <summary style="font-weight: bold; cursor: pointer; color: #c07f07;">Semantic Keynotes &amp; Named Entity Recognition (NER) Tags</summary>
+  <div style="margin-top: 1rem;">
+    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1e1e1e;">Semantic Keynotes</h3>
+    <ul style="list-style-type: disc; margin-left: 1.5rem; margin-bottom: 1rem;">
+      <li><strong>Ice Cream Experience</strong> – Choosing and enjoying ice cream as a simple, enjoyable experience at Frost Bite.</li>
+      <li><strong>Ice Cream Menu Choices</strong> – A variety of menu options can make deciding what flavor or treat to order surprisingly difficult.</li>
+      <li><strong>Favorite Ice Cream Flavors</strong> – Customers may stick with familiar favorites or choose something new.</li>
+      <li><strong>Trying New Ice Cream Flavors</strong> – Exploring different flavors can create new favorites and give customers another reason to return.</li>
+      <li><strong>Family &amp; Friends Outing</strong> – Frost Bite provides a casual destination for enjoying ice cream with friends and family.</li>
+      <li><strong>Avon Indiana Ice Cream Shop</strong> – Frost Bite serves the Avon community with ice cream, frozen treats, burgers, sandwiches, and more.</li>
+    </ul>
+
+    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1e1e1e;">NER Tags</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li><strong>ORGANIZATION:</strong> Frost Bite</li>
+      <li><strong>PERSON:</strong> Mayank Patel</li>
+      <li><strong>BUSINESS TYPE:</strong> Ice Cream Shop / Restaurant</li>
+      <li><strong>SERVICE:</strong> Ice Cream, Frozen Treats, Burgers, Sandwiches</li>
+      <li><strong>LOCATION:</strong> Avon, Indiana</li>
+      <li><strong>ADDRESS:</strong> 7025 Galen Dr W, Avon, IN 46123</li>
+      <li><strong>AUDIENCE:</strong> Families, Friends, Ice Cream Lovers</li>
+      <li><strong>CONCEPT:</strong> Ice Cream Flavors, Menu Choices, Favorite Treats, New Flavors, Family Outing, Sweet Treats</li>
+    </ul>
+  </div>
+</details>
 `.trim(),
+    schema: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://frostbite-avon-indiana.com/blogs/hardest-part-getting-ice-cream-frost-bite#blogposting",
+          "url": "https://frostbite-avon-indiana.com/blogs/hardest-part-getting-ice-cream-frost-bite",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://frostbite-avon-indiana.com/blogs/hardest-part-getting-ice-cream-frost-bite"
+          },
+          "headline": "The Hardest Part of Getting Ice Cream At Frost Bite",
+          "description": "Discover why choosing an ice cream flavor can be the hardest part of visiting Frost Bite in Avon, Indiana, from favorite flavors and new choices to enjoying treats with friends and family.",
+          "datePublished": "2026-08-19",
+          "dateModified": "2026-08-19",
+          "author": {
+            "@type": "Person",
+            "@id": "https://frostbite-avon-indiana.com/blogs/hardest-part-getting-ice-cream-frost-bite#author",
+            "name": "Mayank Patel"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://frostbite-avon-indiana.com/#organization",
+            "name": "Frost Bite",
+            "url": "https://frostbite-avon-indiana.com/"
+          },
+          "articleSection": "Ice Cream",
+          "inLanguage": "en-US",
+          "keywords": [
+            "ice cream",
+            "ice cream shop",
+            "ice cream Avon Indiana",
+            "Frost Bite",
+            "Avon Indiana ice cream",
+            "ice cream flavors",
+            "frozen treats",
+            "family ice cream outing",
+            "ice cream with friends"
+          ],
+          "about": [
+            { "@type": "Thing", "name": "Ice Cream" },
+            { "@type": "Thing", "name": "Ice Cream Flavors" },
+            { "@type": "Thing", "name": "Frozen Treats" },
+            { "@type": "Thing", "name": "Family Outings" },
+            { "@type": "Thing", "name": "Ice Cream Shops" }
+          ],
+          "mentions": [
+            { "@type": "Restaurant", "@id": "https://frostbite-avon-indiana.com/#restaurant" },
+            { "@type": "Place", "name": "Avon, Indiana" }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://frostbite-avon-indiana.com/blogs/hardest-part-getting-ice-cream-frost-bite",
+          "url": "https://frostbite-avon-indiana.com/blogs/hardest-part-getting-ice-cream-frost-bite",
+          "name": "The Hardest Part of Getting Ice Cream At Frost Bite",
+          "isPartOf": {
+            "@type": "Blog",
+            "@id": "https://frostbite-avon-indiana.com/#blog"
+          },
+          "about": {
+            "@type": "Thing",
+            "name": "Ice Cream"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Blog",
+          "@id": "https://frostbite-avon-indiana.com/#blog",
+          "name": "Frost Bite Blog",
+          "url": "https://frostbite-avon-indiana.com/blogs"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://frostbite-avon-indiana.com/blogs/hardest-part-getting-ice-cream-frost-bite#author",
+          "name": "Mayank Patel"
+        },
+        {
+          "@type": "Restaurant",
+          "@id": "https://frostbite-avon-indiana.com/#restaurant",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/",
+          "description": "Frost Bite is a family-owned and operated destination for ice cream, burgers, sandwiches, and other food items in Avon, Indiana.",
+          "telephone": "+1-317-272-2483",
+          "email": "frostbite7025@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "7025 Galen Dr W",
+            "addressLocality": "Avon",
+            "addressRegion": "IN",
+            "postalCode": "46123",
+            "addressCountry": "US"
+          },
+          "servesCuisine": [
+            "Ice Cream",
+            "American"
+          ],
+          "priceRange": "$$",
+          "foundingDate": "1991"
+        }
+      ]
+    })
   },
 ];

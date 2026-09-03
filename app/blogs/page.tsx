@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Breadcrumb from "@/components/common/breadcrumb";
 import { blogs } from "@/data/blogs";
+import { User, Calendar, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Frost Bite | homemade ice cream in Avon, Indiana",
@@ -100,16 +101,25 @@ export default function BlogListingPage() {
 
                 {/* Content Wrap */}
                 <div className="flex flex-col flex-1 p-6 md:p-8">
-                  <div className="flex items-center gap-2 mb-3 text-sm text-gray-500">
-                    <span>By Frost Bite</span>
-                    <span className="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
-                    <span>
-                      {new Date(blog.date).toLocaleDateString(undefined, {
-                        year: "numeric",
-                        month: "long",
-                        day: "2-digit",
-                      })}
-                    </span>
+                  <div className="flex flex-wrap items-center gap-3 md:gap-4 text-xs text-gray-500 mb-4 bg-gray-50/80 py-2 px-3 rounded-lg border border-gray-100 w-max max-w-full">
+                    <div className="flex items-center gap-1.5">
+                      <User className="w-3.5 h-3.5 text-[#c07f07]" />
+                      <span>{blog.author || "Frost Bite"}</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <Calendar className="w-3.5 h-3.5 text-[#c07f07]" />
+                      <span>
+                        {new Date(blog.date).toLocaleDateString(undefined, {
+                          year: "numeric",
+                          month: "short",
+                          day: "2-digit",
+                        })}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <Clock className="w-3.5 h-3.5 text-[#c07f07]" />
+                      <span>{blog.readTime || "4 minute read"}</span>
+                    </div>
                   </div>
 
                   <h2 className="text-xl md:text-2xl font-bold text-[#1e1e1e] group-hover:text-[#c07f07] transition-colors duration-300 line-clamp-2 leading-snug mb-3">

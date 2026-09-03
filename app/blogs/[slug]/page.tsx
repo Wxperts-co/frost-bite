@@ -66,7 +66,9 @@ export default async function BlogDetailPage({
   }
 
   // Filter other blogs to display in sidebar
-  const otherBlogs = blogs;
+  const otherBlogs = [...blogs].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 
   return (
     <>
@@ -94,7 +96,7 @@ export default async function BlogDetailPage({
                       src={blog.coverImage}
                       alt={blog.title}
                       fill
-                      className="object-contain"
+                      className="object-cover w-full h-full"
                       priority
                       sizes="(max-width: 924px) 100vw, 75vw"
                     />
@@ -203,6 +205,14 @@ export default async function BlogDetailPage({
           </div>
         </div>
       </section>
+
+      {/* JSON-LD Schema */}
+      {blog.schema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: blog.schema }}
+        />
+      )}
     </>
   );
 }
