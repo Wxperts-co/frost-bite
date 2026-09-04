@@ -202,7 +202,7 @@ Frost Bite in Avon, Indiana, is a place for people who take their frozen treats 
     <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1e1e1e;">NER Tags</h3>
     <ul style="list-style-type: none; padding-left: 0;">
       <li><strong>ORGANIZATION:</strong> Frost Bite</li>
-      <li><strong>PERSON:</strong> Mayank Patel</li>
+      <li><strong>PERSON:</strong> Mayank Patel (Author)</li>
       <li><strong>BUSINESS TYPE:</strong> Ice Cream Shop / Restaurant</li>
       <li><strong>SERVICE:</strong> Ice Cream, Frozen Treats, Burgers, Sandwiches</li>
       <li><strong>LOCATION:</strong> Avon, Indiana</li>
