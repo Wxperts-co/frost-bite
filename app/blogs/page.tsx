@@ -91,34 +91,34 @@ export default function BlogListingPage() {
                     </div>
                   )}
                   {/* Category/Date overlay */}
-                  <div className="absolute top-4 left-4 bg-[#c07f07] text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
-                    {new Date(blog.date).toLocaleDateString(undefined, {
-                      month: "short",
-                      day: "2-digit",
-                    })}
-                  </div>
+                  {!(blog.slug === 'handcrafted-ice-cream-avon-in' || blog.slug === 'family-ice-cream-shop-in-avon-in') && (
+                    <div className="absolute top-4 left-4 bg-[#c07f07] text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+                      {new Date(blog.date).toLocaleDateString(undefined, {
+                        month: "short",
+                        day: "2-digit",
+                      })}
+                    </div>
+                  )}
                 </div>
 
                 {/* Content Wrap */}
                 <div className="flex flex-col flex-1 p-6 md:p-8">
                   <div className="flex flex-wrap items-center gap-3 md:gap-4 text-xs text-gray-500 mb-4 bg-gray-50/80 py-2 px-3 rounded-lg border border-gray-100 w-max max-w-full">
+                    {!(blog.slug === 'handcrafted-ice-cream-avon-in' || blog.slug === 'family-ice-cream-shop-in-avon-in') && (
+                      <div className="flex items-center gap-1.5">
+                        <Calendar className="w-3.5 h-3.5 text-[#c07f07]" />
+                        <span>
+                          {new Date(blog.date).toLocaleDateString(undefined, {
+                            year: "numeric",
+                            month: "short",
+                            day: "2-digit",
+                          })}
+                        </span>
+                      </div>
+                    )}
                     <div className="flex items-center gap-1.5">
                       <User className="w-3.5 h-3.5 text-[#c07f07]" />
                       <span>{blog.author || "Frost Bite"}</span>
-                    </div>
-                    <div className="flex items-center gap-1.5">
-                      <Calendar className="w-3.5 h-3.5 text-[#c07f07]" />
-                      <span>
-                        {new Date(blog.date).toLocaleDateString(undefined, {
-                          year: "numeric",
-                          month: "short",
-                          day: "2-digit",
-                        })}
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-1.5">
-                      <Clock className="w-3.5 h-3.5 text-[#c07f07]" />
-                      <span>{blog.readTime || "7 minute read"}</span>
                     </div>
                   </div>
 

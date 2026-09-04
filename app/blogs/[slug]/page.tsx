@@ -104,18 +104,22 @@ export default async function BlogDetailPage({
                 )}
 
                 <div className="flex flex-wrap items-center gap-4 md:gap-6 text-sm text-gray-600 mb-6 bg-gray-50/80 py-3 px-4 rounded-xl border border-gray-100 w-max max-w-full shadow-sm">
+                  {!(blog.slug === 'handcrafted-ice-cream-avon-in' || blog.slug === 'family-ice-cream-shop-in-avon-in') && (
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4 text-[#c07f07]" />
+                      <span>{blog.date}</span>
+                    </div>
+                  )}
                   <div className="flex items-center gap-2">
                     <User className="w-4 h-4 text-[#c07f07]" />
                     <span>{blog.author || "Frost Bite"}</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-[#c07f07]" />
-                    <span>{blog.date}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-4 h-4 text-[#c07f07]" />
-                    <span>{blog.readTime || "5 minute read"}</span>
-                  </div>
+                  {!(blog.slug === 'handcrafted-ice-cream-avon-in' || blog.slug === 'family-ice-cream-shop-in-avon-in') && (
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-[#c07f07]" />
+                      <span>{blog.readTime || "5 minute read"}</span>
+                    </div>
+                  )}
                 </div>
 
                 <h1 className="text-2xl md:text-4xl font-bold text-[#1e1e1e] mb-6 font-['Playfair_Display'] leading-tight">
@@ -177,9 +181,11 @@ export default async function BlogDetailPage({
                           </div>
 
                           <div className="flex flex-col">
-                            <span className="text-xs text-gray-400">
-                              {item.date}
-                            </span>
+                            {!(item.slug === 'handcrafted-ice-cream-avon-in' || item.slug === 'family-ice-cream-shop-in-avon-in') && (
+                              <span className="text-xs text-gray-400">
+                                {item.date}
+                              </span>
+                            )}
 
                             <h4
                               className={`text-sm font-bold line-clamp-2 leading-snug transition-colors duration-300 ${
