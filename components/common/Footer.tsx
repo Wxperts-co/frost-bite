@@ -21,6 +21,7 @@ const Footer = () => {
     { name: "Food & Sandwiches", href: "/food-sandwiches" },
     { name: "Gallery", href: "/gallery" },
     { name: "Reviews", href: "/reviews" },
+    { name: "FAQs", href: "/faqs" },
     { name: "Contact Us", href: "/contact-us" },
   ];
 

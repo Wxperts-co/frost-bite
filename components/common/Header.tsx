@@ -28,7 +28,6 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Simple nav items - No dropdowns
   const navItems = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about-us" },
@@ -37,6 +36,7 @@ const Header = () => {
     { name: "Gallery", href: "/gallery" },
     { name: "Blogs", href: "/blogs" },
     { name: "Reviews", href: "/reviews" },
+    { name: "FAQs", href: "/faqs" },
     { name: "Contact Us", href: "/contact-us" },
   ];
 
