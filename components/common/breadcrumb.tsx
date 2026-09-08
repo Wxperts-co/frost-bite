@@ -56,9 +56,9 @@ export default function Breadcrumb({
               </div>
 
               {/* Title */}
-              <h3 className="text-white font-bold text-3xl md:text-5xl lg:text-6xl mb-4 font-['Playfair_Display']">
+              <span className="text-white font-bold text-3xl md:text-5xl lg:text-6xl mb-4 font-['Playfair_Display']">
                 {title}
-              </h3>
+              </span>
 
 
             </div>

@@ -80,16 +80,7 @@ const menuData = {
   ],
 };
 
-interface Props {
-  searchParams?: Promise<{ category?: string }>;
-}
-
-export default async function FoodSandwichesPage({ searchParams }: Props) {
-  const params = await searchParams || {};
-  const category = params?.category || "burgers";
-  const currentMenu = menuData[category as keyof typeof menuData] || menuData.burgers;
-  const currentCategory = foodCategories.find(c => c.id === category);
-
+export default function FoodSandwichesPage() {
   return (
     <>
       <Breadcrumb 
@@ -122,82 +113,92 @@ export default async function FoodSandwichesPage({ searchParams }: Props) {
             <div className="w-24 h-1 bg-gradient-to-r from-[#c07f07] to-[#046069] mx-auto rounded-full mt-6" />
           </div>
 
-          {/* Category Tabs */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
+          {/* Category Tabs - Anchor Jump Links */}
+          <div className="relative md:sticky md:top-[100px] z-20 pt-[10px] pb-4 bg-transparent mb-12">
+            <div className="flex flex-wrap justify-center gap-3 bg-white/95 py-4 rounded-xl shadow-sm border border-gray-100 px-4">
+              {foodCategories.map((cat) => {
+                const Icon = cat.icon;
+                return (
+                  <a
+                    key={cat.id}
+                    href={`#${cat.id}`}
+                    className="flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold transition-all duration-300 bg-gray-100 text-gray-700 hover:bg-[#c07f07]/10 hover:text-[#c07f07] cursor-pointer shadow-sm hover:scale-[1.02]"
+                  >
+                    <Icon size={16} />
+                    <span className="text-sm whitespace-nowrap">{cat.name}</span>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Category Sections */}
+          <div className="space-y-20">
             {foodCategories.map((cat) => {
+              const currentMenu = menuData[cat.id as keyof typeof menuData] || [];
               const Icon = cat.icon;
-              const isActive = category === cat.id;
+              
               return (
-                <Link
-                  key={cat.id}
-                  href={`/food-sandwiches?category=${cat.id}`}
-                  className={`flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold transition-all duration-300 ${
-                    isActive
-                      ? 'bg-gradient-to-r from-[#c07f07] to-[#046069] text-white shadow-lg shadow-[#c07f07]/20'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                  }`}
-                >
-                  <Icon size={16} />
-                  <span className="text-sm whitespace-nowrap">{cat.name}</span>
-                </Link>
-              );
-            })}
-          </div>
-
-          {/* Category Info */}
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#1e1e1e] mb-2">
-              {currentCategory?.name}
-            </h2>
-            <p className="text-gray-500">{currentCategory?.desc}</p>
-          </div>
-
-          {/* Menu Items Grid - 2 items per row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {currentMenu.map((item, idx) => (
-              <div
-                key={idx}
-                className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-              >
-                <div className="flex items-center gap-4 p-4">
-                  {/* Left Side - Image */}
-                  <div className="flex-shrink-0 w-24 h-24 md:w-28 md:h-28 rounded-xl overflow-hidden bg-gray-100">
-                    {item.image ? (
-                      <Image
-                        src={item.image}
-                        alt={item.name}
-                        width={112}
-                        height={112}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center bg-[#c07f07]/10">
-                        <FaHamburger className="text-[#c07f07]/40 text-4xl" />
-                      </div>
-                    )}
+                <div key={cat.id} id={cat.id} className="scroll-mt-36">
+                  {/* Category Info */}
+                  <div className="text-center mb-8">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#1e1e1e] mb-2 flex justify-center items-center gap-2">
+                      <Icon className="text-[#c07f07]" /> {cat.name}
+                    </h2>
+                    <p className="text-gray-500">{cat.desc}</p>
+                    <div className="w-16 h-1 bg-[#c07f07]/30 mx-auto rounded-full mt-4" />
                   </div>
-                  
-                  {/* Right Side - Name & Price */}
-                  <div className="flex-1">
-                    <div className="flex justify-between items-start gap-2">
-                      <div>
-                        <h3 className="text-gray-800 font-bold text-lg group-hover:text-[#c07f07] transition-colors">
-                          {item.name}
-                        </h3>
-                        {item.popular && (
-                          <span className="inline-block text-[10px] text-[#c07f07] font-semibold bg-[#c07f07]/10 px-2 py-0.5 rounded-full mt-1">
-                            Popular
-                          </span>
-                        )}
+
+                  {/* Menu Items Grid - 2 items per row */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {currentMenu.map((item, idx) => (
+                      <div
+                        key={idx}
+                        className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+                      >
+                        <div className="flex items-center gap-4 p-4">
+                          {/* Left Side - Image */}
+                          <div className="flex-shrink-0 w-24 h-24 md:w-28 md:h-28 rounded-xl overflow-hidden bg-gray-100">
+                            {item.image ? (
+                              <Image
+                                src={item.image}
+                                alt={item.name}
+                                width={112}
+                                height={112}
+                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                              />
+                            ) : (
+                              <div className="w-full h-full flex items-center justify-center bg-[#c07f07]/10">
+                                <FaHamburger className="text-[#c07f07]/40 text-4xl" />
+                              </div>
+                            )}
+                          </div>
+                          
+                          {/* Right Side - Name & Price */}
+                          <div className="flex-1">
+                            <div className="flex justify-between items-start gap-2">
+                              <div>
+                                <h3 className="text-gray-800 font-bold text-lg group-hover:text-[#c07f07] transition-colors">
+                                  {item.name}
+                                </h3>
+                                {item.popular && (
+                                  <span className="inline-block text-[10px] text-[#c07f07] font-semibold bg-[#c07f07]/10 px-2 py-0.5 rounded-full mt-1">
+                                    Popular
+                                  </span>
+                                )}
+                              </div>
+                              <div className="bg-[#c07f07]/10 px-3 py-1.5 rounded-full">
+                                <span className="text-[#c07f07] font-bold text-sm md:text-base">{item.price}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div className="bg-[#c07f07]/10 px-3 py-1.5 rounded-full">
-                        <span className="text-[#c07f07] font-bold text-sm md:text-base">{item.price}</span>
-                      </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           
