@@ -415,86 +415,155 @@ Frost Bite has been part of Avon since 1991. Being family owned gives the shop a
         {
           "@type": "BlogPosting",
           "@id": "https://frostbite-avon-indiana.com/blogs/signature-flavors-frost-bite-avon-indiana#blogposting",
-          "url": "https://frostbite-avon-indiana.com/blogs/signature-flavors-frost-bite-avon-indiana",
           "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://frostbite-avon-indiana.com/blogs/signature-flavors-frost-bite-avon-indiana"
           },
           "headline": "A Look At The Signature Flavors At Frost Bite In Avon, Indiana",
-          "description": "Discover the signature ice cream flavors at Frost Bite in Avon, Indiana, including hot fudge, cookie dough, mint chocolate chip and strawberry sundaes.",
+          "description": "Discover the signature ice cream flavors at Frost Bite in Avon, Indiana, including Hot Fudge Sundae, Cookie Dough Sundae, Mint Chocolate Chip and Strawberry Sundae.",
+          "url": "https://frostbite-avon-indiana.com/blogs/signature-flavors-frost-bite-avon-indiana",
           "datePublished": "2026-09-18",
           "dateModified": "2026-09-18",
           "author": {
-            "@type": "Person",
-            "@id": "https://frostbite-avon-indiana.com/blogs/signature-flavors-frost-bite-avon-indiana#author",
-            "name": "Mayank Patel"
+            "@id": "https://frostbite-avon-indiana.com/#author-mayank-patel"
           },
           "publisher": {
-            "@type": "Organization",
-            "@id": "https://frostbite-avon-indiana.com/#organization",
-            "name": "Frost Bite",
-            "url": "https://frostbite-avon-indiana.com/"
+            "@id": "https://frostbite-avon-indiana.com/#business"
           },
           "articleSection": "Ice Cream",
           "inLanguage": "en-US",
           "keywords": [
             "Frost Bite Avon Indiana",
-            "ice cream flavors Avon Indiana",
-            "signature ice cream flavors",
+            "signature ice cream flavors Avon Indiana",
             "ice cream shop Avon Indiana",
-            "hot fudge sundae Avon",
-            "cookie dough sundae Avon",
-            "mint chocolate chip Avon",
-            "strawberry sundae Avon",
+            "Hot Fudge Sundae Avon",
+            "Cookie Dough Sundae Avon",
+            "Mint Chocolate Chip Avon",
+            "Strawberry Sundae Avon",
             "ice cream in Avon Indiana",
             "Frost Bite ice cream"
           ],
           "about": [
-            { "@type": "Thing", "name": "Ice Cream Flavors" },
-            { "@type": "Thing", "name": "Signature Flavors" },
-            { "@type": "Thing", "name": "Sundaes" },
-            { "@type": "Thing", "name": "Frozen Treats" },
-            { "@type": "Thing", "name": "Ice Cream Shops" }
+            {
+              "@type": "Thing",
+              "name": "Signature Ice Cream Flavors"
+            },
+            {
+              "@type": "Thing",
+              "name": "Hot Fudge Sundae"
+            },
+            {
+              "@type": "Thing",
+              "name": "Cookie Dough Sundae"
+            },
+            {
+              "@type": "Thing",
+              "name": "Mint Chocolate Chip"
+            },
+            {
+              "@type": "Thing",
+              "name": "Strawberry Sundae"
+            },
+            {
+              "@type": "Thing",
+              "name": "Ice Cream Variety"
+            },
+            {
+              "@type": "Thing",
+              "name": "Local Ice Cream Shop"
+            },
+            {
+              "@type": "Thing",
+              "name": "Family-Friendly Dessert Experience"
+            }
           ],
           "mentions": [
-            { "@type": "Restaurant", "@id": "https://frostbite-avon-indiana.com/#restaurant" },
-            { "@type": "Place", "name": "Avon, Indiana" }
-          ]
+            {
+              "@id": "https://frostbite-avon-indiana.com/#business"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Hot Fudge Sundae",
+              "description": "A classic ice cream dessert combining creamy ice cream with warm, rich chocolate fudge."
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Cookie Dough Sundae",
+              "description": "A vanilla ice cream sundae featuring cookie dough pieces."
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Mint Chocolate Chip",
+              "description": "Ice cream combining cool mint flavor with chocolate chips."
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Strawberry Sundae",
+              "description": "A creamy ice cream dessert featuring strawberry flavor."
+            }
+          ],
+          "isPartOf": {
+            "@id": "https://frostbite-avon-indiana.com/#website"
+          }
         },
         {
           "@type": "WebPage",
           "@id": "https://frostbite-avon-indiana.com/blogs/signature-flavors-frost-bite-avon-indiana",
           "url": "https://frostbite-avon-indiana.com/blogs/signature-flavors-frost-bite-avon-indiana",
           "name": "A Look At The Signature Flavors At Frost Bite In Avon, Indiana",
+          "description": "A guide to signature ice cream flavors and frozen desserts available at Frost Bite in Avon, Indiana.",
           "isPartOf": {
-            "@type": "Blog",
-            "@id": "https://frostbite-avon-indiana.com/#blog"
+            "@id": "https://frostbite-avon-indiana.com/#website"
           },
           "about": {
-            "@type": "Thing",
-            "name": "Ice Cream"
+            "@id": "https://frostbite-avon-indiana.com/#business"
+          },
+          "breadcrumb": {
+            "@id": "https://frostbite-avon-indiana.com/blogs/signature-flavors-frost-bite-avon-indiana#breadcrumb"
           },
           "inLanguage": "en-US"
         },
         {
-          "@type": "Blog",
-          "@id": "https://frostbite-avon-indiana.com/#blog",
-          "name": "Frost Bite Blog",
-          "url": "https://frostbite-avon-indiana.com/blogs"
+          "@type": "BreadcrumbList",
+          "@id": "https://frostbite-avon-indiana.com/blogs/signature-flavors-frost-bite-avon-indiana#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://frostbite-avon-indiana.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blogs",
+              "item": "https://frostbite-avon-indiana.com/blogs"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "A Look At The Signature Flavors At Frost Bite In Avon, Indiana",
+              "item": "https://frostbite-avon-indiana.com/blogs/signature-flavors-frost-bite-avon-indiana"
+            }
+          ]
         },
         {
           "@type": "Person",
-          "@id": "https://frostbite-avon-indiana.com/blogs/signature-flavors-frost-bite-avon-indiana#author",
-          "name": "Mayank Patel"
+          "@id": "https://frostbite-avon-indiana.com/#author-mayank-patel",
+          "name": "Mayank Patel",
+          "jobTitle": "Author",
+          "worksFor": {
+            "@id": "https://frostbite-avon-indiana.com/#business"
+          }
         },
         {
-          "@type": "Restaurant",
-          "@id": "https://frostbite-avon-indiana.com/#restaurant",
+          "@type": "IceCreamShop",
+          "@id": "https://frostbite-avon-indiana.com/#business",
           "name": "Frost Bite",
           "url": "https://frostbite-avon-indiana.com/",
-          "description": "Frost Bite is a family-owned and operated destination for ice cream, burgers, sandwiches, and other food items in Avon, Indiana.",
           "telephone": "+1-317-272-2483",
           "email": "frostbite7025@gmail.com",
+          "description": "Family-owned ice cream shop in Avon, Indiana, serving handcrafted frozen treats, soft serve, hard ice cream, shakes, sundaes and other menu items.",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "7025 Galen Dr W",
@@ -503,12 +572,72 @@ Frost Bite has been part of Avon since 1991. Being family owned gives the shop a
             "postalCode": "46123",
             "addressCountry": "US"
           },
-          "servesCuisine": [
+          "areaServed": {
+            "@type": "City",
+            "name": "Avon"
+          },
+          "foundingDate": "1991",
+          "knowsAbout": [
             "Ice Cream",
-            "American"
+            "Frozen Treats",
+            "Sundaes",
+            "Soft Serve",
+            "Hard Ice Cream",
+            "Shakes",
+            "Signature Ice Cream Flavors"
           ],
-          "priceRange": "$$",
-          "foundingDate": "1991"
+          "hasMenu": {
+            "@type": "Menu",
+            "name": "Frost Bite Menu",
+            "hasMenuSection": [
+              {
+                "@type": "MenuSection",
+                "name": "Signature Flavors",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": "Hot Fudge Sundae"
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Cookie Dough Sundae"
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Mint Chocolate Chip"
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Strawberry Sundae"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://frostbite-avon-indiana.com/#ice-cream-service",
+          "name": "Ice Cream and Frozen Desserts",
+          "serviceType": "Ice Cream Shop",
+          "description": "Freshly made ice cream, frozen treats, sundaes and specialty desserts served at Frost Bite in Avon, Indiana.",
+          "provider": {
+            "@id": "https://frostbite-avon-indiana.com/#business"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Avon"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://frostbite-avon-indiana.com/#website",
+          "url": "https://frostbite-avon-indiana.com/",
+          "name": "Frost Bite",
+          "publisher": {
+            "@id": "https://frostbite-avon-indiana.com/#business"
+          },
+          "inLanguage": "en-US"
         }
       ]
     })
