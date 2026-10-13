@@ -226,8 +226,8 @@ Frost Bite in Avon, Indiana, is a place for people who take their frozen treats 
           },
           "headline": "The Hardest Part of Getting Ice Cream At Frost Bite",
           "description": "Discover why choosing an ice cream flavor can be the hardest part of visiting Frost Bite in Avon, Indiana, from favorite flavors and new choices to enjoying treats with friends and family.",
-          "datePublished": "2026-08-19",
-          "dateModified": "2026-08-19",
+          "datePublished": "2026-10-12",
+          "dateModified": "2026-10-12",
           "author": {
             "@type": "Person",
             "@id": "https://frostbite-avon-indiana.com/blogs/hardest-part-getting-ice-cream-frost-bite#author",
@@ -627,6 +627,386 @@ Frost Bite has been part of Avon since 1991. Being family owned gives the shop a
           "areaServed": {
             "@type": "City",
             "name": "Avon"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://frostbite-avon-indiana.com/#website",
+          "url": "https://frostbite-avon-indiana.com/",
+          "name": "Frost Bite",
+          "publisher": {
+            "@id": "https://frostbite-avon-indiana.com/#business"
+          },
+          "inLanguage": "en-US"
+        }
+      ]
+    })
+  },
+  {
+    id: "classic-hamburger-vs-double-cheeseburger-frost-bite-avon-indiana",
+
+    slug: "classic-hamburger-vs-double-cheeseburger-frost-bite-avon-indiana",
+
+    title: "A Classic Hamburger Or A Double Cheeseburger? What To Order At Frost Bite In Avon, Indiana",
+
+    metaTitle: "Hamburger vs. Double Cheeseburger | Frost Bite Avon, IN",
+
+    canonicalUrl: "https://frostbite-avon-indiana.com/blogs/classic-hamburger-vs-double-cheeseburger-frost-bite-avon-indiana",
+
+    description: "Compare hamburgers, cheeseburgers, double burgers and bacon cheeseburgers at Frost Bite in Avon, Indiana. Explore menu prices, sides and ice cream treats.",
+
+    coverImage: "/images/blog/oct-2026.jpg",
+    date: "Oct 13, 2026",
+
+    keywords: [
+      "Frost Bite Avon Indiana",
+      "hamburger Avon Indiana",
+      "double cheeseburger Avon Indiana",
+      "Frost Bite burger menu",
+      "hamburger vs double cheeseburger",
+      "cheeseburger prices Avon Indiana",
+      "double hamburger",
+      "bacon cheeseburger Avon",
+      "family restaurant Avon Indiana",
+      "Frost Bite menu prices",
+      "hot dog Avon Indiana",
+      "ice cream Avon Indiana",
+      "burgers in Avon Indiana"
+    ],
+
+    author: "Mayank Patel",
+
+    readTime: "4 minute read",
+
+    content: `
+<p>
+There is a particular kind of hunger that calls for a burger. Not a complicated meal or something that takes ages to decide on, just a burger with the toppings you like and enough to satisfy your appetite. The only real question is which one to get. At Frost Bite in Avon, Indiana, the burger menu ranges from a simple hamburger to a double cheeseburger and a bacon cheeseburger. Each option offers something a little different, so choosing between them depends on whether you want to keep your meal basic or add a little more to it. Frost Bite has been family-owned and operated since 1991, serving familiar food favourites alongside sandwiches, hot dogs, chicken, sides, combos and ice cream treats. Explore the <a href="/menu" style="color:#0000EE;text-decoration:underline;">Frost Bite menu</a> to see the available food options.
+</p>
+
+<h2>Start With The Burger You Usually Crave</h2>
+
+<p>
+Some people rarely stray from a classic hamburger. Others would not consider ordering one without cheese. Frost Bite has options for both. The Hamburger costs $8.00. It is the most straightforward choice on the burger menu for anyone who wants a traditional beef burger without cheese. The Cheeseburger, priced at $9.10, adds cheese to that familiar combination. It is also listed among the restaurant's popular items. If cheese is the part of a burger you look forward to most, this is an easy option to consider. Then there is the question of portion size. When one patty does not sound like enough, the Double Hamburger costs $10.00 and gives you two beef patties instead. It offers a way to order a larger burger without adding cheese.
+</p>
+
+<h2>Two Patties And Cheese Make A Different Kind Of Order</h2>
+
+<p>
+The Double Cheeseburger, priced at $11.45, combines two beef patties with cheese. It is marked as a popular choice at Frost Bite and is worth looking at if you prefer a burger with a more substantial portion of beef. There is no need to overthink the menu. If you want a straightforward burger, the hamburger does the job. If cheese is essential, choose the cheeseburger. If you want more beef, the double hamburger or double cheeseburger gives you that option.
+</p>
+
+<h2>Bacon Belongs In The Conversation Too</h2>
+
+<p>
+A bacon cheeseburger has a different appeal from a standard cheeseburger. The menu lists several ways to order a beef burger, but these differences are useful when deciding what to have. Sometimes you want to keep lunch simple; other times, adding bacon or choosing a double patty sounds more appealing. The prices also give customers a straightforward way to compare the available options before ordering.
+</p>
+
+<h2>Not Everyone At The Table Wants A Burger</h2>
+
+<p>
+One person might be set on a cheeseburger while someone else would rather have something different. That is where the rest of the menu comes in. Frost Bite offers a Hot Dog for $5.75, along with chicken, sandwiches, sides and combos. This gives groups more flexibility than a menu built around just one main item. It can be particularly convenient for families. Adults can choose their preferred burgers, while other members of the group can order a sandwich or hot dog instead. Combos are another option for anyone who wants to put together a fuller meal. Learn more about this <a href="/about-us" style="color:#0000EE;text-decoration:underline;">family-owned restaurant</a> and its longstanding presence in Avon.
+</p>
+
+<h2>The Ice Cream Menu Deserves A Look Before You Leave</h2>
+
+<p>
+Frost Bite also serves ice cream treats, which gives customers something sweet to choose after their meal or during a separate visit. The Hot Fudge Sundae is the choice for anyone who likes vanilla ice cream with rich chocolate fudge. If you prefer a little texture in your dessert, the Cookie Dough Sundae combines vanilla ice cream with cookie dough pieces. Discover more <a href="/blogs/signature-flavors-frost-bite-avon-indiana" style="color:#0000EE;text-decoration:underline;">signature ice cream flavors at Frost Bite</a>.
+</p>
+
+<h2>A Longstanding Family-Owned Spot In Avon</h2>
+
+<p>
+Frost Bite has been family-owned and operated since 1991. Its menu focuses on familiar choices that work for a quick lunch, a casual meal with family or a stop when you want a burger without a complicated decision. For first-time visitors, the cheeseburger and double cheeseburger are two popular options to consider. The hamburger keeps things simple, the double hamburger offers more beef, and the bacon cheeseburger brings another flavour into the mix. Hot dogs, sandwiches, chicken and ice cream provide alternatives for anyone who wants something else.
+</p>
+`.trim(),
+
+    schema: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://frostbite-avon-indiana.com/blogs/classic-hamburger-vs-double-cheeseburger-frost-bite-avon-indiana#blogposting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://frostbite-avon-indiana.com/blogs/classic-hamburger-vs-double-cheeseburger-frost-bite-avon-indiana"
+          },
+          "headline": "A Classic Hamburger Or A Double Cheeseburger? What To Order At Frost Bite In Avon, Indiana",
+          "description": "Compare hamburgers, cheeseburgers, double burgers and bacon cheeseburgers at Frost Bite in Avon, Indiana. Explore menu prices, sides and ice cream treats.",
+          "url": "https://frostbite-avon-indiana.com/blogs/classic-hamburger-vs-double-cheeseburger-frost-bite-avon-indiana",
+          "image": "https://frostbite-avon-indiana.com/images/blog/oct-2026.jpg",
+          "author": {
+            "@type": "Organization",
+            "name": "Frost Bite Editorial Team"
+          },
+          "publisher": {
+            "@id": "https://frostbite-avon-indiana.com/#business"
+          },
+          "articleSection": "Food and Restaurant Menu",
+          "inLanguage": "en-US",
+          "keywords": [
+            "Frost Bite Avon Indiana",
+            "hamburger Avon Indiana",
+            "double cheeseburger Avon Indiana",
+            "Frost Bite burger menu",
+            "hamburger vs double cheeseburger",
+            "cheeseburger prices Avon Indiana",
+            "double hamburger",
+            "bacon cheeseburger Avon",
+            "family restaurant Avon Indiana",
+            "Frost Bite menu prices",
+            "hot dog Avon Indiana",
+            "ice cream Avon Indiana",
+            "burgers in Avon Indiana"
+          ],
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Hamburger Menu"
+            },
+            {
+              "@type": "Thing",
+              "name": "Double Cheeseburger"
+            },
+            {
+              "@type": "Thing",
+              "name": "Burger Menu Prices"
+            },
+            {
+              "@type": "Thing",
+              "name": "Family Dining"
+            },
+            {
+              "@type": "Thing",
+              "name": "Ice Cream Desserts"
+            },
+            {
+              "@type": "Thing",
+              "name": "Local Restaurant in Avon, Indiana"
+            }
+          ],
+          "mentions": [
+            {
+              "@id": "https://frostbite-avon-indiana.com/#business"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Hamburger",
+              "offers": {
+                "@type": "Offer",
+                "price": "8.00",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Cheeseburger",
+              "offers": {
+                "@type": "Offer",
+                "price": "9.10",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Double Hamburger",
+              "offers": {
+                "@type": "Offer",
+                "price": "10.00",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Double Cheeseburger",
+              "offers": {
+                "@type": "Offer",
+                "price": "11.45",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Hot Dog",
+              "offers": {
+                "@type": "Offer",
+                "price": "5.75",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Bacon Cheeseburger"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Hot Fudge Sundae"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Cookie Dough Sundae"
+            }
+          ],
+          "isPartOf": {
+            "@id": "https://frostbite-avon-indiana.com/#website"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://frostbite-avon-indiana.com/blogs/classic-hamburger-vs-double-cheeseburger-frost-bite-avon-indiana",
+          "url": "https://frostbite-avon-indiana.com/blogs/classic-hamburger-vs-double-cheeseburger-frost-bite-avon-indiana",
+          "name": "A Classic Hamburger Or A Double Cheeseburger? What To Order At Frost Bite In Avon, Indiana",
+          "description": "Compare hamburgers, cheeseburgers, double burgers and bacon cheeseburgers at Frost Bite in Avon, Indiana. Explore menu prices, sides and ice cream treats.",
+          "isPartOf": {
+            "@id": "https://frostbite-avon-indiana.com/#website"
+          },
+          "about": {
+            "@id": "https://frostbite-avon-indiana.com/#business"
+          },
+          "breadcrumb": {
+            "@id": "https://frostbite-avon-indiana.com/blogs/classic-hamburger-vs-double-cheeseburger-frost-bite-avon-indiana#breadcrumb"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://frostbite-avon-indiana.com/blogs/classic-hamburger-vs-double-cheeseburger-frost-bite-avon-indiana#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://frostbite-avon-indiana.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blogs",
+              "item": "https://frostbite-avon-indiana.com/blogs"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "A Classic Hamburger Or A Double Cheeseburger? What To Order At Frost Bite In Avon, Indiana",
+              "item": "https://frostbite-avon-indiana.com/blogs/classic-hamburger-vs-double-cheeseburger-frost-bite-avon-indiana"
+            }
+          ]
+        },
+        {
+          "@type": "Restaurant",
+          "@id": "https://frostbite-avon-indiana.com/#business",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/",
+          "description": "Family-owned and operated since 1991, Frost Bite serves burgers, hot dogs, chicken, sandwiches, sides, combos and ice cream treats in Avon, Indiana.",
+          "foundingDate": "1991",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Avon",
+            "addressRegion": "IN",
+            "addressCountry": "US"
+          },
+          "knowsAbout": [
+            "Hamburgers",
+            "Cheeseburgers",
+            "Double Cheeseburgers",
+            "Bacon Cheeseburgers",
+            "Hot Dogs",
+            "Sandwiches",
+            "Chicken",
+            "Ice Cream",
+            "Sundaes"
+          ],
+          "hasMenu": {
+            "@type": "Menu",
+            "name": "Frost Bite Burger and Dessert Menu",
+            "hasMenuSection": [
+              {
+                "@type": "MenuSection",
+                "name": "Burgers",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": "Hamburger",
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "8.00",
+                      "priceCurrency": "USD"
+                    }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Cheeseburger",
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "9.10",
+                      "priceCurrency": "USD"
+                    }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Double Hamburger",
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "10.00",
+                      "priceCurrency": "USD"
+                    }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Double Cheeseburger",
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "11.45",
+                      "priceCurrency": "USD"
+                    }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Bacon Cheeseburger"
+                  }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": "Other Menu Items",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": "Hot Dog",
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "5.75",
+                      "priceCurrency": "USD"
+                    }
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Chicken"
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Sandwiches"
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Combos"
+                  }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": "Ice Cream and Desserts",
+                "hasMenuItem": [
+                  {
+                    "@type": "MenuItem",
+                    "name": "Hot Fudge Sundae"
+                  },
+                  {
+                    "@type": "MenuItem",
+                    "name": "Cookie Dough Sundae"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
