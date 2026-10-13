@@ -745,7 +745,6 @@ Frost Bite has been family-owned and operated since 1991. Its menu focuses on fa
       <li><strong>BUSINESS TYPE:</strong> Restaurant, Family-Owned Food Establishment</li>
       <li><strong>SERVICE:</strong> Burger Menu, Casual Dining, Food Service, Takeaway Food, Ice Cream and Dessert Service</li>
       <li><strong>LOCATION:</strong> Avon, Indiana</li>
-      <li><strong>ADDRESS:</strong> Not explicitly provided in the supplied article</li>
       <li><strong>FOOD / MENU ITEMS:</strong> Hamburger, Cheeseburger, Double Hamburger, Double Cheeseburger, Bacon Cheeseburger, Hot Dog, Chicken, Sandwiches, Sides, Combos, Hot Fudge Sundae, Cookie Dough Sundae</li>
       <li><strong>PRICE:</strong> Hamburger ($8.00), Cheeseburger ($9.10), Double Hamburger ($10.00), Double Cheeseburger ($11.45), Hot Dog ($5.75)</li>
       <li><strong>AUDIENCE:</strong> Families, Local Customers, Burger Lovers, Casual Diners, Ice Cream Lovers</li>
