@@ -718,6 +718,43 @@ Frost Bite also serves ice cream treats, which gives customers something sweet t
 <p>
 Frost Bite has been family-owned and operated since 1991. Its menu focuses on familiar choices that work for a quick lunch, a casual meal with family or a stop when you want a burger without a complicated decision. For first-time visitors, the cheeseburger and double cheeseburger are two popular options to consider. The hamburger keeps things simple, the double hamburger offers more beef, and the bacon cheeseburger brings another flavour into the mix. Hot dogs, sandwiches, chicken and ice cream provide alternatives for anyone who wants something else.
 </p>
+<details style="margin-top: 2rem; padding: 1rem; border: 1px solid #eee; border-radius: 8px; background: #f9f9f9;">
+  <summary style="font-weight: bold; cursor: pointer; color: #c07f07;">Semantic Keynotes &amp; Named Entity Recognition (NER) Tags</summary>
+
+  <div style="margin-top: 1rem;">
+
+    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1e1e1e;">Semantic Keynotes</h3>
+
+    <ul style="padding: 1.25rem;">
+      <li><strong>Hamburger vs. Double Cheeseburger</strong> – Explores the differences between classic hamburgers, cheeseburgers, double hamburgers and double cheeseburgers at Frost Bite in Avon, Indiana.</li>
+      <li><strong>Frost Bite Burger Menu Prices</strong> – Provides the listed prices for the Hamburger at $8.00, Cheeseburger at $9.10, Double Hamburger at $10.00 and Double Cheeseburger at $11.45.</li>
+      <li><strong>Classic Hamburger Options</strong> – Covers straightforward beef burger choices for customers who prefer a traditional hamburger without cheese.</li>
+      <li><strong>Double Burger Portions</strong> – Highlights the Double Hamburger and Double Cheeseburger as options for customers who want two beef patties.</li>
+      <li><strong>Bacon Cheeseburger Choice</strong> – Discusses the bacon cheeseburger as an alternative for customers who want a different flavour from a standard cheeseburger.</li>
+      <li><strong>Family-Friendly Menu Variety</strong> – Explains how hot dogs, chicken, sandwiches, sides and combos offer alternatives for families and groups with different food preferences.</li>
+      <li><strong>Ice Cream and Sundae Desserts</strong> – Highlights the Hot Fudge Sundae and Cookie Dough Sundae as dessert options available alongside the restaurant's savoury menu.</li>
+      <li><strong>Family-Owned Restaurant Since 1991</strong> – Emphasises Frost Bite's longstanding family-owned operation and its familiar food offerings in Avon, Indiana.</li>
+      <li><strong>Local Burger Search Intent</strong> – Addresses customers looking for hamburgers, cheeseburgers, burger prices and casual dining options in Avon, Indiana.</li>
+      <li><strong>Informed Menu Selection</strong> – Helps readers compare burger types, cheese options, patty portions and prices before ordering.</li>
+    </ul>
+
+    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1e1e1e;">NER Tags</h3>
+
+    <ul style="padding: 1.25rem;">
+      <li><strong>ORGANIZATION:</strong> Frost Bite</li>
+      <li><strong>BUSINESS TYPE:</strong> Restaurant, Family-Owned Food Establishment</li>
+      <li><strong>SERVICE:</strong> Burger Menu, Casual Dining, Food Service, Takeaway Food, Ice Cream and Dessert Service</li>
+      <li><strong>LOCATION:</strong> Avon, Indiana</li>
+      <li><strong>ADDRESS:</strong> Not explicitly provided in the supplied article</li>
+      <li><strong>FOOD / MENU ITEMS:</strong> Hamburger, Cheeseburger, Double Hamburger, Double Cheeseburger, Bacon Cheeseburger, Hot Dog, Chicken, Sandwiches, Sides, Combos, Hot Fudge Sundae, Cookie Dough Sundae</li>
+      <li><strong>PRICE:</strong> Hamburger ($8.00), Cheeseburger ($9.10), Double Hamburger ($10.00), Double Cheeseburger ($11.45), Hot Dog ($5.75)</li>
+      <li><strong>AUDIENCE:</strong> Families, Local Customers, Burger Lovers, Casual Diners, Ice Cream Lovers</li>
+      <li><strong>CONCEPT:</strong> Burger Comparisons, Menu Prices, Portion Size, Cheese Options, Bacon Toppings, Family Dining, Menu Variety, Ice Cream Desserts, Local Restaurant</li>
+      <li><strong>LOCAL SEARCH ENTITY:</strong> Burgers in Avon, Indiana</li>
+    </ul>
+
+  </div>
+</details>
 `.trim(),
 
     schema: JSON.stringify({
