@@ -32,8 +32,67 @@ export const metadata: Metadata = {
 };
 
 export default function MenuPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Menu",
+        "@id": "https://frostbite-avon-indiana.com/menu#menu",
+        "url": "https://frostbite-avon-indiana.com/menu",
+        "name": "Frost Bite Full Menu",
+        "description": "Explore Frost Bite's full menu in Avon, IN—soft serve, chocolate vanilla, hard ice cream, food, burger, hot dogs, etc.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://frostbite-avon-indiana.com/#website",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "@id": "https://frostbite-avon-indiana.com/menu#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://frostbite-avon-indiana.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Menu",
+              "item": "https://frostbite-avon-indiana.com/menu"
+            }
+          ]
+        },
+        "hasMenuSection": categories.map((cat) => ({
+          "@type": "MenuSection",
+          "name": cat.name,
+          "description": cat.desc,
+          "hasMenuItem": (menuData[cat.id] || []).slice(0, 10).map((item) => ({
+            "@type": "MenuItem",
+            "name": item.name,
+            "description": item.desc,
+            "offers": {
+              "@type": "Offer",
+              "price": item.price.includes("$") ? item.price.split("$")[1].split(" ")[0].trim() : "0.00",
+              "priceCurrency": "USD"
+            }
+          }))
+        }))
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
+        }}
+      />
       <Breadcrumb
         title="Our Menu"
         backgroundImage="/images/inner-bg-1.jpg"

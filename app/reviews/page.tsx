@@ -102,10 +102,89 @@ const stats = [
   { number: "150+", label: "5-Star Reviews", icon: FaHeart, color: "text-red-500" },
 ];
 
-// This is a Server Component - no useState, useEffect
 export default async function ReviewsPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ItemPage",
+        "@id": "https://frostbite-avon-indiana.com/reviews#webpage",
+        "url": "https://frostbite-avon-indiana.com/reviews",
+        "name": "Frost Bite | Customer Reviews Avon, IN",
+        "description": "Read real customer reviews about handcrafted ice cream, famous breaded tenderloins, and burgers at Frost Bite in Avon, IN.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://frostbite-avon-indiana.com/#website",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "@id": "https://frostbite-avon-indiana.com/reviews#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://frostbite-avon-indiana.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Customer Reviews",
+              "item": "https://frostbite-avon-indiana.com/reviews"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "Restaurant",
+          "@id": "https://frostbite-avon-indiana.com/#restaurant",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/",
+          "telephone": "+1-317-272-2483",
+          "email": "frostbite7025@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "7025 Galen Dr W",
+            "addressLocality": "Avon",
+            "addressRegion": "IN",
+            "postalCode": "46123",
+            "addressCountry": "US"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1",
+            "reviewCount": "807"
+          },
+          "review": testimonials.map((t) => ({
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": t.name
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": t.rating,
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "reviewBody": t.text
+          }))
+        }
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
+        }}
+      />
       <Breadcrumb 
         title="Customer Reviews" 
         backgroundImage="/images/inner-bg-1.jpg"

@@ -72,6 +72,79 @@ At Frost Bite, quality is not treated like an extra feature. It is the starting 
 </p>
 
 `.trim(),
+    schema: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://frostbite-avon-indiana.com/blogs/handcrafted-ice-cream-avon-in#blogposting",
+          "url": "https://frostbite-avon-indiana.com/blogs/handcrafted-ice-cream-avon-in",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://frostbite-avon-indiana.com/blogs/handcrafted-ice-cream-avon-in"
+          },
+          "headline": "The Journey of Ice Cream Before It Even Reaches Your Cone",
+          "description": "Discover how handcrafted ice cream is made using quality ingredients for rich flavor and creamy texture. Visit Frost Bite in Avon, IN for every favorite scoop.",
+          "image": "https://frostbite-avon-indiana.com/images/ice-cream-3.png",
+          "datePublished": "2026-07-07",
+          "dateModified": "2026-07-07",
+          "author": {
+            "@type": "Person",
+            "@id": "https://frostbite-avon-indiana.com/#author-mayank-patel",
+            "name": "Mayank Patel"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://frostbite-avon-indiana.com/#organization",
+            "name": "Frost Bite",
+            "url": "https://frostbite-avon-indiana.com/"
+          },
+          "articleSection": "Ice Cream",
+          "inLanguage": "en-US",
+          "keywords": [
+            "handcrafted ice cream in Avon, IN",
+            "ice cream shop Avon, Indiana",
+            "Frost Bite Avon, IN",
+            "ice cream near me Avon, Indiana",
+            "best ice cream Avon, IN",
+            "soft serve ice cream Avon, Indiana"
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://frostbite-avon-indiana.com/blogs/handcrafted-ice-cream-avon-in",
+          "url": "https://frostbite-avon-indiana.com/blogs/handcrafted-ice-cream-avon-in",
+          "name": "The Journey of Ice Cream Before It Even Reaches Your Cone",
+          "isPartOf": {
+            "@type": "Blog",
+            "@id": "https://frostbite-avon-indiana.com/#blog"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Blog",
+          "@id": "https://frostbite-avon-indiana.com/#blog",
+          "name": "Frost Bite Blog",
+          "url": "https://frostbite-avon-indiana.com/blogs"
+        },
+        {
+          "@type": "Restaurant",
+          "@id": "https://frostbite-avon-indiana.com/#restaurant",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/",
+          "telephone": "+1-317-272-2483",
+          "email": "frostbite7025@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "7025 Galen Dr W",
+            "addressLocality": "Avon",
+            "addressRegion": "IN",
+            "postalCode": "46123",
+            "addressCountry": "US"
+          }
+        }
+      ]
+    })
   },
   {
     id: "blog-nobody-lets-eat-ice-cream",
@@ -130,6 +203,79 @@ There is something different about walking into a place that belongs to the comm
 </p>
 
 `.trim(),
+    schema: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://frostbite-avon-indiana.com/blogs/family-ice-cream-shop-in-avon-in#blogposting",
+          "url": "https://frostbite-avon-indiana.com/blogs/family-ice-cream-shop-in-avon-in",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://frostbite-avon-indiana.com/blogs/family-ice-cream-shop-in-avon-in"
+          },
+          "headline": "Nobody Ever Says, Lets Make Memories. They Always Say Come Lets Eat Ice Cream",
+          "description": "Some of life's best memories begin with ice cream. Visit Frost Bite, your favorite ice cream shop in Avon, IN, for handcrafted treats, sundaes, and family fun.",
+          "image": "https://frostbite-avon-indiana.com/images/ice-cream-about3.png",
+          "datePublished": "2026-06-19",
+          "dateModified": "2026-06-19",
+          "author": {
+            "@type": "Person",
+            "@id": "https://frostbite-avon-indiana.com/#author-mayank-patel",
+            "name": "Mayank Patel"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://frostbite-avon-indiana.com/#organization",
+            "name": "Frost Bite",
+            "url": "https://frostbite-avon-indiana.com/"
+          },
+          "articleSection": "Family & Community",
+          "inLanguage": "en-US",
+          "keywords": [
+            "family ice cream shop in Avon, IN",
+            "ice cream shop Avon, Indiana",
+            "Frost Bite Avon, IN",
+            "ice cream near me Avon, Indiana",
+            "best ice cream Avon, IN",
+            "soft serve ice cream Avon, Indiana"
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://frostbite-avon-indiana.com/blogs/family-ice-cream-shop-in-avon-in",
+          "url": "https://frostbite-avon-indiana.com/blogs/family-ice-cream-shop-in-avon-in",
+          "name": "Nobody Ever Says, Lets Make Memories. They Always Say Come Lets Eat Ice Cream",
+          "isPartOf": {
+            "@type": "Blog",
+            "@id": "https://frostbite-avon-indiana.com/#blog"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Blog",
+          "@id": "https://frostbite-avon-indiana.com/#blog",
+          "name": "Frost Bite Blog",
+          "url": "https://frostbite-avon-indiana.com/blogs"
+        },
+        {
+          "@type": "Restaurant",
+          "@id": "https://frostbite-avon-indiana.com/#restaurant",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/",
+          "telephone": "+1-317-272-2483",
+          "email": "frostbite7025@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "7025 Galen Dr W",
+            "addressLocality": "Avon",
+            "addressRegion": "IN",
+            "postalCode": "46123",
+            "addressCountry": "US"
+          }
+        }
+      ]
+    })
   },
   {
     id: "blog-hardest-part-getting-ice-cream",
