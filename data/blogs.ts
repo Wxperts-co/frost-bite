@@ -1058,4 +1058,239 @@ Frost Bite has been family-owned and operated since 1991. Its menu focuses on fa
       ]
     })
   },
+  {
+    id: "frost-bite-avon-in-ice-cream-milkshakes-burgers",
+    slug: "frost-bite-avon-in-ice-cream-milkshakes-burgers",
+    title: "Discover the Many Ways to Enjoy Frost Bite in Avon, IN",
+    metaTitle: "Frost Bite in Avon, IN: Ice Cream, Shakes, Burgers & More",
+    canonicalUrl:
+      "https://frostbite-avon-indiana.com/blogs/frost-bite-avon-in-ice-cream-milkshakes-burgers",
+    description:
+      "Explore Frost Bite in Avon, Indiana: soft serve, sundaes, milkshakes, signature Frost creations, burgers and sides. Family-run since 1991.",
+    coverImage: "/images/gallery/1.jpg",
+    date: "Nov 11, 2026",
+    author: "Mr. Mayank Patel",
+    readTime: "4 minute read",
+    keywords: [
+      "Frost Bite Avon IN",
+      "ice cream Avon Indiana",
+      "milkshakes Avon IN",
+      "Frost creations",
+      "soft serve Avon",
+      "burgers Avon Indiana",
+      "family-owned restaurant Avon",
+      "sundaes Avon IN",
+      "Dippin’ Dots Avon",
+      "casual dining Avon Indiana"
+    ],
+    content: `
+<p>
+When someone suggests stopping for ice cream, the picture that usually comes to mind is simple: a cone, a scoop or perhaps a sundae with plenty of toppings. But what if the place you had in mind could also feed your lunchtime cravings, serve you a thick milkshake, or provide a whole new experience? That is why you should stop in and check out Frost Bite of Avon, Indiana. It's not simply for dessert lovers. It offers plenty of frozen treats, drinks, and classic fare that everyone will love. Frost Bite has been a family-run establishment since its inception in 1991, serving the community of Avon with the philosophy that good eats and great frozen treats should be accessible to all, no matter the occasion.
+</p>
+
+<h2>Start With the Classics, Then Try Something New</h2>
+
+<p>
+You can always keep with the same flavor of ice cream. It's not for nothing that some favorites are popular. Creamy favorites are tough to beat, and Frost Bite even serves up soft serve, with varieties from chocolate or vanilla to chocolate-vanilla twist. If you're not a fan of soft serve, go for hard ice cream or treat yourself to a sundae. Chocolate lovers can always try the Hot Fudge Sundae, while cookie fans will love the Cookie Dough Sundae, featuring bites of cookie dough among creamy vanilla ice cream. Then there's the refreshing Strawberry Sundae and the cool, refreshing Mint Chocolate Chip. However, there is only one way to enjoy a visit, and it is to go with the classics. Sometimes the most fun is in choosing an unknown experience.
+</p>
+
+<h2>When a Milkshake Sounds Better Than a Scoop</h2>
+
+<p>
+A cone is small and convenient, but there is a reason that the allure of a milkshake is strong. A good choice if you're looking for something thick and creamy to savor at your leisure. Frost Bite offers a wide range of milkshake flavors including chocolate, vanilla, peanut butter, coffee, strawberry, banana, blueberry, mint, chocolate chip, and Oreo. There's just so much to play around with, whether you're after something fruitier or chocolate-rich. They also come in different sizes, so you can choose to match your appetite. The smaller shake can be the perfect side to a meal, and the bigger shake can be the highlight.
+</p>
+
+<h2>Discover the Signature Frost Creations</h2>
+
+<p>
+If you are someone who likes a little variety in every spoonful, the signature Frost creations deserve a look. A Frost is a frozen treat that goes beyond the standard cone or cup with mix-ins to the soft serve. Heath, M&M, Snickers, Butterfinger, Apple Pie, Banana, Brownie, Chocolate Chip, etc. These combinations bring together a variety of flavors and textures in one dessert. You may love the classic chocolate and candy combo or try one that incorporates apple-pie flavors. It adds a fun twist to your standard order and comes in the creamy texture of soft-serve. If you enjoy trying different kinds of frozen treats, Dippin’ Dots, floats, slushies and freezes add even more variety to the menu.
+</p>
+
+<h2>Not Every Visit Has to Be About Dessert</h2>
+
+<p>
+Here is where Frost Bite surprises people who think of it only as an ice cream shop. Sometimes you just feel hungry and not like a sweet treat. They offer burgers, cheeseburgers, bacon cheeseburgers, hot dogs, chicken sandwiches, BBQ sandwiches, fish sandwiches, chicken wraps, pork tenderloin, chicken tenders, etc. You can also finish up your meal with sides as well. One popular side is french fries, although there are other sides to choose from (onion rings, mozzarella sticks, cheese fries, mac and cheese bites, mushrooms, breaded zucchini, and cheese curds).
+</p>
+
+<h2>A Place for More Than One Kind of Occasion</h2>
+
+<p>
+Not all food adventures are a last minute idea. Sometimes it's a quick stop-in after work. Sometimes it is a family get-together, a meal from a souvenir, and sometimes it is a cute spur of the moment pick-up of a sweet on the way home. This versatility is the reason why such super-varied menus are a bonus. Parents can find something for their kids, friends can hang out over desserts/shakes, and the savory items give something to those looking for a filling meal.
+</p>
+
+<details style="margin-top: 2rem; padding: 1rem; border: 1px solid #eee; border-radius: 8px; background: #f9f9f9;">
+  <summary style="font-weight: bold; cursor: pointer; color: #c07f07;">Semantic Keynotes &amp; Named Entity Recognition (NER) Tags</summary>
+
+  <div style="margin-top: 1rem;">
+
+    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1e1e1e;">Semantic Keynotes</h3>
+
+    <ul style="padding: 1.25rem;">
+      <li><strong>Frost Bite Ice Cream and Restaurant in Avon, Indiana:</strong> Presents Frost Bite as more than an ice cream stop, with frozen treats, drinks and classic fare for every occasion.</li>
+      <li><strong>Soft Serve and Hard Ice Cream Choices:</strong> Covers chocolate, vanilla and chocolate-vanilla twist soft serve, plus hard ice cream for customers who prefer a scoop.</li>
+      <li><strong>Classic Sundae Options:</strong> Highlights the Hot Fudge Sundae, Cookie Dough Sundae, Strawberry Sundae and Mint Chocolate Chip as favorites.</li>
+      <li><strong>Milkshake Flavors and Sizes:</strong> Lists chocolate, vanilla, peanut butter, coffee, strawberry, banana, blueberry, mint chocolate chip and Oreo, in sizes that suit a side or a main treat.</li>
+      <li><strong>Signature Frost Creations:</strong> Explains the Frost as soft serve blended with mix-ins such as Heath, M&M, Snickers, Butterfinger, Apple Pie, Banana and Brownie.</li>
+      <li><strong>More Frozen Variety:</strong> Mentions Dippin’ Dots, floats, slushies and freezes for customers who want something beyond cones and cups.</li>
+      <li><strong>Savory Menu Beyond Dessert:</strong> Covers burgers, cheeseburgers, bacon cheeseburgers, hot dogs, chicken sandwiches, BBQ sandwiches, fish sandwiches, chicken wraps, pork tenderloin and chicken tenders.</li>
+      <li><strong>Side Dish Selection:</strong> Lists french fries, onion rings, mozzarella sticks, cheese fries, mac and cheese bites, mushrooms, breaded zucchini and cheese curds.</li>
+      <li><strong>Family-Run Since 1991:</strong> Emphasizes Frost Bite’s long-standing family ownership and its goal of making good food and frozen treats accessible to all.</li>
+      <li><strong>Local Search Intent:</strong> Targets people looking for ice cream, milkshakes, burgers and casual dining in Avon, Indiana, for quick stops, family outings and after-work treats.</li>
+    </ul>
+
+    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1e1e1e;">NER Tags</h3>
+
+    <ul style="padding: 1.25rem;">
+      <li><strong>ORGANIZATION:</strong> Frost Bite</li>
+      <li><strong>PERSON:</strong> Mr. Mayank Patel (author)</li>
+      <li><strong>BUSINESS TYPE:</strong> Ice cream shop, Restaurant, Family-run establishment</li>
+      <li><strong>SERVICE:</strong> Ice cream and dessert service, Burger and sandwich menu, Casual dining, Quick-stop takeaway, Family dining</li>
+      <li><strong>LOCATION:</strong> Avon, Indiana</li>
+      <li><strong>FROZEN TREATS:</strong> Soft serve, Chocolate-vanilla twist, Hard ice cream, Hot Fudge Sundae, Cookie Dough Sundae, Strawberry Sundae, Mint Chocolate Chip, Milkshakes, Frost creations, Dippin’ Dots, Floats, Slushies, Freezes</li>
+      <li><strong>MILKSHAKE FLAVORS:</strong> Chocolate, Vanilla, Peanut butter, Coffee, Strawberry, Banana, Blueberry, Mint chocolate chip, Oreo</li>
+      <li><strong>FROST MIX-INS:</strong> Heath, M&M, Snickers, Butterfinger, Apple Pie, Banana, Brownie, Chocolate chip</li>
+      <li><strong>FOOD / MENU ITEMS:</strong> Burger, Cheeseburger, Bacon cheeseburger, Hot dog, Chicken sandwich, BBQ sandwich, Fish sandwich, Chicken wrap, Pork tenderloin, Chicken tenders</li>
+      <li><strong>SIDES:</strong> French fries, Onion rings, Mozzarella sticks, Cheese fries, Mac and cheese bites, Mushrooms, Breaded zucchini, Cheese curds</li>
+      <li><strong>AUDIENCE:</strong> Families, Parents and kids, Friends, Dessert lovers, Local customers, Dine-in and quick-stop customers</li>
+      <li><strong>CONCEPT:</strong> Menu variety, Classic vs. new flavors, Milkshake sizes, Family-owned since 1991, Occasion-based dining</li>
+      <li><strong>LOCAL SEARCH ENTITY:</strong> Ice cream in Avon, Indiana; Burgers in Avon, Indiana</li>
+    </ul>
+
+  </div>
+</details>
+`.trim(),
+
+    schema: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://frostbite-avon-indiana.com/blogs/frost-bite-avon-in-ice-cream-milkshakes-burgers#blogposting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://frostbite-avon-indiana.com/blogs/frost-bite-avon-in-ice-cream-milkshakes-burgers"
+          },
+          "headline": "Discover the Many Ways to Enjoy Frost Bite in Avon, IN",
+          "description": "Explore Frost Bite in Avon, Indiana: soft serve, sundaes, milkshakes, signature Frost creations, burgers and sides. Family-run since 1991.",
+          "url": "https://frostbite-avon-indiana.com/blogs/frost-bite-avon-in-ice-cream-milkshakes-burgers",
+          "image": "https://frostbite-avon-indiana.com/images/gallery/1.jpg",
+          "datePublished": "2026-11-11",
+          "dateModified": "2026-11-11",
+          "author": {
+            "@type": "Person",
+            "name": "Mr. Mayank Patel"
+          },
+          "publisher": {
+            "@id": "https://frostbite-avon-indiana.com/#business"
+          },
+          "articleSection": "Food, Ice Cream and Restaurant Guide",
+          "inLanguage": "en-US",
+          "keywords": [
+            "Frost Bite Avon IN",
+            "ice cream Avon Indiana",
+            "milkshakes Avon IN",
+            "Frost creations",
+            "soft serve Avon",
+            "burgers Avon Indiana",
+            "family-owned restaurant Avon",
+            "sundaes Avon IN",
+            "Dippin’ Dots Avon",
+            "casual dining Avon Indiana"
+          ],
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Frost Bite Ice Cream and Restaurant"
+            },
+            {
+              "@type": "Thing",
+              "name": "Soft Serve and Hard Ice Cream"
+            },
+            {
+              "@type": "Thing",
+              "name": "Milkshake Flavors and Sizes"
+            },
+            {
+              "@type": "Thing",
+              "name": "Signature Frost Creations"
+            },
+            {
+              "@type": "Thing",
+              "name": "Burgers and Casual Dining in Avon, Indiana"
+            }
+          ],
+          "isPartOf": {
+            "@id": "https://frostbite-avon-indiana.com/#website"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://frostbite-avon-indiana.com/blogs/frost-bite-avon-in-ice-cream-milkshakes-burgers",
+          "url": "https://frostbite-avon-indiana.com/blogs/frost-bite-avon-in-ice-cream-milkshakes-burgers",
+          "name": "Discover the Many Ways to Enjoy Frost Bite in Avon, IN",
+          "description": "Explore Frost Bite in Avon, Indiana: soft serve, sundaes, milkshakes, signature Frost creations, burgers and sides. Family-run since 1991.",
+          "isPartOf": {
+            "@id": "https://frostbite-avon-indiana.com/#website"
+          },
+          "about": {
+            "@id": "https://frostbite-avon-indiana.com/#business"
+          },
+          "breadcrumb": {
+            "@id": "https://frostbite-avon-indiana.com/blogs/frost-bite-avon-in-ice-cream-milkshakes-burgers#breadcrumb"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://frostbite-avon-indiana.com/blogs/frost-bite-avon-in-ice-cream-milkshakes-burgers#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://frostbite-avon-indiana.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blogs",
+              "item": "https://frostbite-avon-indiana.com/blogs"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Discover the Many Ways to Enjoy Frost Bite in Avon, IN",
+              "item": "https://frostbite-avon-indiana.com/blogs/frost-bite-avon-in-ice-cream-milkshakes-burgers"
+            }
+          ]
+        },
+        {
+          "@type": "Restaurant",
+          "@id": "https://frostbite-avon-indiana.com/#business",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/",
+          "description": "Family-run establishment since 1991, serving the community of Avon with ice cream, milkshakes, Frost creations, burgers, sandwiches and sides.",
+          "foundingDate": "1991",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "7025 Galen Dr W",
+            "addressLocality": "Avon",
+            "addressRegion": "IN",
+            "postalCode": "46123",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://frostbite-avon-indiana.com/#website",
+          "url": "https://frostbite-avon-indiana.com/",
+          "name": "Frost Bite",
+          "publisher": {
+            "@id": "https://frostbite-avon-indiana.com/#business"
+          },
+          "inLanguage": "en-US"
+        }
+      ]
+    })
+  },
 ];
