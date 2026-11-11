@@ -38,8 +38,73 @@ export const metadata: Metadata = {
 };
 
 export default function AboutUsPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "@id": "https://frostbite-avon-indiana.com/about-us#webpage",
+        "url": "https://frostbite-avon-indiana.com/about-us",
+        "name": "About | Frost Bite | Ice Cream Shop Avon, IN",
+        "description": "Learn about Frost Bite, a beloved ice cream shop in Avon, IN, since 1991. Family-owned, fresh ingredients & cozy vibes. Come taste the difference!",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://frostbite-avon-indiana.com/#website",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "@id": "https://frostbite-avon-indiana.com/about-us#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://frostbite-avon-indiana.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About Us",
+              "item": "https://frostbite-avon-indiana.com/about-us"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "IceCreamShop",
+          "@id": "https://frostbite-avon-indiana.com/#restaurant",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/",
+          "foundingDate": "1991",
+          "telephone": "+1-317-272-2483",
+          "email": "frostbite7025@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "7025 Galen Dr W",
+            "addressLocality": "Avon",
+            "addressRegion": "IN",
+            "postalCode": "46123",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.7628",
+            "longitude": "-86.3970"
+          }
+        }
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
+        }}
+      />
       {/* Breadcrumb Section */}
       <Breadcrumb
         title="About Frost Bite"

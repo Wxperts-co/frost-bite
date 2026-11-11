@@ -38,8 +38,86 @@ export const metadata: Metadata = {
 };
 
 export default function ContactUsPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "@id": "https://frostbite-avon-indiana.com/contact-us#webpage",
+        "url": "https://frostbite-avon-indiana.com/contact-us",
+        "name": "Frost Bite | Burgers & Fish Sandwich Avon, IN",
+        "description": "Find hours, directions, and contact info for Frost Bite in Avon, IN. Stop by Galen Dr for delicious handcrafted ice cream, burgers, fish sandwiches, etc.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://frostbite-avon-indiana.com/#website",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "@id": "https://frostbite-avon-indiana.com/contact-us#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://frostbite-avon-indiana.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contact Us",
+              "item": "https://frostbite-avon-indiana.com/contact-us"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "Restaurant",
+          "@id": "https://frostbite-avon-indiana.com/#restaurant",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/",
+          "telephone": "+1-317-272-2483",
+          "email": "frostbite7025@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "7025 Galen Dr W",
+            "addressLocality": "Avon",
+            "addressRegion": "IN",
+            "postalCode": "46123",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.7628",
+            "longitude": "-86.3970"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              "opens": "11:00",
+              "closes": "22:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Sunday"],
+              "opens": "12:00",
+              "closes": "22:00"
+            }
+          ]
+        }
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
+        }}
+      />
       <Breadcrumb
         title="Contact Us"
         backgroundImage="/images/inner-bg-1.jpg"
@@ -85,7 +163,7 @@ export default function ContactUsPage() {
                         rel="noopener noreferrer"
                         className="hover:text-[#c07f07] transition-colors duration-300"
                       >
-                        7025 Galen Dr W, Avon, IN 46123, United States
+                        7025 Galen Dr W, Avon, IN 46123
                       </Link>
                     </li>
 

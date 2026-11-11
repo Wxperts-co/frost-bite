@@ -44,8 +44,52 @@ const galleryImages = [
 ];
 
 export default function GalleryPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ImageGallery",
+        "@id": "https://frostbite-avon-indiana.com/gallery#gallery",
+        "url": "https://frostbite-avon-indiana.com/gallery",
+        "name": "Frost Bite Photo Gallery",
+        "description": "Browse photos of Frost Bite's delicious ice cream, sundaes, burgers & more in Avon, IN.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://frostbite-avon-indiana.com/#website",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "@id": "https://frostbite-avon-indiana.com/gallery#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://frostbite-avon-indiana.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Gallery",
+              "item": "https://frostbite-avon-indiana.com/gallery"
+            }
+          ]
+        },
+        "image": galleryImages.map((img) => `https://frostbite-avon-indiana.com${img.src}`)
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
+        }}
+      />
       <Breadcrumb 
         title="Gallery" 
         backgroundImage="/images/inner-bg-1.jpg"

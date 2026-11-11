@@ -34,8 +34,52 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic';
 
 export default function FoodSandwichesPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Menu",
+        "@id": "https://frostbite-avon-indiana.com/food-sandwiches#menu",
+        "url": "https://frostbite-avon-indiana.com/food-sandwiches",
+        "name": "Frost Bite Food & Sandwiches Menu",
+        "description": "Enjoy juicy burgers, crispy chicken, hot dogs, sandwiches & combo meals at Frost Bite in Avon, IN.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://frostbite-avon-indiana.com/#website",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "@id": "https://frostbite-avon-indiana.com/food-sandwiches#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://frostbite-avon-indiana.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Food & Sandwiches",
+              "item": "https://frostbite-avon-indiana.com/food-sandwiches"
+            }
+          ]
+        }
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
+        }}
+      />
       <Breadcrumb 
         title="Food & Sandwiches" 
         backgroundImage="/images/inner-bg-1.jpg"

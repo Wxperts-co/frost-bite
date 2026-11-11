@@ -34,8 +34,58 @@ export const metadata: Metadata = {
 };
 
 export default function BlogListingPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        "@id": "https://frostbite-avon-indiana.com/blogs#blog",
+        "url": "https://frostbite-avon-indiana.com/blogs",
+        "name": "Frost Bite Blog",
+        "description": "Enjoy homemade ice cream in Avon, Indiana. Stories, traditions, and sweet inspiration from Frost Bite.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://frostbite-avon-indiana.com/#website",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "@id": "https://frostbite-avon-indiana.com/blogs#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://frostbite-avon-indiana.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blogs",
+              "item": "https://frostbite-avon-indiana.com/blogs"
+            }
+          ]
+        },
+        "blogPost": blogs.map((b) => ({
+          "@type": "BlogPosting",
+          "headline": b.title,
+          "description": b.description,
+          "url": `https://frostbite-avon-indiana.com/blogs/${b.slug}`,
+          "datePublished": new Date(b.date).toISOString().split("T")[0]
+        }))
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
+        }}
+      />
       {/* Hidden headings for SEO as specified in the document */}
       <h1 className="sr-only">local ice cream shop in Avon, IN</h1>
       <h2 className="sr-only">ice cream shop near me</h2>

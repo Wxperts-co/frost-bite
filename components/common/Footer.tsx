@@ -155,7 +155,7 @@ const Footer = () => {
                   className="hover:underline transition-all duration-300 group"
                 >
                   <p className="text-white text-sm leading-relaxed group-hover:text-[#fca90e] transition-colors">
-                    7025 Galen Dr W, Avon, IN 46123, United States
+                    7025 Galen Dr W, Avon, IN 46123
                   </p>
                 </Link>
               </div>

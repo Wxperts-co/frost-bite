@@ -22,8 +22,51 @@ export const metadata: Metadata = {
 };
 
 export default function CheckoutPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CheckoutPage",
+        "@id": "https://frostbite-avon-indiana.com/checkout#webpage",
+        "url": "https://frostbite-avon-indiana.com/checkout",
+        "name": "Checkout | Frost Bite Avon, Indiana",
+        "description": "Complete your pickup order at Frost Bite in Avon, Indiana. Fresh handcrafted treats ready for pickup!",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://frostbite-avon-indiana.com/#website",
+          "name": "Frost Bite",
+          "url": "https://frostbite-avon-indiana.com/"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "@id": "https://frostbite-avon-indiana.com/checkout#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://frostbite-avon-indiana.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Checkout",
+              "item": "https://frostbite-avon-indiana.com/checkout"
+            }
+          ]
+        }
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
+        }}
+      />
       <Breadcrumb
         title="Checkout"
         backgroundImage="/images/inner-bg-1.jpg"
