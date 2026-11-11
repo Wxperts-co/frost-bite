@@ -1324,6 +1324,7 @@ Not all food adventures are a last minute idea. Sometimes it's a quick stop-in a
           "dateModified": "2026-11-11",
           "author": {
             "@type": "Person",
+            "@id": "https://frostbite-avon-indiana.com/#author-mayank-patel",
             "name": "Mr. Mayank Patel"
           },
           "publisher": {
@@ -1346,11 +1347,15 @@ Not all food adventures are a last minute idea. Sometimes it's a quick stop-in a
           "about": [
             {
               "@type": "Thing",
-              "name": "Frost Bite Ice Cream and Restaurant"
+              "name": "Frost Bite Ice Cream and Restaurant in Avon, Indiana"
             },
             {
               "@type": "Thing",
-              "name": "Soft Serve and Hard Ice Cream"
+              "name": "Soft Serve and Hard Ice Cream Choices"
+            },
+            {
+              "@type": "Thing",
+              "name": "Classic Sundae Options"
             },
             {
               "@type": "Thing",
@@ -1362,7 +1367,152 @@ Not all food adventures are a last minute idea. Sometimes it's a quick stop-in a
             },
             {
               "@type": "Thing",
-              "name": "Burgers and Casual Dining in Avon, Indiana"
+              "name": "More Frozen Variety"
+            },
+            {
+              "@type": "Thing",
+              "name": "Savory Menu Beyond Dessert"
+            },
+            {
+              "@type": "Thing",
+              "name": "Side Dish Selection"
+            },
+            {
+              "@type": "Thing",
+              "name": "Family-Run Since 1991"
+            },
+            {
+              "@type": "Thing",
+              "name": "Local Search Intent"
+            }
+          ],
+          "mentions": [
+            {
+              "@id": "https://frostbite-avon-indiana.com/#business"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Soft Serve Ice Cream"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Chocolate-Vanilla Twist"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Hard Ice Cream"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Hot Fudge Sundae"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Cookie Dough Sundae"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Strawberry Sundae"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Mint Chocolate Chip"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Milkshakes"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Signature Frost Creations"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Dippin’ Dots"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Floats"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Slushies"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Freezes"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Burger"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Cheeseburger"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Bacon Cheeseburger"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Hot Dog"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Chicken Sandwich"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "BBQ Sandwich"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Fish Sandwich"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Chicken Wrap"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Pork Tenderloin"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Chicken Tenders"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "French Fries"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Onion Rings"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Mozzarella Sticks"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Cheese Fries"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Mac and Cheese Bites"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Mushrooms"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Breaded Zucchini"
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Cheese Curds"
             }
           ],
           "isPartOf": {
@@ -1411,12 +1561,44 @@ Not all food adventures are a last minute idea. Sometimes it's a quick stop-in a
           ]
         },
         {
-          "@type": "Restaurant",
+          "@type": "Person",
+          "@id": "https://frostbite-avon-indiana.com/#author-mayank-patel",
+          "name": "Mr. Mayank Patel",
+          "jobTitle": "Author",
+          "worksFor": {
+            "@id": "https://frostbite-avon-indiana.com/#business"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://frostbite-avon-indiana.com/#service-frost-bite",
+          "name": "Ice Cream and Food Dining Service",
+          "serviceType": "Ice Cream Shop and Restaurant Service",
+          "description": "Ice cream and dessert service, burger and sandwich menu, casual dining, quick-stop takeaway, and family dining at Frost Bite in Avon, Indiana.",
+          "provider": {
+            "@id": "https://frostbite-avon-indiana.com/#business"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Avon"
+          }
+        },
+        {
+          "@type": ["Restaurant", "IceCreamShop"],
           "@id": "https://frostbite-avon-indiana.com/#business",
           "name": "Frost Bite",
           "url": "https://frostbite-avon-indiana.com/",
+          "telephone": "+1-317-272-2483",
+          "email": "frostbite7025@gmail.com",
           "description": "Family-run establishment since 1991, serving the community of Avon with ice cream, milkshakes, Frost creations, burgers, sandwiches and sides.",
           "foundingDate": "1991",
+          "priceRange": "$$",
+          "servesCuisine": [
+            "Ice Cream",
+            "American",
+            "Burgers",
+            "Desserts"
+          ],
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "7025 Galen Dr W",
@@ -1424,6 +1606,125 @@ Not all food adventures are a last minute idea. Sometimes it's a quick stop-in a
             "addressRegion": "IN",
             "postalCode": "46123",
             "addressCountry": "US"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Avon"
+          },
+          "knowsAbout": [
+            "Soft Serve",
+            "Hard Ice Cream",
+            "Chocolate-Vanilla Twist",
+            "Hot Fudge Sundae",
+            "Cookie Dough Sundae",
+            "Strawberry Sundae",
+            "Mint Chocolate Chip",
+            "Milkshakes",
+            "Frost Creations",
+            "Dippin’ Dots",
+            "Floats",
+            "Slushies",
+            "Freezes",
+            "Burgers",
+            "Cheeseburgers",
+            "Bacon Cheeseburgers",
+            "Hot Dogs",
+            "Chicken Sandwiches",
+            "BBQ Sandwiches",
+            "Fish Sandwiches",
+            "Chicken Wraps",
+            "Pork Tenderloin",
+            "Chicken Tenders",
+            "French Fries",
+            "Onion Rings",
+            "Mozzarella Sticks",
+            "Cheese Fries",
+            "Mac and Cheese Bites",
+            "Mushrooms",
+            "Breaded Zucchini",
+            "Cheese Curds"
+          ],
+          "hasMenu": {
+            "@type": "Menu",
+            "name": "Frost Bite Full Menu",
+            "hasMenuSection": [
+              {
+                "@type": "MenuSection",
+                "name": "Frozen Treats & Ice Cream",
+                "hasMenuItem": [
+                  { "@type": "MenuItem", "name": "Soft Serve Ice Cream" },
+                  { "@type": "MenuItem", "name": "Chocolate-Vanilla Twist" },
+                  { "@type": "MenuItem", "name": "Hard Ice Cream" },
+                  { "@type": "MenuItem", "name": "Hot Fudge Sundae" },
+                  { "@type": "MenuItem", "name": "Cookie Dough Sundae" },
+                  { "@type": "MenuItem", "name": "Strawberry Sundae" },
+                  { "@type": "MenuItem", "name": "Mint Chocolate Chip" },
+                  { "@type": "MenuItem", "name": "Dippin’ Dots" },
+                  { "@type": "MenuItem", "name": "Floats" },
+                  { "@type": "MenuItem", "name": "Slushies" },
+                  { "@type": "MenuItem", "name": "Freezes" }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": "Milkshakes",
+                "hasMenuItem": [
+                  { "@type": "MenuItem", "name": "Chocolate Milkshake" },
+                  { "@type": "MenuItem", "name": "Vanilla Milkshake" },
+                  { "@type": "MenuItem", "name": "Peanut Butter Milkshake" },
+                  { "@type": "MenuItem", "name": "Coffee Milkshake" },
+                  { "@type": "MenuItem", "name": "Strawberry Milkshake" },
+                  { "@type": "MenuItem", "name": "Banana Milkshake" },
+                  { "@type": "MenuItem", "name": "Blueberry Milkshake" },
+                  { "@type": "MenuItem", "name": "Mint Chocolate Chip Shake" },
+                  { "@type": "MenuItem", "name": "Oreo Milkshake" }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": "Signature Frost Creations",
+                "hasMenuItem": [
+                  { "@type": "MenuItem", "name": "Heath Frost" },
+                  { "@type": "MenuItem", "name": "M&M Frost" },
+                  { "@type": "MenuItem", "name": "Snickers Frost" },
+                  { "@type": "MenuItem", "name": "Butterfinger Frost" },
+                  { "@type": "MenuItem", "name": "Apple Pie Frost" },
+                  { "@type": "MenuItem", "name": "Banana Frost" },
+                  { "@type": "MenuItem", "name": "Brownie Frost" },
+                  { "@type": "MenuItem", "name": "Chocolate Chip Frost" }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": "Burgers & Sandwiches",
+                "hasMenuItem": [
+                  { "@type": "MenuItem", "name": "Burger" },
+                  { "@type": "MenuItem", "name": "Cheeseburger" },
+                  { "@type": "MenuItem", "name": "Bacon Cheeseburger" },
+                  { "@type": "MenuItem", "name": "Hot Dog" },
+                  { "@type": "MenuItem", "name": "Chicken Sandwich" },
+                  { "@type": "MenuItem", "name": "BBQ Sandwich" },
+                  { "@type": "MenuItem", "name": "Fish Sandwich" },
+                  { "@type": "MenuItem", "name": "Chicken Wrap" },
+                  { "@type": "MenuItem", "name": "Pork Tenderloin" },
+                  { "@type": "MenuItem", "name": "Chicken Tenders" }
+                ]
+              },
+              {
+                "@type": "MenuSection",
+                "name": "Sides",
+                "hasMenuItem": [
+                  { "@type": "MenuItem", "name": "French Fries" },
+                  { "@type": "MenuItem", "name": "Onion Rings" },
+                  { "@type": "MenuItem", "name": "Mozzarella Sticks" },
+                  { "@type": "MenuItem", "name": "Cheese Fries" },
+                  { "@type": "MenuItem", "name": "Mac and Cheese Bites" },
+                  { "@type": "MenuItem", "name": "Mushrooms" },
+                  { "@type": "MenuItem", "name": "Breaded Zucchini" },
+                  { "@type": "MenuItem", "name": "Cheese Curds" }
+                ]
+              }
+            ]
           }
         },
         {
